@@ -5,21 +5,21 @@ import type { Leader } from '../types';
 const Contact = () => {
   const leaders: Leader[] = [
     {
-      name: 'John Doe',
+      name: 'Vadiraj Inamdar',
       position: 'President',
-      imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=500',
+      imageUrl: 'src/images/1720026172356.jpeg',
       contact: {
-        email: 'president@jciponda.org',
-        phone: '+91 98765 43210'
+        email: 'vadirajinamdar4@gmail.com',
+        phone: '-'
       }
     },
     {
-      name: 'Jane Smith',
+      name: 'Muskan Naik',
       position: 'Secretary',
-      imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=500',
+      imageUrl: 'src/images/1722509376448.jpeg',
       contact: {
-        email: 'secretary@jciponda.org',
-        phone: '+91 98765 43211'
+        email: '-',
+        phone: '-'
       }
     }
   ];

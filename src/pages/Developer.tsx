@@ -11,9 +11,6 @@ const Developer = () => {
           className="text-center mb-12"
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Developer</h1>
-          <p className="text-lg text-gray-700">
-            Meet the developer behind this website
-          </p>
         </motion.div>
 
         <motion.div
@@ -26,24 +23,23 @@ const Developer = () => {
             <div className="md:flex-shrink-0">
               <img
                 className="h-48 w-full md:w-48 object-cover"
-                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=500"
+                src="src/images/IMG_2277.jpg"
                 alt="Developer"
               />
             </div>
             <div className="p-8">
               <div className="uppercase tracking-wide text-sm text-blue-600 font-semibold">
-                Full Stack Developer
+                Frontend Dev
               </div>
               <h2 className="mt-2 text-xl font-semibold text-gray-900">
-                John Developer
+                Shrinivas Inamdar
               </h2>
               <p className="mt-4 text-gray-600">
-                Passionate about creating beautiful and functional web applications
-                using modern technologies.
+              Passionate about crafting stunning front-end experiences and exploring the endless possibilities of tech!
               </p>
               <div className="mt-6 flex space-x-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/ShrinivasInamdar"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
@@ -51,7 +47,7 @@ const Developer = () => {
                   <Github className="h-6 w-6" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/shrinivas-inamdar-a83a30237/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
@@ -59,7 +55,7 @@ const Developer = () => {
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <a
-                  href="mailto:developer@example.com"
+                  href="mailto:shrinivasinamdar6@gmail.com"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   <Mail className="h-6 w-6" />
