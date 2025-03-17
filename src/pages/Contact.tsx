@@ -7,7 +7,7 @@ const Contact = () => {
     {
       name: 'Vadiraj Inamdar',
       position: 'President',
-      imageUrl: 'src/images/1720026172356.jpeg',
+      imageUrl: 'https://drive.google.com/file/d/1UXFuWIhtypuz_onxXSQ47NO2Dub7pci6/view?usp=share_link',
       contact: {
         email: 'vadirajinamdar4@gmail.com',
         phone: '-'
