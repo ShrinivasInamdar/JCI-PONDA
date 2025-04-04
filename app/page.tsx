@@ -87,26 +87,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Past Events Section */}
-      <Section
-        title="Past Events"
-        description="A glimpse of our recent activities and initiatives"
-        className="bg-gray-50 dark:bg-gray-900"
-      >
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {pastEvents.map((event, index) => (
-            <Card
-              key={index}
-              title={event.title}
-              description={event.description}
-              image={event.image}
-              date={event.date}
-              link={event.link}
-              linkText="Read More"
-            />
-          ))}
-        </div>
-      </Section>
+
 
       {/* Leader 2025 Section */}
       <Section title="Leader 2025">
@@ -127,8 +108,29 @@ export default function Home() {
         </div>
       </Section>
 
+            {/* Past Events Section */}
+            <Section
+        title="Past Events"
+        description="A glimpse of our recent activities and initiatives"
+        className="bg-gray-50 dark:bg-gray-900"
+      >
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {pastEvents.map((event, index) => (
+            <Card
+              key={index}
+              title={event.title}
+              description={event.description}
+              image={event.image}
+              date={event.date}
+              link={event.link}
+              linkText="Read More"
+            />
+          ))}
+        </div>
+      </Section>
+
       {/* Latest Events Section */}
-      <Section
+      {/* <Section
         title="Latest Events"
         description="Stay updated with our most recent activities and initiatives"
         className="bg-gray-50 dark:bg-gray-900"
@@ -164,7 +166,7 @@ export default function Home() {
             <Link href="/events">View All Events</Link>
           </Button>
         </div>
-      </Section>
+      </Section> */}
     </div>
   )
 }
