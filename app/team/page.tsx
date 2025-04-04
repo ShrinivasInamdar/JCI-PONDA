@@ -23,18 +23,6 @@ const teamMembers = [
     description: "Managing the chapter's finances and ensuring transparent and efficient use of resources.",
   },
   {
-    name: "JC Vaibhav Pai ",
-    position: "Joint Secretary",
-    image: "/placeholder.svg?height=200&width=200",
-    description: "-",
-  },
-  {
-    name: "JC Kishan Mangueshkar ",
-    position: "Joint Treasurer",
-    image: "/placeholder.svg?height=200&width=200",
-    description: "-",
-  },
-  {
     name: "JC Samrudhi Naik",
     position: "Vice President - Management",
     image: "/placeholder.svg?height=200&width=200",
@@ -53,20 +41,8 @@ const teamMembers = [
     description: "-",
   },
   {
-    name: "JC Nikhil",
-    position: "Vice President - Business",
-    image: "/placeholder.svg?height=200&width=200",
-    description: "-",
-  },
-  {
     name: "JC Dhanya Bhat",
     position: "Vice President - Internationalism",
-    image: "/placeholder.svg?height=200&width=200",
-    description: "-",
-  },
-  {
-    name: "JC Dhiraj Govekar",
-    position: "Vice President - Growth & Development",
     image: "/placeholder.svg?height=200&width=200",
     description: "-",
   },

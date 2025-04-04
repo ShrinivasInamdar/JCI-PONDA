@@ -21,6 +21,7 @@ const carouselSlides = [
     title: "Networking Events",
     description: "Connect with like-minded individuals and grow your network",
   },
+  
 ]
 
 // Sample data for past events
