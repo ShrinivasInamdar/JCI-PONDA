@@ -4,32 +4,46 @@ import { Card } from "@/components/card"
 // Sample data for developers
 const developers = [
   {
-    name: "Alex Johnson",
+    name: "Jr Jc Shrinivas Inamdar",
     role: "Lead Developer",
     image: "/placeholder.svg?height=200&width=200",
     description:
-      "Full-stack developer with expertise in React and Next.js, responsible for the overall architecture of the website.",
+      "-",
   },
   {
-    name: "Sophia Chen",
-    role: "UI/UX Designer",
-    image: "/placeholder.svg?height=200&width=200",
-    description:
-      "Creative designer focused on creating intuitive and accessible user interfaces with a keen eye for detail.",
-  },
-  {
-    name: "Marcus Williams",
+    name: "Pranav Kerkar",
     role: "Frontend Developer",
     image: "/placeholder.svg?height=200&width=200",
     description:
-      "Specializes in creating responsive and interactive web experiences using modern frontend technologies.",
+      "-",
   },
   {
-    name: "Priya Patel",
-    role: "Backend Developer",
+    name: "Ashden Mascarenhas",
+    role: "Frontend Developer",
     image: "/placeholder.svg?height=200&width=200",
     description:
-      "Experienced in building robust server-side applications and APIs to power the website's functionality.",
+      "-",
+  },
+  {
+    name: "P Jayesh Naidu",
+    role: "Frontend Developer",
+    image: "/placeholder.svg?height=200&width=200",
+    description:
+      "-",
+  },
+  {
+    name: "Lauren",
+    role: "Frontend Developer",
+    image: "/placeholder.svg?height=200&width=200",
+    description:
+      "-",
+  },
+  {
+    name: "Aarth Vajandar",
+    role: "Frontend Developer",
+    image: "/placeholder.svg?height=200&width=200",
+    description:
+      "-",
   },
 ]
 
