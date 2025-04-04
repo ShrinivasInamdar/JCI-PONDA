@@ -118,7 +118,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
           </div>
-          <h3 className="text-2xl font-bold mb-2">Vadiraj Inamdar</h3>
+          <h3 className="text-2xl font-bold mb-2">JC Vadiraj Inamdar</h3>
           <p className="text-blue-600 dark:text-blue-400 font-medium mb-4">President, JCI Ponda 2025</p>
           <p className="text-gray-600 dark:text-gray-300 text-center max-w-2xl">
             Leading JCI Ponda with a vision to empower young citizens and create sustainable impact in our community
