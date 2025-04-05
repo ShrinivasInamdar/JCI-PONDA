@@ -60,7 +60,8 @@
     "zod": "^3.24.1",
     "react-particles": "latest",
     "tsparticles-slim": "latest",
-    "tsparticles-engine": "latest"
+    "tsparticles-engine": "latest",
+    "@tailwindcss/typography": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",

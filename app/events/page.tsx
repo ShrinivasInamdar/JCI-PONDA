@@ -1,15 +1,22 @@
 import { Section } from "@/components/section"
 import { Card } from "@/components/card"
 
-// Sample data for upcoming events
+// =============================================
+// UPCOMING EVENTS DATA
+// =============================================
+// To add a new upcoming event:
+// 1. Add a new object to this array with the event details
+// 2. The "link" property should be "#" or a registration link
+// 3. The "linkText" property should be "Register" or similar
+// =============================================
 const upcomingEvents = [
   {
     title: "Annual Leadership Conference",
     description:
       "Join us for a day of inspiring talks, workshops, and networking opportunities focused on developing leadership skills for the future.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/placeholder.svg?height=200&width=300", // Replace with actual image path
     date: "25 Apr 2025",
-    link: "#",
+    link: "#", // Registration link or "#" if not available yet
     linkText: "Register",
   },
   {
@@ -21,42 +28,47 @@ const upcomingEvents = [
     link: "#",
     linkText: "Register",
   },
+  // Add more upcoming events here...
+]
+
+// =============================================
+// PAST EVENTS DATA
+// =============================================
+// To add a new past event:
+// 1. Add a new object to this array with the event details
+// 2. Create a unique slug for the event (e.g., "leadership-workshop-2025")
+// 3. Set the "link" property to "/events/your-event-slug"
+// 4. Add the event data to the events object in [slug]/page.tsx
+// =============================================
+const pastEvents = [
   {
-    title: "Environmental Awareness Workshop",
+    title: "Community Clean-up Drive",
     description:
-      "Learn about sustainable practices and how you can contribute to environmental conservation in your daily life.",
+      "We organized a community clean-up drive at Ponda Beach, collecting over 200kg of waste and raising awareness about environmental conservation.",
     image: "/placeholder.svg?height=200&width=300",
-    date: "22 May 2025",
-    link: "#",
-    linkText: "Register",
+    date: "15 Mar 2025",
+    link: "/events/community-cleanup", // This should match the slug in the dynamic route
+    linkText: "Read More",
   },
   {
-    title: "Youth Entrepreneurship Summit",
+    title: "Leadership Workshop",
     description:
-      "A platform for young entrepreneurs to showcase their ideas, get mentorship, and connect with potential investors.",
+      "A workshop focused on developing leadership skills among youth, featuring speakers from various industries sharing their experiences.",
     image: "/placeholder.svg?height=200&width=300",
-    date: "15 Jun 2025",
-    link: "#",
-    linkText: "Register",
+    date: "28 Feb 2025",
+    link: "/events/leadership-workshop",
+    linkText: "Read More",
   },
   {
-    title: "Cultural Exchange Program",
+    title: "Health Awareness Camp",
     description:
-      "Experience diverse cultures through performances, food, and interactive sessions with international JCI members.",
+      "Free health check-ups and awareness sessions on preventive healthcare for the local community members.",
     image: "/placeholder.svg?height=200&width=300",
-    date: "30 Jun 2025",
-    link: "#",
-    linkText: "Register",
+    date: "10 Feb 2025",
+    link: "/events/health-camp",
+    linkText: "Read More",
   },
-  {
-    title: "Career Development Workshop",
-    description:
-      "Enhance your professional skills with sessions on resume building, interview preparation, and career planning.",
-    image: "/placeholder.svg?height=200&width=300",
-    date: "12 Jul 2025",
-    link: "#",
-    linkText: "Register",
-  },
+  // Add more past events here...
 ]
 
 export default function EventsPage() {
@@ -85,6 +97,27 @@ export default function EventsPage() {
           ))}
         </div>
       </Section>
+
+      {/* Past Events Section */}
+      {/* <Section
+        title="Past Events"
+        description="Explore our previous events and their impact"
+        className="bg-gray-50 dark:bg-gray-900"
+      >
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {pastEvents.map((event, index) => (
+            <Card
+              key={index}
+              title={event.title}
+              description={event.description}
+              image={event.image}
+              date={event.date}
+              link={event.link}
+              linkText={event.linkText}
+            />
+          ))}
+        </div>
+      </Section> */}
     </div>
   )
 }

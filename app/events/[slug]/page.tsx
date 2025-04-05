@@ -1,0 +1,228 @@
+import Link from "next/link"
+import { ArrowLeft } from "lucide-react"
+import { Button } from "@/components/ui/button"
+
+// =============================================
+// EVENT DATA
+// =============================================
+// To add a new event:
+// 1. Create a new property in this object with a unique slug as the key
+// 2. The slug should match the URL you want to use (e.g., "leadership-workshop-2025")
+// 3. Fill in all the required fields for the event
+// 4. Make sure to update the pastEvents array in /app/events/page.tsx to link to this event
+// =============================================
+const events = {
+  // Event 1: Community Clean-up Drive
+  "community-cleanup": {
+    title: "Community Clean-up Drive",
+    date: "15 Mar 2025",
+    location: "Ponda Beach, Goa",
+    organizer: "Environmental Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200", // Replace with actual image path
+    // Add 2-3 additional images for the gallery
+    images: [
+      "/placeholder.svg?height=300&width=400", // Replace with actual image paths
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    // HTML content for the description - you can use paragraphs, lists, etc.
+    description: `
+      <p>The JCI Ponda Community Clean-up Drive was a tremendous success, bringing together over 100 volunteers from all walks of life to clean up Ponda Beach and surrounding areas.</p>
+      
+      <p>The event began at 7:00 AM with a brief orientation session where volunteers were divided into teams and assigned specific areas. Each team was equipped with gloves, trash bags, and other necessary cleaning tools. The clean-up activity lasted for approximately 4 hours, during which the volunteers collected over 200 kg of waste, including plastic bottles, food wrappers, and other non-biodegradable items.</p>
+      
+      <p>Following the clean-up, an awareness session was conducted to educate participants and local residents about the importance of proper waste disposal and the harmful effects of pollution on marine life and the environment. The session also included practical tips on reducing plastic usage and adopting sustainable practices in daily life.</p>
+      
+      <p>The event concluded with a small ceremony to recognize the efforts of all volunteers and to thank the local authorities and sponsors for their support. Refreshments were provided to all participants.</p>
+      
+      <p>This initiative not only helped in cleaning up a significant portion of Ponda Beach but also raised awareness about environmental conservation among the local community. JCI Ponda plans to make this a regular event and expand it to other areas in the region.</p>
+    `,
+    // List of key achievements or impacts from the event
+    impact: [
+      "Collected over 200 kg of waste from Ponda Beach",
+      "Engaged 100+ volunteers from the community",
+      "Raised awareness about environmental conservation",
+      "Established partnerships with local environmental organizations",
+    ],
+  },
+
+  // Event 2: Leadership Workshop
+  "leadership-workshop": {
+    title: "Leadership Workshop",
+    date: "28 Feb 2025",
+    location: "JCI Ponda Hall, Ponda",
+    organizer: "Training Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Leadership Workshop organized by JCI Ponda was a transformative experience for all participants, focusing on developing essential leadership skills among young professionals and students.</p>
+      
+      <p>The workshop was conducted by renowned leadership trainer Mr. Rajesh Sharma, who has over 15 years of experience in leadership development. The day-long workshop covered various aspects of leadership, including communication skills, team management, conflict resolution, and strategic thinking.</p>
+      
+      <p>The morning session began with interactive activities designed to break the ice and encourage participants to step out of their comfort zones. This was followed by a comprehensive session on effective communication, where participants learned about the importance of clear communication in leadership and practiced various communication techniques.</p>
+      
+      <p>After lunch, the workshop focused on team management and conflict resolution. Through role-playing exercises and case studies, participants gained insights into managing diverse teams and resolving conflicts in a constructive manner. The final session of the day was dedicated to strategic thinking, where participants worked in groups to develop strategic plans for hypothetical scenarios.</p>
+      
+      <p>The workshop concluded with a Q&A session, allowing participants to seek clarification and advice on specific leadership challenges they face. Each participant received a certificate of participation and a leadership resource kit to continue their leadership development journey.</p>
+      
+      <p>The feedback from participants was overwhelmingly positive, with many expressing that the workshop provided them with practical tools and insights that they could immediately apply in their professional and personal lives.</p>
+    `,
+    impact: [
+      "Trained 50 young professionals and students in leadership skills",
+      "Provided practical tools for effective communication and team management",
+      "Created networking opportunities among participants",
+      "Received 95% positive feedback from attendees",
+    ],
+  },
+
+  // Event 3: Health Awareness Camp
+  "health-camp": {
+    title: "Health Awareness Camp",
+    date: "10 Feb 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+
+  // =============================================
+  // ADD NEW EVENTS HERE
+  // =============================================
+  // Copy the structure above and create a new event object
+  // Make sure the key (e.g., "health-camp") matches the URL slug you want to use
+  // Example:
+  // "youth-leadership-summit-2025": {
+  //   title: "Youth Leadership Summit 2025",
+  //   date: "15 Jul 2025",
+  //   ...
+  // },
+}
+
+export default function EventDetailPage({ params }: { params: { slug: string } }) {
+  const { slug } = params
+  const event = events[slug as keyof typeof events]
+
+  // Handle case when event is not found
+  if (!event) {
+    return (
+      <div className="container mx-auto px-4 py-16 text-center">
+        <h1 className="text-3xl font-bold mb-4">Event Not Found</h1>
+        <p className="mb-8">The event you're looking for doesn't exist or has been removed.</p>
+        <Button asChild>
+          <Link href="/events">Back to Events</Link>
+        </Button>
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      {/* Event Header */}
+      <div className="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-16">
+        <div className="container mx-auto px-4">
+          <Link
+            href="/events"
+            className="inline-flex items-center text-white hover:text-blue-200 mb-4 transition-colors"
+          >
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Events
+          </Link>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{event.title}</h1>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <div className="bg-blue-800/50 px-3 py-1 rounded-full">
+              <span className="font-medium">Date:</span> {event.date}
+            </div>
+            <div className="bg-blue-800/50 px-3 py-1 rounded-full">
+              <span className="font-medium">Location:</span> {event.location}
+            </div>
+            <div className="bg-blue-800/50 px-3 py-1 rounded-full">
+              <span className="font-medium">Organized by:</span> {event.organizer}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-8">
+        {/* Main Image */}
+        <div className="mb-8">
+          <img
+            src={event.mainImage || "/placeholder.svg"}
+            alt={`${event.title} - Main Image`}
+            className="w-full h-[400px] object-cover rounded-lg shadow-md"
+          />
+        </div>
+
+        {/* Image Gallery */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          {event.images.map((image, index) => (
+            <img
+              key={index}
+              src={image || "/placeholder.svg"}
+              alt={`${event.title} - Image ${index + 1}`}
+              className="w-full h-48 object-cover rounded-lg shadow-md"
+            />
+          ))}
+        </div>
+
+        {/* Event Description */}
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-4">Event Details</h2>
+          <div
+            className="prose prose-blue max-w-none dark:prose-invert"
+            dangerouslySetInnerHTML={{ __html: event.description }}
+          />
+        </div>
+
+        {/* Impact Section */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg shadow-md p-6">
+          <h2 className="text-2xl font-bold mb-4">Impact</h2>
+          <ul className="space-y-2">
+            {event.impact.map((item, index) => (
+              <li key={index} className="flex items-start">
+                <span className="inline-flex items-center justify-center bg-blue-600 text-white rounded-full w-6 h-6 text-sm mr-3 flex-shrink-0">
+                  {index + 1}
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Navigation Buttons */}
+        <div className="mt-8 flex justify-center">
+          <Button asChild>
+            <Link href="/events">Back to Events</Link>
+          </Button>
+        </div>
+      </div>
+    </div>
+  )
+}
+

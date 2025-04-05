@@ -58,3 +58,62 @@
   }
 }
 
+/* Prose styles for rich text content */
+.prose {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply font-bold text-gray-900 dark:text-white mb-4;
+}
+
+.prose h1 {
+  @apply text-3xl;
+}
+
+.prose h2 {
+  @apply text-2xl;
+}
+
+.prose h3 {
+  @apply text-xl;
+}
+
+.prose ul,
+.prose ol {
+  @apply mb-4 pl-5;
+}
+
+.prose ul {
+  @apply list-disc;
+}
+
+.prose ol {
+  @apply list-decimal;
+}
+
+.prose li {
+  @apply mb-1;
+}
+
+.prose a {
+  @apply text-blue-600 dark:text-blue-400 hover:underline;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-gray-300 dark:border-gray-700 pl-4 italic my-4;
+}
+
+.prose-blue a {
+  @apply text-blue-600 dark:text-blue-400;
+}
+

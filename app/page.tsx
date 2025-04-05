@@ -21,7 +21,6 @@ const carouselSlides = [
     title: "Networking Events",
     description: "Connect with like-minded individuals and grow your network",
   },
-  
 ]
 
 // Sample data for past events
@@ -88,10 +87,8 @@ export default function Home() {
         </div>
       </Section>
 
-
-
-      {/* Leader 2025 Section */}
-      <Section title="Leader 2025">
+       {/* Leader 2025 Section */}
+       <Section title="Leader 2025">
         <div className="flex flex-col items-center">
           <div className="w-48 h-48 rounded-full overflow-hidden mb-4">
             <img
@@ -109,8 +106,8 @@ export default function Home() {
         </div>
       </Section>
 
-            {/* Past Events Section */}
-            <Section
+      {/* Past Events Section */}
+      <Section
         title="Past Events"
         description="A glimpse of our recent activities and initiatives"
         className="bg-gray-50 dark:bg-gray-900"
@@ -135,14 +132,24 @@ export default function Home() {
         title="Latest Events"
         description="Stay updated with our most recent activities and initiatives"
         className="bg-gray-50 dark:bg-gray-900"
-      >
-        <div className="grid md:grid-cols-3 gap-6">
+      > */}
+        {/* 
+          =============================================
+          LATEST EVENTS CARDS
+          =============================================
+          To update the latest events on the homepage:
+          1. Replace the event details below with your newest events
+          2. Make sure the "link" property points to the correct event detail page
+          3. The URL should match the slug in the events object in [slug]/page.tsx
+          =============================================
+        */}
+        {/* <div className="grid md:grid-cols-3 gap-6">
           <Card
             title="Leadership Workshop 2025"
             description="An intensive workshop focused on developing essential leadership skills for young professionals in our community."
             image="/placeholder.svg?height=200&width=300"
             date="15 Mar 2025"
-            link="/events"
+            link="/events/leadership-workshop" // This should match the slug in the events object
             linkText="Click More"
           />
           <Card
@@ -150,7 +157,7 @@ export default function Home() {
             description="A community initiative to raise awareness about environmental conservation and sustainable practices."
             image="/placeholder.svg?height=200&width=300"
             date="28 Feb 2025"
-            link="/events"
+            link="/events/community-cleanup" // This should match the slug in the events object
             linkText="Click More"
           />
           <Card
@@ -158,7 +165,7 @@ export default function Home() {
             description="A platform for young entrepreneurs to showcase their ideas and connect with mentors and investors."
             image="/placeholder.svg?height=200&width=300"
             date="10 Feb 2025"
-            link="/events"
+            link="/events/health-camp" // This should match the slug in the events object
             linkText="Click More"
           />
         </div>

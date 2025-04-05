@@ -72,11 +72,11 @@ export function Footer() {
               </div>
             </div>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+              {/* <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
-              </a>
-              <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+              </a> */}
+              <a href="https://www.instagram.com/jciponda/" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </a>
