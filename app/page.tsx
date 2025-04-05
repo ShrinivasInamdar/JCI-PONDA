@@ -1,8 +1,10 @@
+"use client"
 import { Carousel } from "@/components/carousel"
 import { Section } from "@/components/section"
 import { Card } from "@/components/card"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { useEffect } from "react";
 
 // Sample data for carousel
 const carouselSlides = [
@@ -52,6 +54,27 @@ const pastEvents = [
 ]
 
 export default function Home() {
+  useEffect(() => {
+    const elements = document.querySelectorAll(".animate-on-scroll");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-slide-in");
+            entry.target.classList.remove("opacity-0");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div>
       {/* Welcome Header */}
@@ -68,27 +91,42 @@ export default function Home() {
       </div>
 
       {/* Vision & Mission Section */}
-      <Section title="Vision & Mission" description="Our guiding principles that drive our actions and initiatives">
+      <section className="py-12 px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center text-blue-600 dark:text-blue-400">
+          Vision & Mission
+        </h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">Our Vision</h3>
+          {/* Vision */}
+          <div
+            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transform transition-all duration-1000 ease-in-out opacity-0 animate-on-scroll"
+          >
+            <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">
+              Our Vision
+            </h3>
             <p className="text-gray-700 dark:text-gray-300">
               To be the leading global network of young active citizens. We envision a world where young people have the
               capacity to create positive change in their communities, creating a better future for all.
             </p>
           </div>
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">Our Mission</h3>
+
+          {/* Mission */}
+          <div
+            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transform transition-all duration-1000 ease-in-out opacity-0 animate-on-scroll"
+          >
+            <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">
+              Our Mission
+            </h3>
             <p className="text-gray-700 dark:text-gray-300">
-              To provide development opportunities that empower young people to create positive change. We focus on
-              personal development, community service, and international cooperation to build a better world.
+              To provide development opportunities that empower young people to create positive change. We focus on personal
+              development, community service, and international cooperation to build a better world.
             </p>
           </div>
         </div>
-      </Section>
+      </section>
 
-       {/* Leader 2025 Section */}
-       <Section title="Leader 2025">
+
+      {/* Leader 2025 Section */}
+      <Section title="Leader 2025">
         <div className="flex flex-col items-center">
           <div className="w-48 h-48 rounded-full overflow-hidden mb-4">
             <img
@@ -133,7 +171,7 @@ export default function Home() {
         description="Stay updated with our most recent activities and initiatives"
         className="bg-gray-50 dark:bg-gray-900"
       > */}
-        {/* 
+      {/* 
           =============================================
           LATEST EVENTS CARDS
           =============================================
@@ -143,7 +181,7 @@ export default function Home() {
           3. The URL should match the slug in the events object in [slug]/page.tsx
           =============================================
         */}
-        {/* <div className="grid md:grid-cols-3 gap-6">
+      {/* <div className="grid md:grid-cols-3 gap-6">
           <Card
             title="Leadership Workshop 2025"
             description="An intensive workshop focused on developing essential leadership skills for young professionals in our community."
