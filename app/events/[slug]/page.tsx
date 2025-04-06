@@ -136,7 +136,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
         <h1 className="text-3xl font-bold mb-4">Event Not Found</h1>
         <p className="mb-8">The event you're looking for doesn't exist or has been removed.</p>
         <Button asChild>
-          <Link href="/reports">Back to Events</Link>
+          <Link href="/events">Back to Events</Link>
         </Button>
       </div>
     )
@@ -218,7 +218,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
         {/* Navigation Buttons */}
         <div className="mt-8 flex justify-center">
           <Button asChild>
-            <Link href="/reports">Back to Events</Link>
+            <Link href="/events">Back to Events</Link>
           </Button>
         </div>
       </div>

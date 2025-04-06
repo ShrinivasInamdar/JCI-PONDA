@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
@@ -12,7 +12,17 @@ const navLinks = [
   { name: "About Us", href: "/about" },
   { name: "Events", href: "/events" },
   { name: "Reports", href: "/reports" },
-  { name: "Team", href: "/team" },
+  {
+    name: "Team",
+    href: "#",
+    dropdown: true,
+    items: [
+      { name: "Local Governing Board", href: "/team" },
+      { name: "Junior Jaycee Wing", href: "/junior-jaycee" },
+    ],
+  },
+  { name: "OLOSP", href: "/olosp" },
+  { name: "JCOM", href: "/jcom" },
   { name: "Contact Us", href: "/contact" },
   { name: "Developers", href: "/developers" },
 ]
@@ -36,18 +46,47 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-blue-600 dark:hover:text-blue-400",
-                  pathname === link.href ? "text-blue-600 dark:text-blue-400" : "text-gray-700 dark:text-gray-200",
-                )}
-              >
-                {link.name}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.dropdown ? (
+                <div key={link.name} className="relative group">
+                  <button
+                    className={cn(
+                      "text-sm font-medium transition-colors hover:text-blue-600 dark:hover:text-blue-400 flex items-center",
+                      pathname.startsWith(link.items[0].href)
+                        ? "text-blue-600 dark:text-blue-400"
+                        : "text-gray-700 dark:text-gray-200",
+                    )}
+                  >
+                    {link.name}
+                    <ChevronDown className="ml-1 h-4 w-4" />
+                  </button>
+                  <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="py-1">
+                      {link.items.map((item) => (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-blue-600 dark:hover:text-blue-400",
+                    pathname === link.href ? "text-blue-600 dark:text-blue-400" : "text-gray-700 dark:text-gray-200",
+                  )}
+                >
+                  {link.name}
+                </Link>
+              ),
+            )}
             <ThemeToggle />
           </div>
 
@@ -67,21 +106,44 @@ export function Navbar() {
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={cn(
-                  "block py-2 px-4 text-sm font-medium rounded-md transition-colors",
-                  pathname === link.href
-                    ? "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
-                    : "text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800",
-                )}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.dropdown ? (
+                <div key={link.name} className="py-2">
+                  <div className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200">{link.name}</div>
+                  <div className="pl-8 space-y-2">
+                    {link.items.map((item) => (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className={cn(
+                          "block py-2 px-4 text-sm font-medium rounded-md transition-colors",
+                          pathname === item.href
+                            ? "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
+                            : "text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800",
+                        )}
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={cn(
+                    "block py-2 px-4 text-sm font-medium rounded-md transition-colors",
+                    pathname === link.href
+                      ? "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
+                      : "text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800",
+                  )}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              ),
+            )}
           </div>
         )}
       </div>

@@ -1,22 +1,19 @@
+"use client"
+
+import { useState } from "react"
 import { Section } from "@/components/section"
 import { Card } from "@/components/card"
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 
-// =============================================
-// UPCOMING EVENTS DATA
-// =============================================
-// To add a new upcoming event:
-// 1. Add a new object to this array with the event details
-// 2. The "link" property should be "#" or a registration link
-// 3. The "linkText" property should be "Register" or similar
-// =============================================
+// Sample data for upcoming events
 const upcomingEvents = [
   {
     title: "Annual Leadership Conference",
     description:
       "Join us for a day of inspiring talks, workshops, and networking opportunities focused on developing leadership skills for the future.",
-    image: "/placeholder.svg?height=200&width=300", // Replace with actual image path
+    image: "/placeholder.svg?height=200&width=300",
     date: "25 Apr 2025",
-    link: "#", // Registration link or "#" if not available yet
+    link: "#",
     linkText: "Register",
   },
   {
@@ -28,18 +25,45 @@ const upcomingEvents = [
     link: "#",
     linkText: "Register",
   },
-  // Add more upcoming events here...
+  {
+    title: "Environmental Awareness Workshop",
+    description:
+      "Learn about sustainable practices and how you can contribute to environmental conservation in your daily life.",
+    image: "/placeholder.svg?height=200&width=300",
+    date: "22 May 2025",
+    link: "#",
+    linkText: "Register",
+  },
+  {
+    title: "Youth Entrepreneurship Summit",
+    description:
+      "A platform for young entrepreneurs to showcase their ideas, get mentorship, and connect with potential investors.",
+    image: "/placeholder.svg?height=200&width=300",
+    date: "15 Jun 2025",
+    link: "#",
+    linkText: "Register",
+  },
+  {
+    title: "Cultural Exchange Program",
+    description:
+      "Experience diverse cultures through performances, food, and interactive sessions with international JCI members.",
+    image: "/placeholder.svg?height=200&width=300",
+    date: "30 Jun 2025",
+    link: "#",
+    linkText: "Register",
+  },
+  {
+    title: "Career Development Workshop",
+    description:
+      "Enhance your professional skills with sessions on resume building, interview preparation, and career planning.",
+    image: "/placeholder.svg?height=200&width=300",
+    date: "12 Jul 2025",
+    link: "#",
+    linkText: "Register",
+  },
 ]
 
-// =============================================
-// PAST EVENTS DATA
-// =============================================
-// To add a new past event:
-// 1. Add a new object to this array with the event details
-// 2. Create a unique slug for the event (e.g., "leadership-workshop-2025")
-// 3. Set the "link" property to "/events/your-event-slug"
-// 4. Add the event data to the events object in [slug]/page.tsx
-// =============================================
+// Sample data for past events
 const pastEvents = [
   {
     title: "Community Clean-up Drive",
@@ -47,7 +71,7 @@ const pastEvents = [
       "We organized a community clean-up drive at Ponda Beach, collecting over 200kg of waste and raising awareness about environmental conservation.",
     image: "/placeholder.svg?height=200&width=300",
     date: "15 Mar 2025",
-    link: "/events/community-cleanup", // This should match the slug in the dynamic route
+    link: "/events/community-cleanup",
     linkText: "Read More",
   },
   {
@@ -68,21 +92,53 @@ const pastEvents = [
     link: "/events/health-camp",
     linkText: "Read More",
   },
-  // Add more past events here...
 ]
 
 export default function EventsPage() {
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false)
+
   return (
     <div>
-      <div className="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-16 text-center">
+      <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-16 text-center">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Events</h1>
           <p className="text-xl max-w-2xl mx-auto">Discover our upcoming events and join us in making a difference</p>
         </div>
       </div>
 
+      {/* Plan of Action Section */}
+      <Section title="Plan of Action for 2025" description="Our roadmap for impactful initiatives throughout the year">
+        <div className="flex justify-center">
+          <Dialog open={isCalendarOpen} onOpenChange={setIsCalendarOpen}>
+            <DialogTrigger asChild>
+              <div className="cursor-pointer relative">
+                <img
+                  src="/placeholder.svg?height=400&width=800"
+                  alt="Annual Calendar 2025"
+                  className="rounded-lg shadow-md hover:opacity-90 transition-opacity"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/30 text-white font-bold text-xl rounded-lg">
+                  Click to view Annual Calendar
+                </div>
+              </div>
+            </DialogTrigger>
+            <DialogContent className="max-w-4xl">
+              <img
+                src="/placeholder.svg?height=800&width=1200"
+                alt="Annual Calendar 2025 - Full View"
+                className="w-full h-auto"
+              />
+            </DialogContent>
+          </Dialog>
+        </div>
+      </Section>
+
       {/* Upcoming Events Section */}
-      <Section title="Upcoming Events" description="Register for our upcoming events and be part of the change">
+      <Section
+        title="Upcoming Events"
+        description="Register for our upcoming events and be part of the change"
+        className="bg-gray-50 dark:bg-gray-900"
+      >
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {upcomingEvents.map((event, index) => (
             <Card
@@ -93,17 +149,15 @@ export default function EventsPage() {
               date={event.date}
               link={event.link}
               linkText={event.linkText}
+              index={index}
+              direction={index % 2 === 0 ? "left" : "right"}
             />
           ))}
         </div>
       </Section>
 
       {/* Past Events Section */}
-      {/* <Section
-        title="Past Events"
-        description="Explore our previous events and their impact"
-        className="bg-gray-50 dark:bg-gray-900"
-      >
+      {/* <Section title="Past Events" description="Explore our previous events and their impact">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {pastEvents.map((event, index) => (
             <Card
@@ -114,6 +168,8 @@ export default function EventsPage() {
               date={event.date}
               link={event.link}
               linkText={event.linkText}
+              index={index}
+              direction="up"
             />
           ))}
         </div>

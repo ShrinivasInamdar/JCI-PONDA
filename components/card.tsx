@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import { AnimatedCard } from "@/components/animated-card"
 
 interface CardProps {
   title: string
@@ -11,10 +12,23 @@ interface CardProps {
   date?: string
   className?: string
   tag?: string
+  index?: number
+  direction?: "left" | "right" | "up" | "down" | "fade"
 }
 
-export function Card({ title, description, image, link, linkText = "Read More", date, className, tag }: CardProps) {
-  return (
+export function Card({
+  title,
+  description,
+  image,
+  link,
+  linkText = "Read More",
+  date,
+  className,
+  tag,
+  index = 0,
+  direction = "up",
+}: CardProps) {
+  const cardContent = (
     <div
       className={cn(
         "bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg hover:-translate-y-1",
@@ -42,6 +56,12 @@ export function Card({ title, description, image, link, linkText = "Read More", 
         )}
       </div>
     </div>
+  )
+
+  return (
+    <AnimatedCard direction={direction} delay={index * 100}>
+      {cardContent}
+    </AnimatedCard>
   )
 }
 

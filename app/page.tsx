@@ -3,6 +3,8 @@ import { Section } from "@/components/section"
 import { Card } from "@/components/card"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Instagram, Facebook, Twitter } from "lucide-react"
+import { AnimatedCard } from "@/components/animated-card"
 
 // Sample data for carousel
 const carouselSlides = [
@@ -51,63 +53,349 @@ const pastEvents = [
   },
 ]
 
+// Sample data for JCI pillars
+const jciPillars = [
+  {
+    title: "Individual Development",
+    frontDescription: "Grow personally and professionally",
+    backDescription:
+      "Opportunities for personal growth through training programs, workshops, and leadership experiences that enhance your skills and capabilities.",
+    icon: "👤",
+  },
+  {
+    title: "Community Action",
+    frontDescription: "Create positive change",
+    backDescription:
+      "Engage in meaningful projects that address community needs and create sustainable impact through collective action and innovative solutions.",
+    icon: "🤝",
+  },
+  {
+    title: "Business & Entrepreneurship",
+    frontDescription: "Develop business acumen",
+    backDescription:
+      "Access to networking opportunities, business skills development, and entrepreneurial support to help you succeed in your professional endeavors.",
+    icon: "💼",
+  },
+  {
+    title: "International Cooperation",
+    frontDescription: "Connect globally",
+    backDescription:
+      "Build international connections and understanding through cross-cultural exchanges, global conferences, and collaborative projects worldwide.",
+    icon: "🌎",
+  },
+  {
+    title: "Leadership",
+    frontDescription: "Lead with purpose",
+    backDescription:
+      "Develop leadership skills through hands-on experience, mentorship, and opportunities to lead projects and teams at local and international levels.",
+    icon: "⭐",
+  },
+]
+
+// Sample data for leaders
+const leaders = {
+  national: [
+    {
+      name: "JFS ANKUR JHUNJHUNWALA",
+      position: "National President",
+      image: "/placeholder.svg?height=200&width=200",
+      social: {
+        instagram: "#",
+        facebook: "#",
+        twitter: "#",
+      },
+    },
+    {
+      name: "JFS ASHOK BHAT",
+      position: "National Vice President",
+      image: "/placeholder.svg?height=200&width=200",
+      social: {
+        instagram: "#",
+        facebook: "#",
+        twitter: "#",
+      },
+    },
+  ],
+  zone: [
+    {
+      name: "JFD SHABA GAUNS",
+      position: "Zone President ",
+      image: "/placeholder.svg?height=200&width=200",
+      social: {
+        instagram: "#",
+        facebook: "#",
+        twitter: "#",
+      },
+    },
+    {
+      name: "HGF SHILPA RAGHAVA SILVERA",
+      position: "Zone 11 Vice President",
+      image: "/placeholder.svg?height=200&width=200",
+      social: {
+        instagram: "#",
+        facebook: "#",
+        twitter: "#",
+      },
+    },
+  ],
+  local: [
+    {
+      name: "JC VADIRAJ INAMDAR",
+      position: "Local Organisation President",
+      image: "/placeholder.svg?height=200&width=200",
+      social: {
+        instagram: "#",
+        facebook: "#",
+        twitter: "#",
+      },
+    },
+  ],
+}
+
 export default function Home() {
   return (
     <div>
       {/* Welcome Header */}
-      <div className="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-16 text-center">
+      <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-20 text-center">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to JCI Ponda</h1>
-          <p className="text-xl max-w-2xl mx-auto">Empowering young active citizens to create positive change</p>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 font-serif text-yellow-100 animate-pulse">
+            Welcome to JCI Ponda
+          </h1>
+          <p className="text-2xl max-w-3xl mx-auto">Empowering young active citizens to create positive change</p>
         </div>
+      </div>
+
+      {/* Anniversary Banner */}
+      <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
+        <p className="text-2xl font-serif text-blue-800 font-semibold">Celebrating 53 Glorious Years of JCI Ponda</p>
       </div>
 
       {/* Carousel Section */}
-      <div className="container mx-auto px-4 py-8">
+      <div className="w-full py-8">
         <Carousel slides={carouselSlides} />
       </div>
 
-      {/* Vision & Mission Section */}
-      <Section title="Vision & Mission" description="Our guiding principles that drive our actions and initiatives">
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">Our Vision</h3>
-            <p className="text-gray-700 dark:text-gray-300">
-              To be the leading global network of young active citizens. We envision a world where young people have the
-              capacity to create positive change in their communities, creating a better future for all.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">Our Mission</h3>
-            <p className="text-gray-700 dark:text-gray-300">
-              To provide development opportunities that empower young people to create positive change. We focus on
-              personal development, community service, and international cooperation to build a better world.
-            </p>
-          </div>
+      {/* Vision, Creed & Mission Section */}
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        <div className="flex justify-center mb-8">
+          <AnimatedCard direction="fade">
+            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500">
+              <img src="/placeholder.svg?height=200&width=200" alt="JCI Logo" className="w-full h-full object-cover" />
+            </div>
+          </AnimatedCard>
+        </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          <AnimatedCard direction="left" delay={100}>
+            <div className="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
+              <h3 className="text-2xl font-bold mb-4 text-center font-serif">Our Vision</h3>
+              <p className="text-center">
+              To be the foremost global network of young leaders.
+              </p>
+            </div>
+          </AnimatedCard>
+          <AnimatedCard direction="up" delay={200}>
+            <div className="bg-gradient-to-br from-yellow-400 to-orange-500 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
+              <h3 className="text-2xl font-bold mb-4 text-center font-serif">JCI Creed</h3>
+              <p className="text-center italic">
+                We believe:
+                <br />
+                That faith in God gives meaning and purpose to human life;
+                <br />
+                That the brotherhood of man transcends the sovereignty of nations;
+                <br />
+                That economic justice can best be won by free men through free enterprise;
+                <br />
+                That government should be of laws rather than of men;
+                <br />
+                That earth's great treasure lies in human personality;
+                <br />
+                And that service to humanity is the best work of life.
+              </p>
+            </div>
+          </AnimatedCard>
+          <AnimatedCard direction="right" delay={300}>
+            <div className="bg-gradient-to-br from-green-500 to-teal-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
+              <h3 className="text-2xl font-bold mb-4 text-center font-serif">Our Mission</h3>
+              <p className="text-center">
+              To provide leadership development opportunities that empower young people to create positive change.
+              </p>
+            </div>
+          </AnimatedCard>
+        </div>
+      </div>
+
+      {/* JCI Pillars Section */}
+      <Section
+        title="What's in it for you - The 5 Pillars of JCI"
+        description="Discover the core areas that define the JCI experience"
+        className="bg-gray-50 dark:bg-gray-900"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          {jciPillars.map((pillar, index) => {
+            // Define different gradients for each pillar
+            const gradients = [
+              "from-blue-500 to-indigo-600",
+              "from-green-500 to-teal-600",
+              "from-purple-500 to-pink-600",
+              "from-yellow-500 to-orange-600",
+              "from-red-500 to-pink-600",
+            ]
+
+            return (
+              <AnimatedCard key={index} direction="up" delay={index * 100}>
+                <div className="flip-card h-64">
+                  <div className="flip-card-inner">
+                    <div
+                      className={`flip-card-front bg-gradient-to-br ${gradients[index]} text-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center`}
+                    >
+                      <div className="text-4xl mb-4">{pillar.icon}</div>
+                      <h3 className="text-xl font-bold mb-2">{pillar.title}</h3>
+                      <p className="text-center">{pillar.frontDescription}</p>
+                    </div>
+                    <div
+                      className={`flip-card-back bg-gradient-to-br ${gradients[(index + 2) % 5]} text-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center`}
+                    >
+                      <p className="text-center">{pillar.backDescription}</p>
+                    </div>
+                  </div>
+                </div>
+              </AnimatedCard>
+            )
+          })}
         </div>
       </Section>
 
-       {/* Leader 2025 Section */}
-       <Section title="Leader 2025">
-        <div className="flex flex-col items-center">
-          <div className="w-48 h-48 rounded-full overflow-hidden mb-4">
-            <img
-              src="/placeholder.svg?height=200&width=200"
-              alt="JCI Ponda Leader 2025"
-              className="w-full h-full object-cover"
-            />
+      {/* Leaders Section */}
+      <Section title="Leaders">
+        {/* National Leaders */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold mb-6 text-center">National Leaders</h3>
+          <div className="flex justify-center gap-8 flex-wrap">
+            {leaders.national.map((leader, index) => (
+              <AnimatedCard key={index} direction="up" delay={index * 150}>
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 flex flex-col items-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+                    <img
+                      src={leader.image || "/placeholder.svg"}
+                      alt={leader.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
+                  <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
+                  <div className="flex space-x-4">
+                    <a
+                      href={leader.social.instagram}
+                      className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+                    >
+                      <Instagram className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={leader.social.facebook}
+                      className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                    >
+                      <Facebook className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={leader.social.twitter}
+                      className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
+                    >
+                      <Twitter className="h-5 w-5" />
+                    </a>
+                  </div>
+                </div>
+              </AnimatedCard>
+            ))}
           </div>
-          <h3 className="text-2xl font-bold mb-2">JC Vadiraj Inamdar</h3>
-          <p className="text-blue-600 dark:text-blue-400 font-medium mb-4">President, JCI Ponda 2025</p>
-          <p className="text-gray-600 dark:text-gray-300 text-center max-w-2xl">
-            Leading JCI Ponda with a vision to empower young citizens and create sustainable impact in our community
-            through innovative projects and leadership development.
-          </p>
+        </div>
+
+        {/* Zone Leaders */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold mb-6 text-center">Zone Leaders (Zone 11)</h3>
+          <div className="flex justify-center gap-8 flex-wrap">
+            {leaders.zone.map((leader, index) => (
+              <AnimatedCard key={index} direction="up" delay={index * 150}>
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 flex flex-col items-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+                    <img
+                      src={leader.image || "/placeholder.svg"}
+                      alt={leader.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
+                  <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
+                  <div className="flex space-x-4">
+                    <a
+                      href={leader.social.instagram}
+                      className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+                    >
+                      <Instagram className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={leader.social.facebook}
+                      className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                    >
+                      <Facebook className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={leader.social.twitter}
+                      className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
+                    >
+                      <Twitter className="h-5 w-5" />
+                    </a>
+                  </div>
+                </div>
+              </AnimatedCard>
+            ))}
+          </div>
+        </div>
+
+        {/* Local Leader */}
+        <div>
+          <h3 className="text-2xl font-bold mb-6 text-center">Local Organisation President</h3>
+          <div className="flex justify-center">
+            {leaders.local.map((leader, index) => (
+              <AnimatedCard key={index} direction="up" delay={index * 150}>
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 flex flex-col items-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+                    <img
+                      src={leader.image || "/placeholder.svg"}
+                      alt={leader.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
+                  <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
+                  <div className="flex space-x-4">
+                    <a
+                      href={leader.social.instagram}
+                      className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+                    >
+                      <Instagram className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={leader.social.facebook}
+                      className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                    >
+                      <Facebook className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={leader.social.twitter}
+                      className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
+                    >
+                      <Twitter className="h-5 w-5" />
+                    </a>
+                  </div>
+                </div>
+              </AnimatedCard>
+            ))}
+          </div>
         </div>
       </Section>
 
       {/* Past Events Section */}
-      <Section
+      {/* <Section
         title="Past Events"
         description="A glimpse of our recent activities and initiatives"
         className="bg-gray-50 dark:bg-gray-900"
@@ -122,59 +410,58 @@ export default function Home() {
               date={event.date}
               link={event.link}
               linkText="Read More"
+              index={index}
+              direction={index % 2 === 0 ? "left" : "right"}
             />
           ))}
         </div>
-      </Section>
+        <div className="mt-8 text-center">
+          <Button asChild>
+            <Link href="/reports">More Reports - Click Here</Link>
+          </Button>
+        </div>
+      </Section> */}
 
       {/* Latest Events Section */}
-      {/* <Section
-        title="Latest Events"
-        description="Stay updated with our most recent activities and initiatives"
-        className="bg-gray-50 dark:bg-gray-900"
-      > */}
-        {/* 
-          =============================================
-          LATEST EVENTS CARDS
-          =============================================
-          To update the latest events on the homepage:
-          1. Replace the event details below with your newest events
-          2. Make sure the "link" property points to the correct event detail page
-          3. The URL should match the slug in the events object in [slug]/page.tsx
-          =============================================
-        */}
-        {/* <div className="grid md:grid-cols-3 gap-6">
+      <Section title="Latest Events" description="Stay updated with our most recent activities and initiatives">
+        <div className="grid md:grid-cols-3 gap-6">
           <Card
             title="Leadership Workshop 2025"
             description="An intensive workshop focused on developing essential leadership skills for young professionals in our community."
             image="/placeholder.svg?height=200&width=300"
             date="15 Mar 2025"
-            link="/events/leadership-workshop" // This should match the slug in the events object
+            link="/events/leadership-workshop"
             linkText="Click More"
+            index={0}
+            direction="up"
           />
           <Card
             title="Environmental Awareness Drive"
             description="A community initiative to raise awareness about environmental conservation and sustainable practices."
             image="/placeholder.svg?height=200&width=300"
             date="28 Feb 2025"
-            link="/events/community-cleanup" // This should match the slug in the events object
+            link="/events/community-cleanup"
             linkText="Click More"
+            index={1}
+            direction="up"
           />
           <Card
             title="Youth Entrepreneurship Summit"
             description="A platform for young entrepreneurs to showcase their ideas and connect with mentors and investors."
             image="/placeholder.svg?height=200&width=300"
             date="10 Feb 2025"
-            link="/events/health-camp" // This should match the slug in the events object
+            link="/events/health-camp"
             linkText="Click More"
+            index={2}
+            direction="up"
           />
         </div>
         <div className="mt-8 text-center">
           <Button asChild>
-            <Link href="/events">View All Events</Link>
+            <Link href="/reports">View All Events</Link>
           </Button>
         </div>
-      </Section> */}
+      </Section>
     </div>
   )
 }
