@@ -9,6 +9,7 @@ import { Poppins } from 'next/font/google';
 import '../styles/globals.css'; // ← Correct path based on your folder structure
 
 
+
 // Sample data for carousel
 const carouselSlides = [
   {
@@ -174,7 +175,7 @@ export default function Home() {
             />
           ))}
         </div>
-        import Link from 'next/link';
+      
 
         <div className="flex justify-center mt-8">
           <Link href="/reports">
