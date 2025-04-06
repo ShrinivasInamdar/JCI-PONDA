@@ -6,6 +6,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useEffect } from "react";
 import { Poppins } from 'next/font/google';
+import HeroSection from "@/components/hero"
+import Leaders from "@/components/leaders"
 import '../styles/globals.css'; // ← Correct path based on your folder structure
 
 
@@ -82,18 +84,11 @@ export default function Home() {
   return (
     <div className="bg-gray-100 dark:bg-gray-900">
       {/* Welcome Header */}
-      <div className="bg-gradient-to-r from-blue-300 to-blue-500 text-white py-20 text-center font-[Poppins]">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-md">
-            Welcome to JCI Ponda
-          </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto">
-            Empowering young active citizens to create positive change
-          </p>
-        </div>
+      <div>
+      <HeroSection />
+
       </div>
-
-
+  
       {/* Carousel Section */}
       <div className="container mx-auto px-4 py-8">
         <Carousel slides={carouselSlides} />

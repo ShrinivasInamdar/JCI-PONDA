@@ -1,4 +1,6 @@
 import { Section } from "@/components/section"
+import galaxy from "./galaxy.jpg";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -101,12 +103,13 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="w-full">
-            <img
-              src="/placeholder.svg?height=600&width=1200"
+            <Image
+              src={galaxy}
               alt="Past Presidents of JCI Ponda"
               className="w-full rounded-lg"
             />
           </div>
+
         </div>
       </Section>
     </div>
