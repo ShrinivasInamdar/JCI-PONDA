@@ -16,13 +16,14 @@ const HeroSection = () => {
                 </h1>
 
                 <p 
-                    className="text-xl md:text-2xl font-medium mb-6 px-6 py-3 inline-block" 
+                    className="text-xl md:text-4xl font-medium mb-6 px-6 py-3 inline-block" 
                     style={{
                         background: "linear-gradient(90deg, #FFD700, #FFA500)",
                         WebkitBackgroundClip: "text",
                         backgroundClip: "text",
                         color: "transparent",
-                        textShadow: "0 2px 4px rgba(0,0,0,0.1)"
+                        textShadow: "0 2px 4px rgba(0,0,0,0.1)",
+                        fontFamily: "inherit",
                     }}
                 >
                     Celebrating the 53rd year of JCI Ponda
