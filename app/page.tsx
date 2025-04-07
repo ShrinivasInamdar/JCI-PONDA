@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Instagram, Facebook, Twitter } from "lucide-react"
 import { AnimatedCard } from "@/components/animated-card"
+<link rel="icon" href="JCI-logo.png" />
 
 // Sample data for carousel
 const carouselSlides = [
