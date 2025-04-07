@@ -37,10 +37,8 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="h-10 w-10 bg-gray-300 dark:bg-gray-700 rounded-md flex items-center justify-center">
+          <div ><img src="/JCI-logo.png" alt="JCI LOGO" id="IMAGE"/></div>
               {/* Placeholder for logo */}
-              <span className="text-sm">Logo</span>
-            </div>
             <span className="font-bold text-xl">JCI Ponda</span>
           </Link>
 

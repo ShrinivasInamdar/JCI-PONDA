@@ -5,51 +5,63 @@ import { AnimatedCard } from "@/components/animated-card"
 // Sample data for developers with added social media links
 const developers = [
   {
-    name: "Alex Johnson",
-    role: "Lead Developer",
+    name: "SHRINIVAS INAMDAR",
+    role: "LEAD DEVELOPER",
     image: "/placeholder.svg?height=200&width=200",
     description:
-      "Full-stack developer with expertise in React and Next.js, responsible for the overall architecture of the website.",
+      "-",
     social: {
-      linkedin: "#",
-      github: "#",
-      instagram: "#",
+      linkedin: "https://www.linkedin.com/in/shrinivas-inamdar-a83a30237/",
+      github: "https://github.com/ShrinivasInamdar",
+      instagram: "https://www.instagram.com/shrinivas_inamdar/",
     },
   },
   {
-    name: "Sophia Chen",
-    role: "UI/UX Designer",
+    name: "PRANAV KERKAR",
+    role: "FRONTEND DEVELOPER",
     image: "/placeholder.svg?height=200&width=200",
     description:
-      "Creative designer focused on creating intuitive and accessible user interfaces with a keen eye for detail.",
+      "-",
     social: {
-      linkedin: "#",
-      github: "#",
-      instagram: "#",
+      linkedin: "https://www.linkedin.com/in/pranav-kerkar-900432253/",
+      github: "https://github.com/pranavkerkar31",
+      instagram: "https://www.instagram.com/pranav_kerkar/",
     },
   },
   {
-    name: "Marcus Williams",
-    role: "Frontend Developer",
+    name: "ASHDEN MASCARENHAS",
+    role: "FRONTEND DEVELOPER",
     image: "/placeholder.svg?height=200&width=200",
     description:
-      "Specializes in creating responsive and interactive web experiences using modern frontend technologies.",
+      "-",
     social: {
-      linkedin: "#",
-      github: "#",
-      instagram: "#",
+      linkedin: "https://www.linkedin.com/in/ashden-mascarenhas-815b50253/",
+      github: "https://github.com/706ash",
+      instagram: "https://www.instagram.com/ashdenmascarenhas/",
     },
   },
   {
-    name: "Priya Patel",
-    role: "Backend Developer",
+    name: "P JAYESH NAIDU",
+    role: "FRONTEND DEVELOPER",
     image: "/placeholder.svg?height=200&width=200",
     description:
-      "Experienced in building robust server-side applications and APIs to power the website's functionality.",
+      "-",
     social: {
-      linkedin: "#",
-      github: "#",
-      instagram: "#",
+      linkedin: "https://www.linkedin.com/in/p-jayesh-naidu-599648255/",
+      github: "https://github.com/25Jayesh10",
+      instagram: "https://www.instagram.com/_jayesh2510_/",
+    },
+  },
+  {
+    name: "AARTH VAJANDAR",
+    role: "FRONTEND DEVELOPER",
+    image: "/placeholder.svg?height=200&width=200",
+    description:
+      "-",
+    social: {
+      linkedin: "https://www.linkedin.com/in/aarth-vajandar-3b1659252/",
+      github: "https://github.com/aarth-01",
+      instagram: "https://www.instagram.com/_.gamer_tonight.__/",
     },
   },
 ]

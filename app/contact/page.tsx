@@ -5,18 +5,18 @@ import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
 // Sample data for contact profiles
 const contactProfiles = [
   {
-    name: "John Doe",
+    name: "JC VADIRAJ INAMDAR",
     position: "President",
     image: "/placeholder.svg?height=200&width=200",
-    email: "president@jciponda.org",
-    phone: "+91 9876543210",
+    email: "president@jciponda.in",
+    phone: "7083491368",
   },
   {
-    name: "Jane Smith",
+    name: "JFM MUSKAN NAIK",
     position: "Secretary",
     image: "/placeholder.svg?height=200&width=200",
-    email: "secretary@jciponda.org",
-    phone: "+91 9876543211",
+    email: "secretary@jciponda.in",
+    phone: "7507781833",
   },
 ]
 
@@ -35,7 +35,7 @@ const infoCards = [
   {
     title: "What is JAC?",
     content:
-      "JAC (Junior Active Citizen) is a program designed for young people under the age of 18 who want to get involved in community service and leadership development. It serves as a preparatory platform for future JC membership.",
+      "-",
   },
 ]
 
@@ -75,7 +75,7 @@ export default function ContactPage() {
                   <span>{profile.phone}</span>
                 </div>
                 <Button asChild>
-                  <a href={`mailto:${profile.email}`}>Contact Me</a>
+                  <a href={`https://wa.me/${profile.phone}`}target="_blank" rel="noopener noreferrer">Contact Me</a>
                 </Button>
               </div>
             </div>

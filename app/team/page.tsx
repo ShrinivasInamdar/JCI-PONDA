@@ -6,7 +6,7 @@ import { AnimatedCard } from "@/components/animated-card"
 const teamMembers = {
   leadership: [
     {
-      name: "John Doe",
+      name: "JC VADIRAJ INAMDAR",
       position: "President",
       image: "/placeholder.svg?height=200&width=200",
       description:
@@ -17,7 +17,7 @@ const teamMembers = {
       },
     },
     {
-      name: "Jane Smith",
+      name: "JFM MUSKAN NAIK",
       position: "Secretary",
       image: "/placeholder.svg?height=200&width=200",
       description: "Coordinating all chapter activities and ensuring effective communication within the organization.",
@@ -27,7 +27,7 @@ const teamMembers = {
       },
     },
     {
-      name: "Michael Johnson",
+      name: "JC NAGRAJ SHANBHOG",
       position: "Treasurer",
       image: "/placeholder.svg?height=200&width=200",
       description: "Managing the chapter's finances and ensuring transparent and efficient use of resources.",
@@ -36,33 +36,44 @@ const teamMembers = {
         instagram: "#",
       },
     },
+    
   ],
   vicePresidents: [
     {
-      name: "Emily Brown",
-      position: "Vice President - Community Development",
+      name: "JC SAMRUDHI NAIK",
+      position: "Vice President - Management",
       image: "/placeholder.svg?height=200&width=200",
-      description: "Spearheading initiatives that address community needs and create lasting positive impact.",
+      description: "-",
       social: {
         facebook: "#",
         instagram: "#",
       },
     },
     {
-      name: "David Wilson",
-      position: "Vice President - Individual Development",
+      name: "JC ROCHELLE FERNANDES",
+      position: "Vice President - Program",
       image: "/placeholder.svg?height=200&width=200",
-      description: "Designing and implementing programs focused on personal and professional growth of members.",
+      description: "-",
       social: {
         facebook: "#",
         instagram: "#",
       },
     },
     {
-      name: "Sarah Lee",
-      position: "Vice President - Business Development",
+      name: "JC DIPESH PATIL",
+      position: "Vice President - Training",
       image: "/placeholder.svg?height=200&width=200",
-      description: "Creating opportunities for entrepreneurship and business networking among members.",
+      description: "-",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "JC DHANYA BHAT",
+      position: "Vice President - Internationalism",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "-",
       social: {
         facebook: "#",
         instagram: "#",
@@ -71,20 +82,50 @@ const teamMembers = {
   ],
   directors: [
     {
-      name: "Robert Chen",
-      position: "Training Director",
+      name: "JC DARSHA MANGUESHKAR",
+      position: "Director Management",
       image: "/placeholder.svg?height=200&width=200",
-      description: "Coordinating training programs to enhance leadership and professional skills of members.",
+      description: "-",
       social: {
         facebook: "#",
         instagram: "#",
       },
     },
     {
-      name: "Lisa Garcia",
-      position: "Public Relations Director",
+      name: "JC MAHADEV SHINDE",
+      position: "Director Program",
       image: "/placeholder.svg?height=200&width=200",
-      description: "Managing the chapter's public image and communications with external stakeholders.",
+      description: "-",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "JC Aniket Sawant",
+      position: "Director Training",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "-",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "JC Netaji Jadhav",
+      position: "Director Business",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "-",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "JC Rutvik Vaze",
+      position: "Director Internationalism",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "-",
       social: {
         facebook: "#",
         instagram: "#",
@@ -93,8 +134,8 @@ const teamMembers = {
   ],
   juniorJaycees: [
     {
-      name: "Alex Johnson",
-      position: "Junior Jaycee Coordinator",
+      name: "JR JC SHRINIVAS INAMDAR",
+      position: "Junior Jaycee Chairperson",
       image: "/placeholder.svg?height=200&width=200",
       description: "Coordinating activities for our Junior Jaycee Wing and nurturing young leaders.",
       social: {
@@ -174,7 +215,7 @@ function TeamMemberCard({ member, index }: { member: any; index: number }) {
 export default function TeamPage() {
   return (
     <div>
-      <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-16 text-center">
+      <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-16 text-center ">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Local Governing Board Team (LGB)</h1>
           <p className="text-xl max-w-2xl mx-auto">Meet the dedicated leaders driving JCI Ponda forward</p>
@@ -183,7 +224,7 @@ export default function TeamPage() {
 
       {/* Leadership Team Section */}
       <Section title="Leadership Team">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {teamMembers.leadership.map((member, index) => (
             <TeamMemberCard key={index} member={member} index={index} />
           ))}

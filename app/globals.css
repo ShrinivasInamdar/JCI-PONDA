@@ -227,4 +227,16 @@
 .animate-delay-500 {
   animation-delay: 500ms;
 }
+#IMAGE {
+  height: 50px;
+   /* default width for small screens */ /* optional */
+}
+#img{
+  transform: scale(3.6);
+  transform-origin: center;
+
+}
+#container{
+  padding: 50px;
+}
 

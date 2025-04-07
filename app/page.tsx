@@ -179,8 +179,8 @@ export default function Home() {
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="flex justify-center mb-8">
           <AnimatedCard direction="fade">
-            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500">
-              <img src="/placeholder.svg?height=200&width=200" alt="JCI Logo" className="w-full h-full object-cover" />
+            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500" id="container">
+              <img src="/JCI LOGO.png" alt="JCI Logo" id="img" />
             </div>
           </AnimatedCard>
         </div>
