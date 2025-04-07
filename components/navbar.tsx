@@ -39,7 +39,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center space-x-2">
           <div ><img src="/JCI-logo.png" alt="JCI LOGO" id="IMAGE"/></div>
               {/* Placeholder for logo */}
-            <span className="font-bold text-xl">JCI Ponda</span>
+            {/* <span className="font-bold text-xl">JCI Ponda</span> */}
           </Link>
 
           {/* Desktop Navigation */}
