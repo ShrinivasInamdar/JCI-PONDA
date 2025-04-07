@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { Poppins } from 'next/font/google';
 import HeroSection from "@/components/hero"
 import Leaders from "@/components/leaders"
+import VisionCreedMission from "@/components/visionmission"
 import '../styles/globals.css'; // ← Correct path based on your folder structure
 
 
@@ -95,43 +96,9 @@ export default function Home() {
       </div>
 
       {/* Vision & Mission Section */}
-      <section className="py-12 px-4 bg-gray-100 dark:bg-gray-900">
-        <h2 className="text-3xl font-bold mb-8 text-center text-blue-600 dark:text-blue-400">
-          Vision, Creed & Mission
-        </h2>
+      <VisionCreedMission />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {/* Vision */}
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transform transition-all duration-1000 ease-in-out opacity-0 animate-on-scroll">
-            <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">Our Vision</h3>
-            <p className="text-gray-700 dark:text-gray-300">
-              To be the leading global network of young active citizens. We envision a world where young people have the
-              capacity to create positive change in their communities, creating a better future for all.
-            </p>
-          </div>
-
-          {/* Creed */}
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transform transition-all duration-1000 ease-in-out opacity-0 animate-on-scroll">
-            <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">Creed</h3>
-            <p className="text-gray-700 dark:text-gray-300">
-              To be the leading global network of young active citizens. We envision a world where young people have the
-              capacity to create positive change in their communities, creating a better future for all.
-            </p>
-          </div>
-
-          {/* Mission */}
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transform transition-all duration-1000 ease-in-out opacity-0 animate-on-scroll">
-            <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">Our Mission</h3>
-            <p className="text-gray-700 dark:text-gray-300">
-              To provide development opportunities that empower young people to create positive change. We focus on personal
-              development, community service, and international cooperation to build a better world.
-            </p>
-          </div>
-        </div>
-      </section>
-
-
-
+      
       {/* Leader 2025 Section */}
       <Section title="Leader 2025">
         <div className="flex flex-col items-center">

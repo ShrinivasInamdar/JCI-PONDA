@@ -6,6 +6,8 @@ import { Menu, X } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
+import Logo from "../public/jci logo.png"
+import Image from "next/image"
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -24,45 +26,52 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full backdrop-blur-md bg-white/70 dark:bg-gray-900/70 border-b border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-4 py-3">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="h-10 w-10 bg-gray-300 dark:bg-gray-700 rounded-md flex items-center justify-center">
-              {/* Placeholder for logo */}
-              <span className="text-sm">Logo</span>
-            </div>
-            <span className="font-bold text-xl">JCI Ponda</span>
-          </Link>
+      <div className="flex items-center justify-between">
+  {/* Logo */}
+  <Link href="/" className="flex items-center space-x-2">
+    {/* Replace this div with actual logo image */}
+    <Image
+      src={Logo} // Update this path
+      alt="JCI Ponda Logo"
+      width={110}
+      height={100}
+      // className="h-10 w-10 rounded-md object-cover"
+    />
+  
+  </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-blue-600 dark:hover:text-blue-400",
-                  pathname === link.href ? "text-blue-600 dark:text-blue-400" : "text-gray-700 dark:text-gray-200",
-                )}
-              >
-                {link.name}
-              </Link>
-            ))}
-            <ThemeToggle />
-          </div>
+  {/* Desktop Navigation */}
+  <div className="hidden md:flex items-center space-x-6">
+    {navLinks.map((link) => (
+      <Link
+        key={link.name}
+        href={link.href}
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-blue-600 dark:hover:text-blue-400",
+          pathname === link.href
+            ? "text-blue-600 dark:text-blue-400"
+            : "text-gray-700 dark:text-gray-200",
+        )}
+      >
+        {link.name}
+      </Link>
+    ))}
+    <ThemeToggle />
+  </div>
 
-          {/* Mobile Navigation Toggle */}
-          <div className="flex items-center md:hidden">
-            <ThemeToggle />
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="ml-2 p-2 text-gray-700 dark:text-gray-200"
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
+  {/* Mobile Navigation Toggle */}
+  <div className="flex items-center md:hidden">
+    <ThemeToggle />
+    <button
+      onClick={() => setIsMenuOpen(!isMenuOpen)}
+      className="ml-2 p-2 text-gray-700 dark:text-gray-200"
+      aria-label="Toggle menu"
+    >
+      {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+    </button>
+  </div>
+</div>
+
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
