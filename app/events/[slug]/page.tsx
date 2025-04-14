@@ -145,29 +145,39 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
   return (
     <div>
       {/* Event Header */}
-      <div className="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-16">
-        <div className="container mx-auto px-4">
-          <Link
-            href="/events"
-            className="inline-flex items-center text-white hover:text-blue-200 mb-4 transition-colors"
-          >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Events
-          </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{event.title}</h1>
-          <div className="flex flex-wrap gap-4 text-sm">
-            <div className="bg-blue-800/50 px-3 py-1 rounded-full">
-              <span className="font-medium">Date:</span> {event.date}
-            </div>
-            <div className="bg-blue-800/50 px-3 py-1 rounded-full">
-              <span className="font-medium">Location:</span> {event.location}
-            </div>
-            <div className="bg-blue-800/50 px-3 py-1 rounded-full">
-              <span className="font-medium">Organized by:</span> {event.organizer}
-            </div>
-          </div>
-        </div>
+      <div className="relative w-full bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-start text-center text-white h-96 md:h-72">
+  {/* Decorative Bubbles */}
+  <div className="absolute top-10 left-10 w-32 h-32 bg-white opacity-10 rounded-full"></div>
+  <div className="absolute bottom-10 right-10 w-48 h-48 bg-white opacity-10 rounded-full"></div>
+  <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-white opacity-5 rounded-full"></div>
+  
+  <div className="container mx-auto px-4 pt-8 w-full">
+    <div className="w-full text-left">
+      <Link
+        href="/events"
+        className="inline-flex hover:text-blue-200 mb-4 transition-colors"
+      >
+        <ArrowLeft className="mr-2 h-4 w-4" />
+        Back to Events
+      </Link>
+    </div>
+    
+    <h1 className="text-4xl md:text-5xl font-bold mb-6 text-left">{event.title}</h1>
+    
+    <div className="flex flex-row flex-wrap gap-2 text-sm">
+      <div className="bg-blue-800/50 px-3 py-1 rounded-full">
+        <span className="font-medium">Date:</span> {event.date}
       </div>
+      <div className="bg-blue-800/50 px-3 py-1 rounded-full">
+        <span className="font-medium">Location:</span> {event.location}
+      </div>
+      <div className="bg-blue-800/50 px-3 py-1 rounded-full">
+        <span className="font-medium">Organized by:</span> {event.organizer}
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <div className="container mx-auto px-4 py-8">
         {/* Main Image */}
