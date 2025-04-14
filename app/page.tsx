@@ -7,6 +7,7 @@ import { Instagram, Facebook, Twitter } from "lucide-react"
 import { AnimatedCard } from "@/components/animated-card"
 <link rel="icon" href="JCI-logo.png" />
 import chakra from '../public/chakra.png';
+import Image from "next/image";
 
 
 // Sample data for carousel
@@ -166,20 +167,25 @@ export default function Home() {
         <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-white opacity-5 rounded-full"></div>
 
         {/* Centered Texts */}
-        <h1 className="text-6xl md:text-7xl font-extrabold text-white drop-shadow-lg">
-  Welcome to{' '}
-  <span>
-    <span className="text-orange-500">J</span>
-    <span className="text-[#f5f5dc]">C</span>
-    <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white text-4xl font-bold">
-      I
-    </span>
-  </span>
-</h1>
+        <h1 className="text-6xl md:text-7xl font-extrabold text-white drop-shadow-lg flex items-center gap-2 flex-wrap">
+          Welcome to
+          <span className="flex items-center gap-1">
+            <span className="text-orange-500">J</span>
+
+            <span className="relative inline-block w-14 h-14">
+              {/* <Image src={chakra} alt="chakra" fill className="object-contain" /> */}
+              <h1 className="absolute inset-0 flex items-center justify-center text-white font-bold">
+                C
+              </h1>
+            </span>
+
+            <h1><span className="text-green-500">I</span> Ponda</h1>
+          </span> 
+        </h1>
 
 
         <p className="text-xl sm:xl md:text-xl font-medium text-white drop-shadow-md">
-          Celebrating the 53rd year with innovation and spirit.
+        Empower......
         </p>
       </div>
 

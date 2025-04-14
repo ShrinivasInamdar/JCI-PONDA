@@ -49,11 +49,11 @@ export default function ContactPage() {
         <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-white opacity-5 rounded-full"></div>
 
         {/* Centered Texts */}
-        <h1 className="text-4xl md:text-4xl font-extrabold text-white drop-shadow-lg">
+        <h1 className="text-5xl md:text-5xl font-extrabold text-white drop-shadow-lg">
          Contact Us
         </h1>
 
-        <p className="text-lg sm:text-lg md:text-lg lg:text-xl  font-medium text-white drop-shadow-md">
+        <p className="text-lg sm:text-sm md:text-lg lg:text-xl  font-medium text-white drop-shadow-md">
           Get in Touch with JCI Ponda
         </p>
       </div>
