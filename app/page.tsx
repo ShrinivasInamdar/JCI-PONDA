@@ -157,14 +157,22 @@ export default function Home() {
   return (
     <div>
       {/* Welcome Header */}
-      <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-20 text-center">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 font-serif text-yellow-100 animate-pulse">
-            Welcome to JCI Ponda
-          </h1>
-          <p className="text-2xl max-w-3xl mx-auto">Empowering young active citizens to create positive change</p>
-        </div>
+      <div className="relative w-full h-72 bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-start text-center space-y-4 pt-12">
+        {/* Decorative Bubbles */}
+        <div className="absolute top-10 left-10 w-32 h-32 bg-white opacity-10 rounded-full"></div>
+        <div className="absolute bottom-10 right-10 w-48 h-48 bg-white opacity-10 rounded-full"></div>
+        <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-white opacity-5 rounded-full"></div>
+
+        {/* Centered Texts */}
+        <h1 className="text-5xl md:text-5xl font-extrabold text-white drop-shadow-lg">
+          Welcome to <span className="text-yellow-300">JCI Ponda</span>
+        </h1>
+
+        <p className="text-2xl md:text-2xl font-medium text-white drop-shadow-md">
+          Celebrating the 53rd year with innovation and spirit.
+        </p>
       </div>
+
 
       {/* Anniversary Banner */}
       <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
@@ -190,7 +198,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
               <h3 className="text-2xl font-bold mb-4 text-center font-serif">Our Vision</h3>
               <p className="text-center">
-              To be the foremost global network of young leaders.
+                To be the foremost global network of young leaders.
               </p>
             </div>
           </AnimatedCard>
@@ -218,7 +226,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-green-500 to-teal-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
               <h3 className="text-2xl font-bold mb-4 text-center font-serif">Our Mission</h3>
               <p className="text-center">
-              To provide leadership development opportunities that empower young people to create positive change.
+                To provide leadership development opportunities that empower young people to create positive change.
               </p>
             </div>
           </AnimatedCard>

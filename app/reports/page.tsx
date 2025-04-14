@@ -102,11 +102,20 @@ export default function ReportsPage() {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-16 text-center">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Reports</h1>
-          <p className="text-xl max-w-2xl mx-auto">Explore detailed reports of our past events and initiatives</p>
-        </div>
+    <div  style={{ height: '212px' }} className="relative w-full  bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-start text-center space-y-4 pt-12">
+        {/* Decorative Bubbles */}
+        <div className="absolute top-10 left-10 w-32 h-32 bg-white opacity-10 rounded-full"></div>
+        <div className="absolute bottom-10 right-10 w-48 h-48 bg-white opacity-10 rounded-full"></div>
+        <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-white opacity-5 rounded-full"></div>
+
+        {/* Centered Texts */}
+        <h1 className="text-5xl md:text-5xl font-extrabold text-white drop-shadow-lg">
+          Reports
+        </h1>
+
+        <p className="text-l md:text-2xl font-medium text-white drop-shadow-md">
+        Explore detailed reports of our past events and initiatives
+        </p>
       </div>
 
       {/* Search Section */}
