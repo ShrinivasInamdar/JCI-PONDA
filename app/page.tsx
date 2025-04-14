@@ -440,7 +440,7 @@ export default function Home() {
             image="/placeholder.svg?height=200&width=300"
             date="15 Mar 2025"
             link="/events/leadership-workshop"
-            linkText="Click More"
+            linkText="Read More"
             index={0}
             direction="up"
           />
@@ -450,7 +450,7 @@ export default function Home() {
             image="/placeholder.svg?height=200&width=300"
             date="28 Feb 2025"
             link="/events/community-cleanup"
-            linkText="Click More"
+            linkText="Read More"
             index={1}
             direction="up"
           />
@@ -460,7 +460,7 @@ export default function Home() {
             image="/placeholder.svg?height=200&width=300"
             date="10 Feb 2025"
             link="/events/health-camp"
-            linkText="Click More"
+            linkText="Read More"
             index={2}
             direction="up"
           />
