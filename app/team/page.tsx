@@ -223,10 +223,10 @@ export default function TeamPage() {
 
         {/* Centered Texts */}
         <h1 className="text-4xl md:text-4xl font-extrabold text-white drop-shadow-lg">
-          Local Governinng Board Team (LGT)
+          Local Governing Board Team (LGT)
         </h1>
 
-        <p className="text-2xl md:text-2xl font-medium text-white drop-shadow-md">
+        <p className="text-s md:text-2xl font-medium text-white drop-shadow-md">
           Explore detailed reports of our past events and initiatives
         </p>
       </div>

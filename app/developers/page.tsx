@@ -79,8 +79,7 @@ export default function DevelopersPage() {
         <h1 className="text-4xl md:text-4xl font-extrabold text-white drop-shadow-lg">
           Developers
         </h1>
-
-        <p className="text-2xl md:text-2xl font-medium text-white drop-shadow-md">
+        <p className="text-lg sm:text-lg md:text-lg lg:text-xl  font-medium text-white drop-shadow-md">
           Meet the talented individuals behind this website
         </p>
       </div>

@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button"
 import { Instagram, Facebook, Twitter } from "lucide-react"
 import { AnimatedCard } from "@/components/animated-card"
 <link rel="icon" href="JCI-logo.png" />
+import chakra from '../public/chakra.png';
+
 
 // Sample data for carousel
 const carouselSlides = [
@@ -164,11 +166,19 @@ export default function Home() {
         <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-white opacity-5 rounded-full"></div>
 
         {/* Centered Texts */}
-        <h1 className="text-5xl md:text-5xl font-extrabold text-white drop-shadow-lg">
-          Welcome to <span className="text-yellow-300">JCI Ponda</span>
-        </h1>
+        <h1 className="text-6xl md:text-7xl font-extrabold text-white drop-shadow-lg">
+  Welcome to{' '}
+  <span>
+    <span className="text-orange-500">J</span>
+    <span className="text-[#f5f5dc]">C</span>
+    <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white text-4xl font-bold">
+      I
+    </span>
+  </span>
+</h1>
 
-        <p className="text-2xl md:text-2xl font-medium text-white drop-shadow-md">
+
+        <p className="text-xl sm:xl md:text-xl font-medium text-white drop-shadow-md">
           Celebrating the 53rd year with innovation and spirit.
         </p>
       </div>

@@ -112,8 +112,7 @@ export default function ReportsPage() {
         <h1 className="text-5xl md:text-5xl font-extrabold text-white drop-shadow-lg">
           Reports
         </h1>
-
-        <p className="text-l md:text-2xl font-medium text-white drop-shadow-md">
+        <p className="text-lg sm:text-lg md:text-lg lg:text-xl  font-medium text-white drop-shadow-md">
         Explore detailed reports of our past events and initiatives
         </p>
       </div>
