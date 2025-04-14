@@ -110,7 +110,7 @@ export default function EventsPage() {
           Events
         </h1>
 
-        <p className="text-l md:text-2xl font-medium text-white drop-shadow-md">
+        <p className="text-md sm:text-base md:text-lg lg:text-xl  font-medium text-white drop-shadow-md">
           Discover our upcoming events and join us in making a difference
         </p>
       </div>

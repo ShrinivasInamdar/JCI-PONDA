@@ -284,7 +284,7 @@ export default function TeamPage() {
           Local Governing Board Team (LGT)
         </h1>
 
-        <p className="text-2xl md:text-2xl font-medium text-white drop-shadow-md">
+        <p className="text-s md:text-2xl font-medium text-white drop-shadow-md">
           Explore detailed reports of our past events and initiatives
         </p>
       </div>
