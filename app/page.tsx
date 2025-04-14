@@ -200,17 +200,17 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           <AnimatedCard direction="left" delay={100}>
-            <div className="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
-              <h3 className="text-2xl font-bold mb-4 text-center font-serif">Our Vision</h3>
-              <p className="text-center">
+            <div className="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105 h-[510px] flex flex-col items-center justify-center">
+              <h3 className="text-3xl font-extrabold mb-6 text-center font-serif">Our Vision</h3>
+              <p className="text-2xl text-center leading-relaxed">
                 To be the foremost global network of young leaders.
               </p>
             </div>
           </AnimatedCard>
           <AnimatedCard direction="up" delay={200}>
-            <div className="bg-gradient-to-br from-yellow-400 to-orange-500 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
-              <h3 className="text-2xl font-bold mb-4 text-center font-serif">JCI Creed</h3>
-              <p className="text-center italic">
+            <div className="bg-gradient-to-br from-yellow-400 to-orange-500 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105 h-[510px] flex flex-col items-center justify-center">
+              <h3 className="text-3xl font-extrabold mb-6 text-center font-serif">JCI Creed</h3>
+              <p className="text-center italic text-[17.5px] leading-relaxed">
                 We believe:
                 <br />
                 That faith in God gives meaning and purpose to human life;
@@ -228,9 +228,9 @@ export default function Home() {
             </div>
           </AnimatedCard>
           <AnimatedCard direction="right" delay={300}>
-            <div className="bg-gradient-to-br from-green-500 to-teal-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
-              <h3 className="text-2xl font-bold mb-4 text-center font-serif">Our Mission</h3>
-              <p className="text-center">
+            <div className="bg-gradient-to-br from-green-500 to-teal-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105 h-[510px] flex flex-col items-center justify-center">
+              <h3 className="text-3xl font-extrabold mb-6 text-center font-serif">Our Mission</h3>
+              <p className="text-2xl text-center leading-relaxed">
                 To provide leadership development opportunities that empower young people to create positive change.
               </p>
             </div>
