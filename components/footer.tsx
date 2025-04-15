@@ -51,10 +51,6 @@ export function Footer() {
                 <span className="text-white/90">info@jciponda.org</span>
               </div>
               <div className="flex items-center text-sm">
-                <Phone className="h-4 w-4 mr-2 text-white" />
-                <span className="text-white/90">+91 1234567890</span>
-              </div>
-              <div className="flex items-center text-sm">
                 <MapPin className="h-4 w-4 mr-2 text-white" />
                 <span className="text-white/90">Ponda, Goa, India</span>
               </div>
@@ -67,10 +63,6 @@ export function Footer() {
               <a href="#" className="text-white/90 hover:text-white">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
-              </a>
-              <a href="#" className="text-white/90 hover:text-white">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
               </a>
             </div>
           </div>

@@ -6,12 +6,21 @@ import { Menu, X, ChevronDown } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
+import { Dropdown } from "react-day-picker"
 
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Events", href: "/events" },
-  { name: "Reports", href: "/reports" },
+  {
+    name: "Reports",
+    href: "#",
+    dropdown: true,
+    items: [
+      { name: "Events Reports", href: "/reports" },
+      { name: "Press Coverage", href: "/press-coverage" },
+    ],
+  },
   {
     name: "Team",
     href: "#",
@@ -21,7 +30,7 @@ const navLinks = [
       { name: "Junior Jaycee Wing", href: "/junior-jaycee" },
     ],
   },
-  { name: "OLOSP", href: "/olosp" },
+  { name: "SSP", href: "/ssp" },
   { name: "JCOM", href: "/jcom" },
   { name: "Contact Us", href: "/contact" },
   { name: "Developers", href: "/developers" },

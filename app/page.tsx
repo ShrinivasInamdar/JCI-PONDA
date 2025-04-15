@@ -107,22 +107,18 @@ const leaders = {
       name: "JFS ANKUR JHUNJHUNWALA",
       position: "National President",
       image: "/placeholder.svg?height=200&width=200",
-      info: "President of JCI India.Leads with integrity, empowering members and driving impactful local change",
+      region: "",
       social: {
         instagram: "#",
-        facebook: "#",
-        twitter: "#",
       },
     },
     {
       name: "JFS ASHOK BHAT",
       position: "National Vice President",
       image: "/placeholder.svg?height=200&width=200",
-      info: "Vice President of JCI India.Leads with integrity, empowering members and driving impactful local change",
+      region: "",
       social: {
         instagram: "#",
-        facebook: "#",
-        twitter: "#",
       },
     },
   ],
@@ -131,22 +127,17 @@ const leaders = {
       name: "JFD SHABA GAUNS",
       position: "Zone President ",
       image: "/placeholder.svg?height=200&width=200",
-      info: "Guides organization with vision, compassion, and strategic community focus",
+      region: "",
       social: {
         instagram: "#",
-        facebook: "#",
-        twitter: "#",
       },
     },
     {
       name: "HGF SHILPA RAGHAVA SILVERA",
       position: "Zone 11 Vice President",
       image: "/placeholder.svg?height=200&width=200",
-      info: "Inspires community growth through leadership, vision, and active engagement",
       social: {
         instagram: "#",
-        facebook: "#",
-        twitter: "#",
       },
     },
   ],
@@ -155,11 +146,9 @@ const leaders = {
       name: "JC VADIRAJ INAMDAR",
       position: "Local Organisation President",
       image: "/placeholder.svg?height=200&width=200",
-      info: "Leads with purpose, building inclusive and proactive community initiatives",
+      region: "",
       social: {
         instagram: "#",
-        facebook: "#",
-        twitter: "#",
       },
     },
   ],
@@ -168,29 +157,6 @@ const leaders = {
 export default function Home() {
   return (
     <div>
-      {/* Welcome Header */}
-      <div className={`${poppins.className} relative w-full h-72 bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-center text-center space-y-4 px-4`}>
-        {/* Decorative Bubbles */}
-        <div className="absolute top-10 left-10 w-32 h-32 bg-white opacity-10 rounded-full"></div>
-        <div className="absolute bottom-10 right-10 w-48 h-48 bg-white opacity-10 rounded-full"></div>
-        <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-white opacity-5 rounded-full"></div>
-
-        {/* Centered Texts */}
-        <h1 className="text-5xl sm:text-5xl md:text-7xl font-extrabold drop-shadow-lg flex items-center gap-2 flex-wrap justify-center">
-          <span className="text-white">Welcome to</span>
-          <span className="bg-gradient-to-r from-yellow-100 to-yellow-300 bg-clip-text text-transparent">
-            JCI Ponda
-          </span>
-        </h1>
-
-        <p className="text-base sm:text-lg md:text-xl font-medium text-white drop-shadow-md">
-          Empowering young active citizens to create positive change
-        </p>
-      </div>
-
-
-
-
       {/* Anniversary Banner */}
       <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
         <p className="text-2xl font-serif text-blue-800 font-semibold">Celebrating 53 Glorious Years of JCI Ponda</p>
@@ -310,9 +276,7 @@ export default function Home() {
                   <div className="flex flex-col items-center flex-grow">
                     <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
                     <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 text-center mb-4 flex-grow">
-                      {leader.info}
-                    </p>
+                    <p className="mb-4">{leader.region}</p>
                     <div className="flex space-x-4 mt-auto">
                       <a
                         href={leader.social.instagram}
@@ -320,18 +284,7 @@ export default function Home() {
                       >
                         <Instagram className="h-5 w-5" />
                       </a>
-                      <a
-                        href={leader.social.facebook}
-                        className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                      >
-                        <Facebook className="h-5 w-5" />
-                      </a>
-                      <a
-                        href={leader.social.twitter}
-                        className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
-                      >
-                        <Twitter className="h-5 w-5" />
-                      </a>
+
                     </div>
                   </div>
                 </div>
@@ -357,9 +310,8 @@ export default function Home() {
                   <div className="flex flex-col items-center flex-grow">
                     <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
                     <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 text-center mb-4 flex-grow">
-                      {leader.info}
-                    </p>
+                    {/* <p className="mb-4">{leader.region}</p> */}
+
                     <div className="flex space-x-4 mt-auto">
                       <a
                         href={leader.social.instagram}
@@ -367,18 +319,7 @@ export default function Home() {
                       >
                         <Instagram className="h-5 w-5" />
                       </a>
-                      <a
-                        href={leader.social.facebook}
-                        className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                      >
-                        <Facebook className="h-5 w-5" />
-                      </a>
-                      <a
-                        href={leader.social.twitter}
-                        className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
-                      >
-                        <Twitter className="h-5 w-5" />
-                      </a>
+
                     </div>
                   </div>
                 </div>
@@ -404,9 +345,7 @@ export default function Home() {
                   <div className="flex flex-col items-center flex-grow">
                     <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
                     <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 text-center mb-4 flex-grow">
-                      {leader.info}
-                    </p>
+                    {/* <p className="mb-4">{leader.region}</p> */}
                     <div className="flex space-x-4 mt-auto">
                       <a
                         href={leader.social.instagram}
@@ -414,18 +353,7 @@ export default function Home() {
                       >
                         <Instagram className="h-5 w-5" />
                       </a>
-                      <a
-                        href={leader.social.facebook}
-                        className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                      >
-                        <Facebook className="h-5 w-5" />
-                      </a>
-                      <a
-                        href={leader.social.twitter}
-                        className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
-                      >
-                        <Twitter className="h-5 w-5" />
-                      </a>
+
                     </div>
                   </div>
                 </div>
