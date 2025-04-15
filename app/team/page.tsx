@@ -99,7 +99,7 @@ const teamMembers: {
   ],
   directors: [
     {
-      name: "JC DARSHA MANGUESHKAR",
+      name: "JC DARSHAN MANGUESHKAR",
       position: "Director Management",
       image: "/placeholder.svg?height=200&width=200",
       description: "-",
