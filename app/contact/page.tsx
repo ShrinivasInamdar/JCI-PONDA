@@ -42,7 +42,7 @@ const infoCards = [
 export default function ContactPage() {
   return (
     <div>
-          <div style={{ height: '212px' }} className="relative w-full bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-start text-center space-y-4 pt-8">
+      <div style={{ height: '212px' }} className="relative w-full bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-start text-center space-y-4 pt-8">
         {/* Decorative Bubbles */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-white opacity-10 rounded-full"></div>
         <div className="absolute bottom-10 right-10 w-48 h-48 bg-white opacity-10 rounded-full"></div>
@@ -50,7 +50,7 @@ export default function ContactPage() {
 
         {/* Centered Texts */}
         <h1 className="text-5xl md:text-5xl font-extrabold text-white drop-shadow-lg">
-         Contact Us
+          Contact Us
         </h1>
 
         <p className="text-lg sm:text-sm md:text-lg lg:text-xl  font-medium text-white drop-shadow-md">
@@ -73,16 +73,13 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-1">{profile.name}</h3>
                 <p className="text-blue-600 dark:text-blue-400 mb-4">{profile.position}</p>
-                <div className="flex items-center mb-2">
-                  <Mail className="h-4 w-4 mr-2 text-blue-600 dark:text-blue-400" />
-                  <span>{profile.email}</span>
+                <div className="flex flex-wrap items-center gap-2 mb-2 -mt-2">
+                  <Mail className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                  <span className="text-sm sm:text-base break-all">{profile.email}</span>
                 </div>
-                <div className="flex items-center mb-4">
-                  <Phone className="h-4 w-4 mr-2 text-blue-600 dark:text-blue-400" />
-                  <span>{profile.phone}</span>
-                </div>
+
                 <Button asChild>
-                  <a href={`https://wa.me/${profile.phone}`}target="_blank" rel="noopener noreferrer">Contact Me</a>
+                  <a href={`https://wa.me/${profile.phone}`} target="_blank" rel="noopener noreferrer">Contact Me</a>
                 </Button>
               </div>
             </div>
@@ -121,13 +118,7 @@ export default function ContactPage() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start">
-                  <Phone className="h-5 w-5 mr-3 text-blue-600 dark:text-blue-400 mt-0.5" />
-                  <div>
-                    <h4 className="font-medium">Phone</h4>
-                    <p className="text-gray-600 dark:text-gray-300">+91 1234567890</p>
-                  </div>
-                </div>
+
                 <div className="flex items-start">
                   <Mail className="h-5 w-5 mr-3 text-blue-600 dark:text-blue-400 mt-0.5" />
                   <div>
@@ -153,13 +144,7 @@ export default function ContactPage() {
                       <Instagram className="h-6 w-6" />
                       <span className="sr-only">Instagram</span>
                     </a>
-                    <a
-                      href="#"
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                    >
-                      <Twitter className="h-6 w-6" />
-                      <span className="sr-only">Twitter</span>
-                    </a>
+                  
                   </div>
                 </div>
               </div>
