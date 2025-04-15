@@ -107,6 +107,7 @@ const leaders = {
       name: "JFS ANKUR JHUNJHUNWALA",
       position: "National President",
       image: "/placeholder.svg?height=200&width=200",
+      info:"President of JCI India.Leads with integrity, empowering members and driving impactful local change",
       social: {
         instagram: "#",
         facebook: "#",
@@ -117,6 +118,7 @@ const leaders = {
       name: "JFS ASHOK BHAT",
       position: "National Vice President",
       image: "/placeholder.svg?height=200&width=200",
+      info:"Vice President of JCI India.Leads with integrity, empowering members and driving impactful local change",
       social: {
         instagram: "#",
         facebook: "#",
@@ -129,6 +131,7 @@ const leaders = {
       name: "JFD SHABA GAUNS",
       position: "Zone President ",
       image: "/placeholder.svg?height=200&width=200",
+      info:"Guides organization with vision, compassion, and strategic community focus",
       social: {
         instagram: "#",
         facebook: "#",
@@ -139,6 +142,7 @@ const leaders = {
       name: "HGF SHILPA RAGHAVA SILVERA",
       position: "Zone 11 Vice President",
       image: "/placeholder.svg?height=200&width=200",
+      info:"Inspires community growth through leadership, vision, and active engagement",
       social: {
         instagram: "#",
         facebook: "#",
@@ -151,6 +155,7 @@ const leaders = {
       name: "JC VADIRAJ INAMDAR",
       position: "Local Organisation President",
       image: "/placeholder.svg?height=200&width=200",
+      info:"Leads with purpose, building inclusive and proactive community initiatives",
       social: {
         instagram: "#",
         facebook: "#",
@@ -207,17 +212,17 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           <AnimatedCard direction="left" delay={100}>
-            <div className="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
-              <h3 className="text-2xl font-bold mb-4 text-center font-serif">Our Vision</h3>
-              <p className="text-center">
+            <div className="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105 h-[510px] flex flex-col items-center justify-center">
+              <h3 className="text-3xl font-extrabold mb-6 text-center font-serif">Our Vision</h3>
+              <p className="text-2xl text-center leading-relaxed">
                 To be the foremost global network of young leaders.
               </p>
             </div>
           </AnimatedCard>
           <AnimatedCard direction="up" delay={200}>
-            <div className="bg-gradient-to-br from-yellow-400 to-orange-500 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
-              <h3 className="text-2xl font-bold mb-4 text-center font-serif">JCI Creed</h3>
-              <p className="text-center italic">
+            <div className="bg-gradient-to-br from-yellow-400 to-orange-500 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105 h-[510px] flex flex-col items-center justify-center">
+              <h3 className="text-3xl font-extrabold mb-6 text-center font-serif">JCI Creed</h3>
+              <p className="text-center italic text-[17.5px] leading-relaxed">
                 We believe:
                 <br />
                 That faith in God gives meaning and purpose to human life;
@@ -235,9 +240,9 @@ export default function Home() {
             </div>
           </AnimatedCard>
           <AnimatedCard direction="right" delay={300}>
-            <div className="bg-gradient-to-br from-green-500 to-teal-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
-              <h3 className="text-2xl font-bold mb-4 text-center font-serif">Our Mission</h3>
-              <p className="text-center">
+            <div className="bg-gradient-to-br from-green-500 to-teal-600 text-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105 h-[510px] flex flex-col items-center justify-center">
+              <h3 className="text-3xl font-extrabold mb-6 text-center font-serif">Our Mission</h3>
+              <p className="text-2xl text-center leading-relaxed">
                 To provide leadership development opportunities that empower young people to create positive change.
               </p>
             </div>
@@ -294,35 +299,40 @@ export default function Home() {
           <div className="flex justify-center gap-8 flex-wrap">
             {leaders.national.map((leader, index) => (
               <AnimatedCard key={index} direction="up" delay={index * 150}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[400px] flex flex-col items-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
                     <img
                       src={leader.image || "/placeholder.svg"}
                       alt={leader.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                  <div className="flex space-x-4">
-                    <a
-                      href={leader.social.instagram}
-                      className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
-                    >
-                      <Instagram className="h-5 w-5" />
-                    </a>
-                    <a
-                      href={leader.social.facebook}
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                    >
-                      <Facebook className="h-5 w-5" />
-                    </a>
-                    <a
-                      href={leader.social.twitter}
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
-                    >
-                      <Twitter className="h-5 w-5" />
-                    </a>
+                  <div className="flex flex-col items-center flex-grow">
+                    <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
+                    <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 text-center mb-4 flex-grow">
+                      {leader.info}
+                    </p>
+                    <div className="flex space-x-4 mt-auto">
+                      <a
+                        href={leader.social.instagram}
+                        className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+                      >
+                        <Instagram className="h-5 w-5" />
+                      </a>
+                      <a
+                        href={leader.social.facebook}
+                        className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                      >
+                        <Facebook className="h-5 w-5" />
+                      </a>
+                      <a
+                        href={leader.social.twitter}
+                        className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
+                      >
+                        <Twitter className="h-5 w-5" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </AnimatedCard>
@@ -336,35 +346,40 @@ export default function Home() {
           <div className="flex justify-center gap-8 flex-wrap">
             {leaders.zone.map((leader, index) => (
               <AnimatedCard key={index} direction="up" delay={index * 150}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[400px] flex flex-col items-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
                     <img
                       src={leader.image || "/placeholder.svg"}
                       alt={leader.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                  <div className="flex space-x-4">
-                    <a
-                      href={leader.social.instagram}
-                      className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
-                    >
-                      <Instagram className="h-5 w-5" />
-                    </a>
-                    <a
-                      href={leader.social.facebook}
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                    >
-                      <Facebook className="h-5 w-5" />
-                    </a>
-                    <a
-                      href={leader.social.twitter}
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
-                    >
-                      <Twitter className="h-5 w-5" />
-                    </a>
+                  <div className="flex flex-col items-center flex-grow">
+                    <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
+                    <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 text-center mb-4 flex-grow">
+                      {leader.info}
+                    </p>
+                    <div className="flex space-x-4 mt-auto">
+                      <a
+                        href={leader.social.instagram}
+                        className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+                      >
+                        <Instagram className="h-5 w-5" />
+                      </a>
+                      <a
+                        href={leader.social.facebook}
+                        className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                      >
+                        <Facebook className="h-5 w-5" />
+                      </a>
+                      <a
+                        href={leader.social.twitter}
+                        className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
+                      >
+                        <Twitter className="h-5 w-5" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </AnimatedCard>
@@ -378,35 +393,40 @@ export default function Home() {
           <div className="flex justify-center">
             {leaders.local.map((leader, index) => (
               <AnimatedCard key={index} direction="up" delay={index * 150}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[400px] flex flex-col items-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
                     <img
                       src={leader.image || "/placeholder.svg"}
                       alt={leader.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                  <div className="flex space-x-4">
-                    <a
-                      href={leader.social.instagram}
-                      className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
-                    >
-                      <Instagram className="h-5 w-5" />
-                    </a>
-                    <a
-                      href={leader.social.facebook}
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                    >
-                      <Facebook className="h-5 w-5" />
-                    </a>
-                    <a
-                      href={leader.social.twitter}
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
-                    >
-                      <Twitter className="h-5 w-5" />
-                    </a>
+                  <div className="flex flex-col items-center flex-grow">
+                    <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
+                    <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 text-center mb-4 flex-grow">
+                      {leader.info}
+                    </p>
+                    <div className="flex space-x-4 mt-auto">
+                      <a
+                        href={leader.social.instagram}
+                        className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+                      >
+                        <Instagram className="h-5 w-5" />
+                      </a>
+                      <a
+                        href={leader.social.facebook}
+                        className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                      >
+                        <Facebook className="h-5 w-5" />
+                      </a>
+                      <a
+                        href={leader.social.twitter}
+                        className="text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300"
+                      >
+                        <Twitter className="h-5 w-5" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </AnimatedCard>
