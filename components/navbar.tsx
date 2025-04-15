@@ -37,13 +37,13 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-          <div ><img src="/JCI-logo.png" alt="JCI LOGO" id="IMAGE"/></div>
-              {/* Placeholder for logo */}
-            {/* <span className="font-bold text-xl">JCI Ponda</span> */}
+            <div>
+              <img src="/JCI-logo.png" alt="JCI LOGO" id="IMAGE" />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden ipad:flex items-center space-x-6">
             {navLinks.map((link) =>
               link.dropdown ? (
                 <div key={link.name} className="relative group">
@@ -83,13 +83,13 @@ export function Navbar() {
                 >
                   {link.name}
                 </Link>
-              ),
+              )
             )}
             <ThemeToggle />
           </div>
 
           {/* Mobile Navigation Toggle */}
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center ipad:hidden">
             <ThemeToggle />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -103,7 +103,7 @@ export function Navbar() {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 space-y-2">
+          <div className="ipad:hidden py-4 space-y-2">
             {navLinks.map((link) =>
               link.dropdown ? (
                 <div key={link.name} className="py-2">
@@ -140,7 +140,7 @@ export function Navbar() {
                 >
                   {link.name}
                 </Link>
-              ),
+              )
             )}
           </div>
         )}
@@ -148,4 +148,3 @@ export function Navbar() {
     </nav>
   )
 }
-

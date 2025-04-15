@@ -169,25 +169,25 @@ export default function Home() {
   return (
     <div>
       {/* Welcome Header */}
-      <div className={`${poppins.className} relative w-full h-72 bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-start text-center space-y-4 pt-12`}>
+      <div className={`${poppins.className} relative w-full h-72 bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-center text-center space-y-4 px-4`}>
         {/* Decorative Bubbles */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-white opacity-10 rounded-full"></div>
         <div className="absolute bottom-10 right-10 w-48 h-48 bg-white opacity-10 rounded-full"></div>
         <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-white opacity-5 rounded-full"></div>
 
         {/* Centered Texts */}
-        <h1 className="text-6xl md:text-7xl font-extrabold drop-shadow-lg flex items-center gap-2 flex-wrap text-center">
+        <h1 className="text-5xl sm:text-5xl md:text-7xl font-extrabold drop-shadow-lg flex items-center gap-2 flex-wrap justify-center">
           <span className="text-white">Welcome to</span>
           <span className="bg-gradient-to-r from-yellow-100 to-yellow-300 bg-clip-text text-transparent">
             JCI Ponda
           </span>
         </h1>
 
-
-        <p className="text-xl sm:xl md:text-xl font-medium text-white drop-shadow-md">
+        <p className="text-base sm:text-lg md:text-xl font-medium text-white drop-shadow-md">
           Empowering young active citizens to create positive change
         </p>
       </div>
+
 
 
 
