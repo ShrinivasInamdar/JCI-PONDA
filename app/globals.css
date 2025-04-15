@@ -239,4 +239,9 @@
 #container{
   padding: 50px;
 }
-
+.text-xl{
+  text-align: center;
+}
+.text-blue-600{
+  text-align: center;
+}
