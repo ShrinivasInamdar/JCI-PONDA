@@ -107,7 +107,7 @@ const leaders = {
       name: "JFS ANKUR JHUNJHUNWALA",
       position: "National President",
       image: "/placeholder.svg?height=200&width=200",
-      info:"President of JCI India.Leads with integrity, empowering members and driving impactful local change",
+      info: "President of JCI India.Leads with integrity, empowering members and driving impactful local change",
       social: {
         instagram: "#",
         facebook: "#",
@@ -118,7 +118,7 @@ const leaders = {
       name: "JFS ASHOK BHAT",
       position: "National Vice President",
       image: "/placeholder.svg?height=200&width=200",
-      info:"Vice President of JCI India.Leads with integrity, empowering members and driving impactful local change",
+      info: "Vice President of JCI India.Leads with integrity, empowering members and driving impactful local change",
       social: {
         instagram: "#",
         facebook: "#",
@@ -131,7 +131,7 @@ const leaders = {
       name: "JFD SHABA GAUNS",
       position: "Zone President ",
       image: "/placeholder.svg?height=200&width=200",
-      info:"Guides organization with vision, compassion, and strategic community focus",
+      info: "Guides organization with vision, compassion, and strategic community focus",
       social: {
         instagram: "#",
         facebook: "#",
@@ -142,7 +142,7 @@ const leaders = {
       name: "HGF SHILPA RAGHAVA SILVERA",
       position: "Zone 11 Vice President",
       image: "/placeholder.svg?height=200&width=200",
-      info:"Inspires community growth through leadership, vision, and active engagement",
+      info: "Inspires community growth through leadership, vision, and active engagement",
       social: {
         instagram: "#",
         facebook: "#",
@@ -155,7 +155,7 @@ const leaders = {
       name: "JC VADIRAJ INAMDAR",
       position: "Local Organisation President",
       image: "/placeholder.svg?height=200&width=200",
-      info:"Leads with purpose, building inclusive and proactive community initiatives",
+      info: "Leads with purpose, building inclusive and proactive community initiatives",
       social: {
         instagram: "#",
         facebook: "#",
@@ -177,11 +177,11 @@ export default function Home() {
 
         {/* Centered Texts */}
         <h1 className="text-6xl md:text-7xl font-extrabold drop-shadow-lg flex items-center gap-2 flex-wrap text-center">
-  <span className="text-white">Welcome to</span>
-  <span className="bg-gradient-to-r from-yellow-100 to-yellow-300 bg-clip-text text-transparent">
-    JCI Ponda
-  </span>
-</h1>
+          <span className="text-white">Welcome to</span>
+          <span className="bg-gradient-to-r from-yellow-100 to-yellow-300 bg-clip-text text-transparent">
+            JCI Ponda
+          </span>
+        </h1>
 
 
         <p className="text-xl sm:xl md:text-xl font-medium text-white drop-shadow-md">
