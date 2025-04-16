@@ -1,10 +1,11 @@
 import { Section } from "@/components/section"
 import { AnimatedCard } from "@/components/animated-card"
+import galaxy from "./galaxy.jpg"
 
 export default function AboutPage() {
   return (
     <div>
-      <div  style={{ height: '212px' }} className="relative w-full  bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-start text-center space-y-4 pt-12">
+      <div style={{ height: '212px' }} className="relative w-full  bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-start text-center space-y-4 pt-12">
         {/* Decorative Bubbles */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-white opacity-10 rounded-full"></div>
         <div className="absolute bottom-10 right-10 w-48 h-48 bg-white opacity-10 rounded-full"></div>
@@ -25,7 +26,11 @@ export default function AboutPage() {
           <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-6 rounded-lg shadow-md">
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-1/3">
-                <img src="/placeholder.svg?height=300&width=300" alt="JCI Logo" className="w-full rounded-lg" />
+                <img
+                  src="/placeholder.svg"
+                  alt="JCI Logo"
+                  className="w-full rounded-lg"
+                />
               </div>
               <div className="md:w-2/3">
                 <h3 className="text-2xl font-serif font-bold mb-4">Junior Chamber International</h3>
@@ -73,7 +78,11 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="md:w-1/3">
-                <img src="/placeholder.svg?height=300&width=300" alt="JCI India Logo" className="w-full rounded-lg" />
+                <img
+                  src="/placeholder.svg"
+                  alt="JCI India Logo"
+                  className="w-full rounded-lg"
+                />
               </div>
             </div>
           </div>
@@ -86,7 +95,11 @@ export default function AboutPage() {
           <div className="bg-gradient-to-r from-green-500 to-teal-600 text-white p-6 rounded-lg shadow-md">
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-1/3">
-                <img src="/placeholder.svg?height=300&width=300" alt="JCI Ponda Logo" className="w-full rounded-lg" />
+                <img
+                  src="/placeholder.svg"
+                  alt="JCI Ponda Logo"
+                  className="w-full rounded-lg"
+                />
               </div>
               <div className="md:w-2/3">
                 <h3 className="text-2xl font-serif font-bold mb-4">JCI Ponda</h3>
@@ -120,7 +133,7 @@ export default function AboutPage() {
           </div>
           <div className="w-full">
             <img
-              src="/placeholder.svg?height=600&width=1200"
+              src={galaxy.src}
               alt="Past Presidents of JCI Ponda"
               className="w-full rounded-lg"
             />

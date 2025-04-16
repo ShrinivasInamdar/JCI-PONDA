@@ -106,7 +106,7 @@ const leaders = {
     {
       name: "JFS ANKUR JHUNJHUNWALA",
       position: "National President",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/leaders_images/ankur.jpg",
       region: "",
       social: {
         instagram: "#",
@@ -115,7 +115,7 @@ const leaders = {
     {
       name: "JFS ASHOK BHAT",
       position: "National Vice President",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/leaders_images/nvp.png",
       region: "",
       social: {
         instagram: "#",
@@ -126,7 +126,7 @@ const leaders = {
     {
       name: "JFD SHABA GAUNS",
       position: "Zone President ",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/leaders_images/zp.png",
       region: "",
       social: {
         instagram: "#",
@@ -135,7 +135,7 @@ const leaders = {
     {
       name: "HGF SHILPA RAGHAVA SILVERA",
       position: "Zone 11 Vice President",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/leaders_images/zvp.jpg",
       social: {
         instagram: "#",
       },
@@ -268,15 +268,14 @@ export default function Home() {
                 <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[400px] flex flex-col items-center">
                   <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
                     <img
-                      src={leader.image || "/placeholder.svg"}
+                      src={leader.image}
                       alt={leader.name}
-                      className="w-full h-full object-cover"
+                      className="card-image"
                     />
                   </div>
                   <div className="flex flex-col items-center flex-grow">
                     <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
                     <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                    <p className="mb-4">{leader.region}</p>
                     <div className="flex space-x-4 mt-auto">
                       <a
                         href={leader.social.instagram}
@@ -284,7 +283,6 @@ export default function Home() {
                       >
                         <Instagram className="h-5 w-5" />
                       </a>
-
                     </div>
                   </div>
                 </div>
@@ -293,74 +291,74 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Zone Leaders */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-6 text-center">Zone Leaders (Zone 11)</h3>
-          <div className="flex justify-center gap-8 flex-wrap">
-            {leaders.zone.map((leader, index) => (
-              <AnimatedCard key={index} direction="up" delay={index * 150}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[400px] flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
-                    <img
-                      src={leader.image || "/placeholder.svg"}
-                      alt={leader.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="flex flex-col items-center flex-grow">
-                    <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
-                    <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                    {/* <p className="mb-4">{leader.region}</p> */}
-
-                    <div className="flex space-x-4 mt-auto">
-                      <a
-                        href={leader.social.instagram}
-                        className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
-                      >
-                        <Instagram className="h-5 w-5" />
-                      </a>
-
-                    </div>
-                  </div>
-                </div>
-              </AnimatedCard>
-            ))}
+        {/* Zone Leaders and Local Organisation President in a horizontal line */}
+        <div className="flex flex-col lg:flex-row justify-center mb-12 gap-6">
+  {/* Zone Leaders */}
+  <div className="w-full lg:w-1/2">
+    <h3 className="text-2xl font-bold mb-6 text-center">Zone Leaders (Zone 11)</h3>
+    <div className="flex justify-center gap-8 flex-wrap">
+      {leaders.zone.map((leader, index) => (
+        <AnimatedCard key={index} direction="up" delay={index * 150}>
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[400px] flex flex-col items-center">
+            <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
+              <img
+                src={leader.image || "/placeholder.svg"}
+                alt={leader.name}
+                className="card-image"
+              />
+            </div>
+            <div className="flex flex-col items-center flex-grow">
+              <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
+              <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
+              <div className="flex space-x-4 mt-auto">
+                <a
+                  href={leader.social.instagram}
+                  className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
+        </AnimatedCard>
+      ))}
+    </div>
+  </div>
 
-        {/* Local Leader */}
-        <div>
-          <h3 className="text-2xl font-bold mb-6 text-center">Local Organisation President</h3>
-          <div className="flex justify-center">
-            {leaders.local.map((leader, index) => (
-              <AnimatedCard key={index} direction="up" delay={index * 150}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[400px] flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
-                    <img
-                      src={leader.image || "/placeholder.svg"}
-                      alt={leader.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="flex flex-col items-center flex-grow">
-                    <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
-                    <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                    {/* <p className="mb-4">{leader.region}</p> */}
-                    <div className="flex space-x-4 mt-auto">
-                      <a
-                        href={leader.social.instagram}
-                        className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
-                      >
-                        <Instagram className="h-5 w-5" />
-                      </a>
-
-                    </div>
-                  </div>
-                </div>
-              </AnimatedCard>
-            ))}
+  {/* Local Organisation President */}
+  <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+    <h3 className="text-2xl font-bold mb-6 text-center">Local Organisation President</h3>
+    <div className="flex justify-center">
+      {leaders.local.map((leader, index) => (
+        <AnimatedCard key={index} direction="up" delay={index * 150}>
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[400px] flex flex-col items-center">
+            <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
+              <img
+                src={leader.image || "/placeholder.svg"}
+                alt={leader.name}
+                className="card-image"
+              />
+            </div>
+            <div className="flex flex-col items-center flex-grow">
+              <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
+              <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
+              <div className="flex space-x-4 mt-auto">
+                <a
+                  href={leader.social.instagram}
+                  className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
+        </AnimatedCard>
+      ))}
+    </div>
+  </div>
+</div>
+
+
       </Section>
 
       {/* Past Events Section */}

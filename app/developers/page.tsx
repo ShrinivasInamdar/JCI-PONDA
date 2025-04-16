@@ -20,7 +20,8 @@ const developers: Developer[] = [
   {
     name: "SHRINIVAS INAMDAR",
     role: "LEAD DEVELOPER",
-    image: "/placeholder.svg?height=200&width=200",
+    // image: "/placeholder.svg?height=200&width=200",
+    image: "/developers/shrini.jpg",
     description: "-",
     social: {
       linkedin: "https://www.linkedin.com/in/shrinivas-inamdar-a83a30237/",
@@ -31,7 +32,7 @@ const developers: Developer[] = [
   {
     name: "PRANAV KERKAR",
     role: "FRONTEND DEVELOPER",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/developers/pranav.jpg",
     description: "-",
     social: {
       linkedin: "https://www.linkedin.com/in/pranav-kerkar-900432253/",
@@ -81,7 +82,7 @@ export default function DevelopersPage() {
       <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg hover:-translate-y-1">
         <div className="relative">
           <img
-            src={developer.image || "/placeholder.svg"}
+            src={developer.image}
             alt={developer.name}
             className="w-full h-48 object-cover"
           />
