@@ -281,7 +281,7 @@ export default function TeamPage() {
 
         {/* Centered Texts */}
         <h1 className="text-4xl md:text-4xl font-extrabold text-white drop-shadow-lg">
-          Local Governing Board Team (LGT)
+          Local Governing Board Team (LGB)
         </h1>
 
         <p className="text-s md:text-2xl font-medium text-white drop-shadow-md">
