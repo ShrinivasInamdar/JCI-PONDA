@@ -33,7 +33,7 @@ const carouselSlides = [
   },
 ]
 
-// Sample data for past events
+// Sample data for Upcoming events
 const pastEvents = [
   {
     title: "Community Clean-up Drive",
@@ -41,7 +41,7 @@ const pastEvents = [
       "We organized a community clean-up drive at Ponda Beach, collecting over 200kg of waste and raising awareness about environmental conservation.",
     image: "/placeholder.svg?height=200&width=300",
     date: "15 Mar 2025",
-    link: "/events/community-cleanup",
+    link: "#",
   },
   {
     title: "Leadership Workshop",
@@ -105,7 +105,13 @@ const leaders = {
   national: [
     {
       name: "JFS ANKUR JHUNJHUNWALA",
-      position: "National President",
+      position: (
+        <>
+          NATIONAL PRESIDENT
+          <br />
+          JCI INDIA
+        </>
+      ),
       image: "/leaders_images/ankur.jpg",
       region: "",
       social: {
@@ -114,7 +120,13 @@ const leaders = {
     },
     {
       name: "JFS ASHOK BHAT",
-      position: "National Vice President",
+      position: (
+        <>
+          National Vice President
+          <br />
+          AREA - A , JCI INDIA
+        </>
+      ),
       image: "/leaders_images/nvp.png",
       region: "",
       social: {
@@ -125,7 +137,16 @@ const leaders = {
   zone: [
     {
       name: "JFD SHABA GAUNS",
-      position: "Zone President ",
+      position: (
+        <>
+          ZONE PRESIDENT
+          <br />
+          ZONE 11
+          <br />
+          JCI INDIA
+          
+        </>
+      ),
       image: "/leaders_images/zp.png",
       region: "",
       social: {
@@ -133,8 +154,16 @@ const leaders = {
       },
     },
     {
-      name: "HGF SHILPA RAGHAVA SILVERA",
-      position: "Zone 11 Vice President",
+      name: "JC HGF SHILPA RAGHAVA SILVERA",
+      position: (
+        <>
+         ZONE VICE PRESIDENT
+          <br />
+          REGION - C
+          <br />
+          JCI INDIA ZONE 11
+        </>
+      ),
       image: "/leaders_images/zvp.jpg",
       social: {
         instagram: "#",
@@ -144,7 +173,7 @@ const leaders = {
   local: [
     {
       name: "JC VADIRAJ INAMDAR",
-      position: "Local Organisation President",
+      position: "LOCAL ORGANISATION PRESIDENT",
       image: "/placeholder.svg?height=200&width=200",
       region: "",
       social: {
@@ -258,14 +287,16 @@ export default function Home() {
       </Section>
 
       {/* Leaders Section */}
-      <Section title="Leaders">
+      <Section title="" >
         {/* National Leaders */}
         <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-6 text-center">National Leaders</h3>
-          <div className="flex justify-center gap-8 flex-wrap">
+        <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
+        <h2 className="text-2xl font-serif text-blue-800 font-semibold">Leaders 2025</h2>
+      </div>
+          <div className="top flex justify-center gap-8 flex-wrap ">
             {leaders.national.map((leader, index) => (
               <AnimatedCard key={index} direction="up" delay={index * 150}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[400px] flex flex-col items-center">
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[350px] flex flex-col items-center">
                   <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
                     <img
                       src={leader.image}
@@ -295,11 +326,11 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row justify-center mb-12 gap-6 mx-4 lg:mx-16 mt-4">
           {/* Zone Leaders */}
           <div className="w-full lg:w-1/2">
-            <h3 className="text-2xl font-bold mb-6 text-center">Zone Leaders (Zone 11)</h3>
+            <h3 className="text-2xl font-bold mb-6 text-center">Zone Leaders</h3>
             <div className="flex justify-center gap-8 flex-wrap">
               {leaders.zone.map((leader, index) => (
                 <AnimatedCard key={index} direction="up" delay={index * 150}>
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[400px] flex flex-col items-center">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[350px] flex flex-col items-center">
                     <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
                       <img
                         src={leader.image || "/placeholder.svg"}
@@ -331,7 +362,7 @@ export default function Home() {
             <div className="flex justify-center">
               {leaders.local.map((leader, index) => (
                 <AnimatedCard key={index} direction="up" delay={index * 150}>
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[400px] flex flex-col items-center">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[350px] flex flex-col items-center">
                     <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
                       <img
                         src={leader.image || "/placeholder.svg"}
@@ -361,10 +392,16 @@ export default function Home() {
 
       </Section>
 
-      {/* Past Events Section */}
-      {/* <Section
-        title="Past Events"
-        description="A glimpse of our recent activities and initiatives"
+      {/* Upcoming Events Section */}
+      <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
+        <h2 className="text-2xl font-serif text-blue-800 font-semibold">Upcoming Events</h2>
+        <br />
+        <h3 className="text-1xl font-serif text-blue-800 font-semibold">Stay updated with our most recent activities and initiatives</h3>
+      </div>
+      <Section
+        title=""
+        
+        description=""
         className="bg-gray-50 dark:bg-gray-900"
       >
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -376,21 +413,26 @@ export default function Home() {
               image={event.image}
               date={event.date}
               link={event.link}
-              linkText="Read More"
+              linkText="Register"
               index={index}
               direction={index % 2 === 0 ? "left" : "right"}
             />
           ))}
         </div>
-        <div className="mt-8 text-center">
+        {/* <div className="mt-8 text-center">
           <Button asChild>
             <Link href="/reports">More Reports - Click Here</Link>
           </Button>
-        </div>
-      </Section> */}
+        </div> */}
+      </Section>
 
       {/* Latest Events Section */}
-      <Section title="Latest Events" description="Stay updated with our most recent activities and initiatives">
+      <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
+        <h2 className="text-2xl font-serif text-blue-800 font-semibold">Past Events</h2>
+        <br />
+        <h3 className="text-1xl font-serif text-blue-800 font-semibold">A glimpse of our recent activities and initiatives</h3>
+      </div>
+      <Section title="" description=" ">
         <div className="grid md:grid-cols-3 gap-6">
           <Card
             title="Leadership Workshop 2025"

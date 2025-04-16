@@ -245,5 +245,9 @@
 .text-blue-600{
   text-align: center;
 }
-
-
+.top{
+  margin-top: 20px;
+}
+.text-1xl .text-2xl{
+  text-align: center;
+}
