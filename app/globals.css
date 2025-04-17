@@ -251,3 +251,6 @@
 .text-1xl .text-2xl{
   text-align: center;
 }
+.py-8{
+  padding: 10px;
+}
