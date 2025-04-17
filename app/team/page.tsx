@@ -26,7 +26,7 @@ const teamMembers: {
     {
       name: "JC VADIRAJ INAMDAR",
       position: "President",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/vadiraj.jpg",
       description:
         "Leading JCI Ponda with a vision to empower young citizens and create sustainable impact in our community.",
       social: {
@@ -37,7 +37,7 @@ const teamMembers: {
     {
       name: "JFM MUSKAN NAIK",
       position: "Secretary",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/muskan.jpg",
       description: "Coordinating all chapter activities and ensuring effective communication within the organization.",
       social: {
         facebook: "#",
@@ -153,7 +153,7 @@ const teamMembers: {
     {
       name: "JR JC SHRINIVAS INAMDAR",
       position: "Junior Jaycee Chairperson",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/shrini.png",
       description: "Coordinating activities for our Junior Jaycee Wing and nurturing young leaders.",
       social: {
         facebook: "#",
@@ -195,34 +195,38 @@ const teamMembers: {
   ],
 };
 
-// Reusable TeamMemberCard component with fixed heights
+// Reusable TeamMemberCard component with increased height
 function TeamMemberCard({ member, index }: { member: TeamMember; index: number }) {
   return (
     <AnimatedCard key={index} direction="up" delay={index * 100}>
-      <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg hover:-translate-y-1 w-full h-full flex flex-col">
-        <div className="relative h-48">
-          <img src={member.image || "/placeholder.svg"} alt={member.name} className="w-full h-full object-cover" />
+      <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg hover:-translate-y-1 w-full max-w-[310px] mx-auto">
+        <div className="relative h-72">
+          <img 
+            src={member.image || "/placeholder.svg"} 
+            alt={member.name} 
+            className="w-full h-full object-cover object-center"
+          />
           <span className="absolute top-2 left-2 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">
             {member.position}
           </span>
         </div>
-        <div className="p-4 flex flex-col flex-grow">
-          <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-          <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow min-h-12">
+        <div className="p-4">
+          <h3 className="text-lg font-semibold mb-2">{member.name}</h3>
+          <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
             {member.description !== "-" ? member.description : ""}
           </p>
-          <div className="flex space-x-3 mt-auto">
+          <div className="flex space-x-3 mt-2">
             <a
               href={member.social.facebook}
               className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
             >
-              <Facebook size={20} />
+              <Facebook size={18} />
             </a>
             <a
               href={member.social.instagram}
               className="text-pink-600 hover:text-pink-800 dark:text-pink-400 dark:hover:text-pink-300"
             >
-              <Instagram size={20} />
+              <Instagram size={18} />
             </a>
           </div>
         </div>
@@ -231,41 +235,62 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
   );
 }
 
-// Generic component for rendering team sections with proper centering and consistent heights
+// Update the TeamSection component to handle directors section differently
 function TeamSection({ members, title, bgClass = "" }: { members: TeamMember[]; title: string; bgClass?: string }) {
-  // Calculate how many complete rows of 3 we have
-  const completeRows = Math.floor(members.length / 3);
-  const remainingItems = members.length % 3;
-  
-  // Split the members into complete rows and the remaining items
-  const completeRowMembers = members.slice(0, completeRows * 3);
-  const remainingMembers = members.slice(completeRows * 3); 
-  
   return (
     <Section title={title} className={bgClass}>
-      {/* Complete rows with 3 cards each */}
-      {completeRows > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-          {completeRowMembers.map((member, index) => (
-            <div key={`row-${index}`} className="h-full">
-              <TeamMemberCard member={member} index={index} />
+      <div className="container mx-auto px-4">
+        {title === "Directors" ? (
+          // Special handling for Directors section
+          <div>
+            {/* First three cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 place-items-center mb-8">
+              {members.slice(0, 3).map((member, index) => (
+                <div key={index} className="w-full flex justify-center">
+                  <TeamMemberCard member={member} index={index} />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      )}
-      
-      {/* Remaining cards centered */}
-      {remainingItems > 0 && (
-        <div className="w-full flex justify-center">
-          <div className={`grid grid-cols-1 ${remainingItems === 2 ? 'md:grid-cols-2' : ''} gap-6 w-full ${remainingItems < 3 ? `md:w-${remainingItems === 1 ? '1/3' : '2/3'}` : ''}`}>
-            {remainingMembers.map((member, index) => (
-              <div key={`remaining-${index}`} className="h-full">
-                <TeamMemberCard member={member} index={completeRows * 3 + index} />
+            {/* Last two cards centered */}
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-[700px]">
+                {members.slice(3).map((member, index) => (
+                  <div key={index} className="flex justify-center">
+                    <TeamMemberCard member={member} index={index + 3} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ) : members.length === 1 ? (
+          // Single card centered
+          <div className="flex justify-center">
+            <div className="w-full max-w-[310px]">
+              <TeamMemberCard member={members[0]} index={0} />
+            </div>
+          </div>
+        ) : members.length === 2 ? (
+          // Two cards centered
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-[700px]">
+              {members.map((member, index) => (
+                <div key={index} className="flex justify-center">
+                  <TeamMemberCard member={member} index={index} />
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          // Three or more cards
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+            {members.map((member, index) => (
+              <div key={index} className="w-full flex justify-center">
+                <TeamMemberCard member={member} index={index} />
               </div>
             ))}
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </Section>
   );
 }

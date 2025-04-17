@@ -144,7 +144,7 @@ const leaders = {
           ZONE 11
           <br />
           JCI INDIA
-          
+
         </>
       ),
       image: "/leaders_images/zp.png",
@@ -157,7 +157,7 @@ const leaders = {
       name: "JC HGF SHILPA RAGHAVA SILVERA",
       position: (
         <>
-         ZONE VICE PRESIDENT
+          ZONE VICE PRESIDENT
           <br />
           REGION - C
           <br />
@@ -290,9 +290,9 @@ export default function Home() {
       <Section title="" >
         {/* National Leaders */}
         <div className="mb-12">
-        <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
-        <h2 className="text-2xl font-serif text-blue-800 font-semibold">Leaders 2025</h2>
-      </div>
+          <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
+            <h2 className="text-2xl font-serif text-blue-800 font-semibold">Leaders 2025</h2>
+          </div>
           <div className="top flex justify-center gap-8 flex-wrap ">
             {leaders.national.map((leader, index) => (
               <AnimatedCard key={index} direction="up" delay={index * 150}>
@@ -400,7 +400,7 @@ export default function Home() {
       </div>
       <Section
         title=""
-        
+
         description=""
         className="bg-gray-50 dark:bg-gray-900"
       >
