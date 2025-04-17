@@ -179,13 +179,24 @@ export default function AboutPage() {
       </Section>
 
       {/* Galaxy of Past Presidents */}
-      <Section title="Galaxy of Past Presidents" className="bg-gray-50 dark:bg-gray-900">
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-          <div className="text-center mb-6">
+      <Section title="" className="bg-gray-50 dark:bg-gray-900">
+      <div className="mb-12">
+    <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center gal">
+    <h2 className="text-2xl font-serif text-blue-800 font-semibold">GALAXY OF PAST PRESIDENTS</h2>
+    <div className="text-center mb-6">
             <p className="text-gray-700 dark:text-gray-300">
               Honoring the visionary leaders who have guided JCI Ponda through the years
             </p>
           </div>
+      </div>
+    
+    </div>
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md image">
+          {/* <div className="text-center mb-6">
+            <p className="text-gray-700 dark:text-gray-300">
+              Honoring the visionary leaders who have guided JCI Ponda through the years
+            </p>
+          </div> */}
           <div className="w-full">
             <img
               src={galaxy.src}
