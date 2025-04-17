@@ -7,14 +7,14 @@ const contactProfiles = [
   {
     name: "JC VADIRAJ INAMDAR",
     position: "President",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/contactus/vadiraj.jpg",
     email: "president@jciponda.in",
     phone: "7083491368",
   },
   {
     name: "JFM MUSKAN NAIK",
     position: "Secretary",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/contactus/muskan.jpg",
     email: "secretary@jciponda.in",
     phone: "7507781833",
   },
@@ -66,7 +66,7 @@ export default function ContactPage() {
               <div className="flex flex-col items-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                   <img
-                    src={profile.image || "/placeholder.svg"}
+                    src={profile.image}
                     alt={profile.name}
                     className="w-full h-full object-cover"
                   />

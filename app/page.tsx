@@ -174,7 +174,7 @@ const leaders = {
     {
       name: "JC VADIRAJ INAMDAR",
       position: "LOCAL ORGANISATION PRESIDENT",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/leaders_images/vadiraj.jpg",
       region: "",
       social: {
         instagram: "#",

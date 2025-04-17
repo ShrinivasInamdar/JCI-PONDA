@@ -2,8 +2,11 @@ import { Section } from "@/components/section"
 import { Card } from "@/components/card"
 import Link from "next/link"
 import { AnimatedCard } from "@/components/animated-card"
-import galaxy from "./galaxy.jpg"
+import galaxy from "./images/galaxy.jpg"
 import { Instagram } from "lucide-react"
+import jci from "./images/jci.jpg"
+import jciindia from "./images/jciindia.jpg"
+import jciponda from "./images/jciponda.jpg"
 
 const leaders = {
   national: [
@@ -54,7 +57,7 @@ const leaders = {
       },
     },
   ],
-  
+
 }
 
 export default function AboutPage() {
@@ -82,7 +85,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-1/3">
                 <img
-                  src="/placeholder.svg"
+                  src={jci.src}
                   alt="JCI Logo"
                   className="w-full rounded-lg"
                 />
@@ -134,7 +137,7 @@ export default function AboutPage() {
               </div>
               <div className="md:w-1/3">
                 <img
-                  src="/placeholder.svg"
+                 src={jciindia.src}
                   alt="JCI India Logo"
                   className="w-full rounded-lg"
                 />
@@ -151,7 +154,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-1/3">
                 <img
-                  src="/placeholder.svg"
+               src={jciponda.src}
                   alt="JCI Ponda Logo"
                   className="w-full rounded-lg"
                 />
@@ -180,17 +183,17 @@ export default function AboutPage() {
 
       {/* Galaxy of Past Presidents */}
       <Section title="" className="bg-gray-50 dark:bg-gray-900">
-      <div className="mb-12">
-    <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center gal">
-    <h2 className="text-2xl font-serif text-blue-800 font-semibold">GALAXY OF PAST PRESIDENTS</h2>
-    <div className="text-center mb-6">
-            <p className="text-gray-700 dark:text-gray-300">
-              Honoring the visionary leaders who have guided JCI Ponda through the years
-            </p>
+        <div className="mb-12">
+          <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center gal">
+            <h2 className="text-2xl font-serif text-blue-800 font-semibold">GALAXY OF PAST PRESIDENTS</h2>
+            <div className="text-center mb-6">
+              <p className="text-gray-700 dark:text-gray-300">
+                Honoring the visionary leaders who have guided JCI Ponda through the years
+              </p>
+            </div>
           </div>
-      </div>
-    
-    </div>
+
+        </div>
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md image">
           {/* <div className="text-center mb-6">
             <p className="text-gray-700 dark:text-gray-300">
@@ -208,44 +211,44 @@ export default function AboutPage() {
       </Section>
 
       {/* Leaders Section */}
-    <Section title="" >
-    {/* National Leaders */}
-    <div className="mb-12">
-    <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
-    <h2 className="text-2xl font-serif text-blue-800 font-semibold">ACHIVEMENTS OF PAST PRESIDENTS</h2>
-  </div>
-      <div className="top flex justify-center gap-8 flex-wrap ">
-        {leaders.national.map((leader, index) => (
-          <AnimatedCard key={index} direction="up" delay={index * 150}>
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[350px] flex flex-col items-center">
-              <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
-                <img
-                  src={leader.image}
-                  alt={leader.name}
-                  className="card-image"
-                />
-              </div>
-              <div className="flex flex-col items-center flex-grow">
-                <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
-                <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                <div className="flex space-x-4 mt-auto">
-                  <a
-                    href={leader.social.instagram}
-                    className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
-                  >
-                    <Instagram className="h-5 w-5" />
-                  </a>
+      <Section title="" >
+        {/* National Leaders */}
+        <div className="mb-12">
+          <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
+            <h2 className="text-2xl font-serif text-blue-800 font-semibold">ACHIVEMENTS OF PAST PRESIDENTS</h2>
+          </div>
+          <div className="top flex justify-center gap-8 flex-wrap ">
+            {leaders.national.map((leader, index) => (
+              <AnimatedCard key={index} direction="up" delay={index * 150}>
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[350px] flex flex-col items-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
+                    <img
+                      src={leader.image}
+                      alt={leader.name}
+                      className="card-image"
+                    />
+                  </div>
+                  <div className="flex flex-col items-center flex-grow">
+                    <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
+                    <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
+                    <div className="flex space-x-4 mt-auto">
+                      <a
+                        href={leader.social.instagram}
+                        className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+                      >
+                        <Instagram className="h-5 w-5" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </AnimatedCard>
-        ))}
-      </div>
+              </AnimatedCard>
+            ))}
+          </div>
+        </div>
+      </Section>
     </div>
-    </Section>
-  </div>
 
-    
+
   )
 }
 
