@@ -15,7 +15,7 @@ This responsive and dynamic platform reflects the spirit of Junior Chamber Inter
 
 -  **Shrinivas Inamdar**  
 -  **Pranav Kerkar**  
--  **Ashden Mascarenhas**  
+-  **Lauren Rodrigues**  
 -  **P Jayesh Naidu**  
 -  **Aarth Vajandhar**
 
