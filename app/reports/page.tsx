@@ -5,6 +5,8 @@ import { Section } from "@/components/section"
 import { Card } from "@/components/card"
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import { AnimatedCard } from "@/components/animated-card"
 
 // Sample data for reports
 const allReports = [
@@ -13,7 +15,7 @@ const allReports = [
     description: "A comprehensive report on the outcomes and impact of our flagship leadership development event.",
     image: "/placeholder.svg?height=200&width=300",
     date: "15 Mar 2024",
-    link: "/events/leadership-workshop",
+    link: "/reports/leadership-conference-2024",
   },
   {
     title: "Community Clean-up Drive",
@@ -68,11 +70,19 @@ export default function ReportsPage() {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-16 text-center">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Reports</h1>
-          <p className="text-xl max-w-2xl mx-auto">Explore detailed reports of our past events and initiatives</p>
-        </div>
+      <div style={{ height: '212px' }} className="relative w-full  bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-start text-center space-y-4 pt-12">
+        {/* Decorative Bubbles */}
+        <div className="absolute top-10 left-10 w-32 h-32 bg-white opacity-10 rounded-full"></div>
+        <div className="absolute bottom-10 right-10 w-48 h-48 bg-white opacity-10 rounded-full"></div>
+        <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-white opacity-5 rounded-full"></div>
+
+        {/* Centered Texts */}
+        <h1 className="text-5xl md:text-5xl font-extrabold text-white drop-shadow-lg">
+          Reports
+        </h1>
+        <p className="text-lg sm:text-lg md:text-lg lg:text-xl  font-medium text-white drop-shadow-md">
+          Explore detailed reports of our past events and initiatives
+        </p>
       </div>
 
       {/* Search Section */}
@@ -102,6 +112,8 @@ export default function ReportsPage() {
                 date={report.date}
                 link={report.link}
                 linkText="View Report"
+                index={index}
+                direction={index % 2 === 0 ? "left" : "right"}
               />
             ))}
           </div>
@@ -111,6 +123,9 @@ export default function ReportsPage() {
           </div>
         )}
       </Section>
+
+      {/* PR Section */}
+    
     </div>
   )
 }
