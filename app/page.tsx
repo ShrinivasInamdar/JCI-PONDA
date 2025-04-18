@@ -13,7 +13,7 @@ import { Poppins } from 'next/font/google';
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '600', '700']// include weights you plan to use
-}); 
+});
 // Sample data for carousel
 const carouselSlides = [
   {
@@ -189,7 +189,7 @@ export default function Home() {
         <div className="flex justify-center mb-8">
           <AnimatedCard direction="fade">
             <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500" id="container">
-              <img src="/JCI LOGO.png" alt="JCI Logo" id="img" />
+              <img src="/jcitm.png" alt="JCI Logo" id="img" />
             </div>
           </AnimatedCard>
         </div>
@@ -276,6 +276,7 @@ export default function Home() {
           <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
             <h2 className="text-2xl font-serif text-blue-800 font-semibold">Leaders 2025</h2>
           </div>
+          <h3 className="text-2xl font-serif  text-center text-blue-800 font-semibold mt-7">National Leaders</h3>
           <div className="top flex justify-center gap-8 flex-wrap ">
             {leaders.national.map((leader, index) => (
               <AnimatedCard key={index} direction="up" delay={index * 150}>
@@ -308,42 +309,10 @@ export default function Home() {
         {/* Zone Leaders and Local Organisation President in a horizontal line */}
         <div className="flex flex-col lg:flex-row justify-center mb-12 gap-6 mx-4 lg:mx-16 mt-4">
           {/* Zone Leaders */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full">
             <h3 className="text-2xl font-serif  text-center text-blue-800 font-semibold">Zone Leaders</h3>
-            <div className="flex justify-center gap-8 flex-wrap">
+            <div className="flex justify-center gap-8 flex-wrap mt-5">
               {leaders.zone.map((leader, index) => (
-                <AnimatedCard key={index} direction="up" delay={index * 150}>
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[350px] flex flex-col items-center">
-                    <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
-                      <img
-                        src={leader.image || "/placeholder.svg"}
-                        alt={leader.name}
-                        className="card-image"
-                      />
-                    </div>
-                    <div className="flex flex-col items-center flex-grow">
-                      <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
-                      <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                      <div className="flex space-x-4 mt-auto">
-                        <a
-                          href={leader.social.instagram}
-                          className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
-                        >
-                          <Instagram className="h-5 w-5" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </AnimatedCard>
-              ))}
-            </div>
-          </div>
-
-          {/* Local Organisation President */}
-          <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-            <h3 className="text-2xl font-serif  text-center text-blue-800 font-semibold">Local Organisation President</h3>
-            <div className="flex justify-center">
-              {leaders.local.map((leader, index) => (
                 <AnimatedCard key={index} direction="up" delay={index * 150}>
                   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[350px] flex flex-col items-center">
                     <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
@@ -372,9 +341,45 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Local Organisation President */}
+        <div className="w-full flex flex-col items-center mt-8">
+  <h3 className="text-2xl font-serif text-center text-blue-800 font-semibold">
+    Local Organisation President
+  </h3>
+
+  <div className="flex justify-center mt-5 flex-wrap gap-6">
+    {leaders.local.map((leader, index) => (
+      <AnimatedCard key={index} direction="up" delay={index * 150}>
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[350px] flex flex-col items-center">
+          {/* Circular image */}
+          <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
+            <img
+              src={leader.image || "/placeholder.svg"}
+              alt={leader.name}
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <div className="flex flex-col items-center flex-grow">
+            <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
+            <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
+            <div className="flex space-x-4 mt-auto">
+              <a
+                href={leader.social.instagram}
+                className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </AnimatedCard>
+    ))}
+  </div>
+</div>
+
+
 
       </Section>
-
       {/* Upcoming Events Section */}
       <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
         <h2 className="text-2xl font-serif text-blue-800 font-semibold">Upcoming Events</h2>
