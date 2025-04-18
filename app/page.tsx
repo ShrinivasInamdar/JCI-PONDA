@@ -61,42 +61,30 @@ const pastEvents = [
   },
 ]
 
-// Sample data for JCI pillars
 const jciPillars = [
   {
-    title: "Individual Development",
-    frontDescription: "Grow personally and professionally",
-    backDescription:
-      "Opportunities for personal growth through training programs, workshops, and leadership experiences that enhance your skills and capabilities.",
-    icon: "👤",
+    title: "Leadership development programs",
+    icon: "/pillar_icons/leadership.png"
   },
   {
-    title: "Community Action",
-    frontDescription: "Create positive change",
-    backDescription:
-      "Engage in meaningful projects that address community needs and create sustainable impact through collective action and innovative solutions.",
-    icon: "🤝",
+    title: "Self-development trainings",
+    icon: "/pillar_icons/selfdevelopment.png"
   },
   {
-    title: "Business & Entrepreneurship",
-    frontDescription: "Develop business acumen",
-    backDescription:
-      "Access to networking opportunities, business skills development, and entrepreneurial support to help you succeed in your professional endeavors.",
-    icon: "💼",
+    title: "Business development connections",
+    icon: "/pillar_icons/businessdevlopment.png"
   },
   {
-    title: "International Cooperation",
-    frontDescription: "Connect globally",
-    backDescription:
-      "Build international connections and understanding through cross-cultural exchanges, global conferences, and collaborative projects worldwide.",
-    icon: "🌎",
+    title: "Community benefitting projects",
+    icon: "/pillar_icons/community.png"
   },
   {
-    title: "Leadership",
-    frontDescription: "Lead with purpose",
-    backDescription:
-      "Develop leadership skills through hands-on experience, mentorship, and opportunities to lead projects and teams at local and international levels.",
-    icon: "⭐",
+    title: "Uplifting the economically deprived",
+    icon: "/pillar_icons/uplifting.png"
+  },
+  {
+    title: "Together building a better world",
+    icon: "/pillar_icons/world.png"
   },
 ]
 
