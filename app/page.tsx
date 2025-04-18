@@ -39,7 +39,7 @@ const pastEvents = [
     title: "Community Clean-up Drive",
     description:
       "We organized a community clean-up drive at Ponda Beach, collecting over 200kg of waste and raising awareness about environmental conservation.",
-      image: "/placeholder.svg?height=200&width=300",
+    image: "/placeholder.svg?height=200&width=300",
     date: "15 Mar 2025",
     link: "#",
   },
@@ -47,7 +47,7 @@ const pastEvents = [
     title: "Leadership Workshop",
     description:
       "A workshop focused on developing leadership skills among youth, featuring speakers from various industries sharing their experiences.",
-      image: "/placeholder.svg?height=200&width=300",
+    image: "/placeholder.svg?height=200&width=300",
     date: "28 Feb 2025",
     link: "/events/leadership-workshop",
   },
@@ -55,7 +55,7 @@ const pastEvents = [
     title: "Health Awareness Camp",
     description:
       "Free health check-ups and awareness sessions on preventive healthcare for the local community members.",
-      image: "/placeholder.svg?height=200&width=300",
+    image: "/placeholder.svg?height=200&width=300",
     date: "10 Feb 2025",
     link: "/events/health-camp",
   },
@@ -64,27 +64,27 @@ const pastEvents = [
 const jciPillars = [
   {
     title: "Leadership development programs",
-    icon: "/pillar_icons/leadership.png"
+    icon: "/pillars_icons/leadership.png"
   },
   {
     title: "Self-development trainings",
-    icon: "/pillar_icons/selfdevelopment.png"
+    icon: "/pillars_icons/selfdevelopment.png"
   },
   {
     title: "Business development connections",
-    icon: "/pillar_icons/businessdevlopment.png"
+    icon: "/pillars_icons/businessdevelopment.png"
   },
   {
     title: "Community benefitting projects",
-    icon: "/pillar_icons/community.png"
+    icon: "/pillars_icons/community.png"
   },
   {
     title: "Uplifting the economically deprived",
-    icon: "/pillar_icons/uplifting.png"
+    icon: "/pillars_icons/uplifting.png"
   },
   {
     title: "Together building a better world",
-    icon: "/pillar_icons/world.png"
+    icon: "/pillars_icons/world.png"
   },
 ]
 
@@ -189,7 +189,7 @@ export default function Home() {
         <div className="flex justify-center mb-8">
           <AnimatedCard direction="fade">
             <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500" id="container">
-              <img src="/JCI LOGO.png" alt="JCI Logo" id="img" />
+              <img src="/jcitm.jpg" alt="JCI Logo" id="img" />
             </div>
           </AnimatedCard>
         </div>
@@ -233,8 +233,8 @@ export default function Home() {
         </div>
       </div>
 
-     {/* JCI Pillars Section */}
-     <Section
+      {/* JCI Pillars Section */}
+      <Section
         title="What's in it for you - The JCI Experience"
         description="Discover how JCI empowers young leaders"
         className="bg-gray-50 dark:bg-gray-900"
@@ -420,7 +420,7 @@ export default function Home() {
           <Card
             title="Leadership Workshop 2025"
             description="An intensive workshop focused on developing essential leadership skills for young professionals in our community."
-            image= "/event_photos/32.jpg?height=200&width=300"
+            image="/event_photos/32.jpg?height=200&width=300"
             date="15 Mar 2025"
             link="/events/leadership-workshop"
             linkText="Read More"
