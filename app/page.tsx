@@ -245,45 +245,40 @@ export default function Home() {
         </div>
       </div>
 
-      {/* JCI Pillars Section */}
-      <Section
-        title="What's in it for you - The 5 Pillars of JCI"
-        description="Discover the core areas that define the JCI experience"
+     {/* JCI Pillars Section */}
+     <Section
+        title="What's in it for you - The JCI Experience"
+        description="Discover how JCI empowers young leaders"
         className="bg-gray-50 dark:bg-gray-900"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {jciPillars.map((pillar, index) => {
-            // Define different gradients for each pillar
             const gradients = [
-              "from-blue-500 to-indigo-600",
-              "from-green-500 to-teal-600",
-              "from-purple-500 to-pink-600",
-              "from-yellow-500 to-orange-600",
-              "from-red-500 to-pink-600",
-            ]
+              "from-cyan-600 to-blue-700",     // Leadership (clear + calm)
+              "from-purple-600 to-pink-500",   // Self-development (vibrant but balanced)
+              "from-teal-600 to-green-500",    // Business connections (strong contrast)
+              "from-orange-600 to-yellow-500", // Community projects (careful: light icons might clash)
+              "from-rose-600 to-red-500",      // Uplifting (rich warm tones)
+              "from-indigo-600 to-blue-800",   // Together better world (deep tones, great contrast)
+            ];
 
             return (
               <AnimatedCard key={index} direction="up" delay={index * 100}>
-                <div className="flip-card h-64">
-                  <div className="flip-card-inner">
-                    <div
-                      className={`flip-card-front bg-gradient-to-br ${gradients[index]} text-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center`}
-                    >
-                      <div className="text-4xl mb-4">{pillar.icon}</div>
-                      <h3 className="text-xl font-bold mb-2">{pillar.title}</h3>
-                      <p className="text-center">{pillar.frontDescription}</p>
-                    </div>
-                    <div
-                      className={`flip-card-back bg-gradient-to-br ${gradients[(index + 2) % 5]} text-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center`}
-                    >
-                      <p className="text-center">{pillar.backDescription}</p>
-                    </div>
+                <div className={`bg-gradient-to-br ${gradients[index]} text-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center h-[200px] hover:shadow-lg transition-shadow`}>
+                  <div className="w-16 h-16 mb-3">
+                    <img
+                      src={pillar.icon}
+                      alt={pillar.title}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
+                  <h3 className="text-lg font-bold mb-2 text-center">{pillar.title}</h3>
                 </div>
               </AnimatedCard>
-            )
+            );
           })}
         </div>
+
       </Section>
 
       {/* Leaders Section */}
