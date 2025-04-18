@@ -29,9 +29,11 @@ const leaders = {
       name: "JFS ASHOK BHAT",
       position: (
         <>
-          National Vice President
+          <br />
+          NATIONAL VICE PRESIDENT
           <br />
           AREA - A , JCI INDIA
+          <br />
         </>
       ),
       image: "/leaders_images/nvp.png",
@@ -42,12 +44,14 @@ const leaders = {
     },
 
     {
-      name: "JFS ASHOK BHAT",
+      name: "JFS Mukesh",
       position: (
         <>
-          National Vice President
+          <br />
+          ZONE OFFICER
           <br />
           AREA - A , JCI INDIA
+          <br />
         </>
       ),
       image: "/leaders_images/nvp.png",
@@ -56,6 +60,209 @@ const leaders = {
         instagram: "#",
       },
     },
+
+    {
+      name: "JFS Dhunhill",
+      position: (
+        <>
+          <br />
+          ZONE VICE PRESIDENT
+          <br />
+          JCI INDIA
+          <br />
+          Half Centurion LO
+          <br />
+        </>
+      ),
+      image: "/leaders_images/ankur.jpg",
+      region: "",
+      social: {
+        instagram: "#",
+      },
+    },
+
+    {
+      name: "JFS Sneha",
+      position: (
+        <>
+          <br />
+          ZONE DIRECTOR - LADY JAYCEE 
+          <br />
+          Half Centurion LO
+          <br />
+          Outstanding President of Zone XI, Runners-up 
+          <br />
+          Outstanding LO of Zone, Runners-up 
+          <br />
+          100 % efficient LO
+        </>
+      ),
+      image: "/leaders_images/ankur.jpg",
+      region: "",
+      social: {
+        instagram: "#",
+      },
+    },
+
+    {
+      name: "JFS Shashikant Phadte",
+      position: (
+        <>
+          JCI INDIA
+          <br />
+          100% Efficient LO
+          <br />
+        </>
+      ),
+      image: "/leaders_images/ankur.jpg",
+      region: "",
+      social: {
+        instagram: "#",
+      },
+    },
+
+    {
+      name: "JFS Thejus Shenoy",
+      position: (
+        <>
+          <br />
+          ZONE OFFICER
+          <br />
+          JCI INDIA
+          <br />
+          1 LO Extension 
+          <br />
+        </>
+      ),
+      image: "/leaders_images/ankur.jpg",
+      region: "",
+      social: {
+        instagram: "#",
+      },
+    },
+
+    {
+      name: "JFS Rahul",
+      position: (
+        <>
+          
+          <br />
+          
+        </>
+      ),
+      image: "/leaders_images/ankur.jpg",
+      region: "",
+      social: {
+        instagram: "#",
+      },
+    },
+
+    {
+      name: "JFS Varun Pandey",
+      position: (
+        <>
+          <br />
+          ZONE OFFICER
+          <br />
+          JCI INDIA
+          <br />
+        </>
+      ),
+      image: "/leaders_images/ankur.jpg",
+      region: "",
+      social: {
+        instagram: "#",
+      },
+    },
+
+    {
+      name: "JFS Akshay Patil",
+      position: (
+        <>
+          <br />
+          ZONE Director Business
+          <br />
+          JCI INDIA
+          <br />
+          Half Centurion LO 
+          <br />
+          Golden Collar
+          <br />
+        </>
+      ),
+      image: "/leaders_images/ankur.jpg",
+      region: "",
+      social: {
+        instagram: "#",
+      },
+    },
+
+
+    {
+      name: "JFS Janhavi Naik",
+      position: (
+        <>
+          JCI INDIA
+          <br />
+          Outstanding LO of Zone XI, Winner 
+          <br />
+          Outstanding JCI Officer winner at National Convention 
+          <br />
+          100 % efficient LO
+          <br />
+          Outstanding OLOSP project 
+          <br />
+          1 LO extension 
+          <br />
+          Golden Gavel
+          <br />
+          Half Centurion LO
+
+        </>
+      ),
+      image: "/leaders_images/ankur.jpg",
+      region: "",
+      social: {
+        instagram: "#",
+      },
+    },
+
+    {
+      name: "JFS Akash",
+      position: (
+        <>
+          
+          <br />
+          JCI INDIA
+          <br />
+          Recognition for 50 glorious years at National Meet. 
+          <br />
+        </>
+      ),
+      image: "/leaders_images/ankur.jpg",
+      region: "",
+      social: {
+        instagram: "#",
+      },
+    },
+
+    {
+      name: "JFS Vadiraj",
+      position: (
+        <>
+          
+          <br />
+          JCI INDIA
+          <br />
+        </>
+      ),
+      image: "/leaders_images/ankur.jpg",
+      region: "",
+      social: {
+        instagram: "#",
+      },
+    },
+
   ],
 
 }
@@ -93,19 +300,19 @@ export default function AboutPage() {
               <div className="md:w-2/3">
                 <h3 className="text-2xl font-serif font-bold mb-4">Junior Chamber International</h3>
                 <p className="mb-4 font-light">
-                  Junior Chamber International (JCI) is a non-profit international non-governmental organization of
-                  young people between 18 and 40 years old. It has members in about 124 countries, and regional or
-                  national organizations in most of them.
+                Junior Chamber International (JCI) is a worldwide federation of young leaders and entrepreneurs with nearly five lakh active members and millions of alumni spread across more than 115 countries.
                 </p>
                 <p className="mb-4 font-light">
-                  JCI's mission is to provide development opportunities that empower young people to create positive
-                  change. The organization focuses on four main areas of opportunity: business development, individual
-                  development, community development, and international cooperation.
+                JCI orgin can be traced back to 1915 to the city of St. Louis, Missouri, USA where Sir Henry Giessenbier with 32 other young men established Young Men's Progressive Civic Association (YMPCA)
+                </p>
+                <p className="mb-4 font-light">
+                In 1916, the name was changed from YMPCA to "Junior Citizens", commonly called "JCs", which later became "Jaycees"
+                </p>
+                <p className="mb-4 font-light">
+                Their work so impressed the St. Louis Junior chamber of Commerce that they asked these young men in 1918 to adopt the name “Junior Chamber of Commerce” which later became “Junior Chamber”
                 </p>
                 <p className="font-light">
-                  Through these areas, JCI members develop skills, knowledge, and understanding to make informed
-                  decisions and take action. JCI members are young active citizens—people who are dedicated to creating
-                  positive change in their communities.
+                By 1944, the movement had spread through 18 countries officially forming "Junior Chamber International", welcoming people between age 18 and 40 years
                 </p>
               </div>
             </div>
@@ -121,18 +328,16 @@ export default function AboutPage() {
               <div className="md:w-2/3">
                 <h3 className="text-2xl font-serif font-bold mb-4">JCI India</h3>
                 <p className="mb-4 font-light">
-                  JCI India is one of the largest national organizations within the JCI global network. Established in
-                  1947, JCI India has grown to become a significant force for positive change across the country.
+                JCI India is a voluntary organization, membership based NGO working in India since 1949 for developing the leadership skills of young men and women of this country. It is affiliated to Junior Chamber International(JCI),a worldwide federation of young leaders and entrepreneurs founded in 1944, having headquarter at Chester Field USA. Currently it has over 200,000 active members and more than one million graduates, in over 100 countries and 6,000 communities.
                 </p>
                 <p className="mb-4 font-light">
-                  With hundreds of local chapters spread throughout India, JCI India provides a platform for young
-                  Indians to develop leadership skills, social responsibility, entrepreneurship, and fellowship
-                  necessary to create positive change in their communities.
+                JCI India is the Second largest Member Nation of Junior Chamber International. Currently we are active in more than 26 states and union territories across India.
+                </p>
+                <p className="mb-4 font-light">
+                The membership is offered to everybody regardless of color, cast and creed between the age of 18 -40 years. Junior Chamber International India is registered under Societies Registration Act, Bombay Public Trust Act and Income Tax Act of India.
                 </p>
                 <p className="font-light">
-                  JCI India conducts numerous national programs focused on community development, skill enhancement, and
-                  leadership training. These initiatives have touched millions of lives and continue to make a
-                  significant impact on Indian society.
+                In the last 64 years we are able to produce thousands of social and business leaders all over the country through our intensive project based training activities
                 </p>
               </div>
               <div className="md:w-1/3">
@@ -221,13 +426,13 @@ export default function AboutPage() {
             {leaders.national.map((leader, index) => (
               <AnimatedCard key={index} direction="up" delay={index * 150}>
                 <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[350px] flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
+                  {/* <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
                     <img
                       src={leader.image}
                       alt={leader.name}
                       className="card-image"
                     />
-                  </div>
+                  </div> */}
                   <div className="flex flex-col items-center flex-grow">
                     <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
                     <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
