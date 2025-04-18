@@ -10,33 +10,7 @@ import jciponda from "./images/jciponda.jpg"
 
 const leaders = {
   national: [
-    {
-      name: "JFS ANKUR JHUNJHUNWALA",
-      position: (
-        <>
-          NATIONAL PRESIDENT
-          <br />
-          JCI INDIA
-        </>
-      ),
-      image: "/leaders_images/ankur.jpg",
-      region: "",
-    },
-    {
-      name: "JFS ASHOK BHAT",
-      position: (
-        <>
-          <br />
-          NATIONAL VICE PRESIDENT
-          <br />
-          AREA - A , JCI INDIA
-          <br />
-        </>
-      ),
-      image: "/leaders_images/nvp.png",
-      region: "",
-    },
-
+    
     {
       name: "JFS Mukesh",
       position: (
