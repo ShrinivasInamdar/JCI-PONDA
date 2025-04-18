@@ -263,3 +263,7 @@
 .fc{
   color: blueviolet;
 }
+.imagewidth{
+ display: flex;
+ justify-content: center;
+}

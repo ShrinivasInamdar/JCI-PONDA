@@ -13,8 +13,8 @@ import { Button } from "@/components/ui/button"
 // =============================================
 const events = {
   // Event 1: Community Clean-up Drive
-  "community-cleanup": {
-    title: "Community Clean-up Drive",
+  "JCI-Action-Framework": {
+    title: "JCI Action Framework",
     date: "15 Mar 2025",
     location: "Ponda Beach, Goa",
     organizer: "Environmental Committee",
@@ -181,16 +181,16 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
 
       <div className="container mx-auto px-4 py-8">
         {/* Main Image */}
-        <div className="mb-8">
+        <div className="mb-8 imagewidth">
           <img
             src={event.mainImage || "/placeholder.svg"}
             alt={`${event.title} - Main Image`}
-            className="w-full h-[400px] object-cover rounded-lg shadow-md"
+            className=" w-[500px] h-[550px] object-cover rounded-lg shadow-md"
           />
         </div>
 
         {/* Image Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
           {event.images.map((image, index) => (
             <img
               key={index}
@@ -199,7 +199,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
               className="w-full h-48 object-cover rounded-lg shadow-md"
             />
           ))}
-        </div>
+        </div> */}
 
         {/* Event Description */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
