@@ -268,32 +268,31 @@ const allReports = [
 
 export default function ReportsPage() {
   const [searchTerm, setSearchTerm] = useState("")
+  const [showAll, setShowAll] = useState(false)
 
-  // Filter reports based on search term
   const filteredReports = allReports.filter(
     (report) =>
       report.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      report.description.toLowerCase().includes(searchTerm.toLowerCase()),
+      report.description.toLowerCase().includes(searchTerm.toLowerCase())
   )
+
+  const reportsToDisplay = showAll ? filteredReports : filteredReports.slice(0, 9)
 
   return (
     <div>
-      <div style={{ height: '212px' }} className="relative w-full  bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-start text-center space-y-4 pt-12">
-        {/* Decorative Bubbles */}
+      {/* Header */}
+      <div style={{ height: '212px' }} className="relative w-full bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden flex flex-col items-center justify-start text-center space-y-4 pt-12">
         <div className="absolute top-10 left-10 w-32 h-32 bg-white opacity-10 rounded-full"></div>
         <div className="absolute bottom-10 right-10 w-48 h-48 bg-white opacity-10 rounded-full"></div>
         <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-white opacity-5 rounded-full"></div>
 
-        {/* Centered Texts */}
-        <h1 className="text-5xl md:text-5xl font-extrabold text-white drop-shadow-lg">
-          Reports
-        </h1>
-        <p className="text-lg sm:text-lg md:text-lg lg:text-xl  font-medium text-white drop-shadow-md">
+        <h1 className="text-5xl md:text-5xl font-extrabold text-white drop-shadow-lg">Reports</h1>
+        <p className="text-lg lg:text-xl font-medium text-white drop-shadow-md">
           Explore detailed reports of our past events and initiatives
         </p>
       </div>
 
-      {/* Search Section */}
+      {/* Search */}
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-md mx-auto relative">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
@@ -310,31 +309,40 @@ export default function ReportsPage() {
       {/* Reports Section */}
       <Section title="Event Reports" description="Detailed documentation of our events and their impact">
         {filteredReports.length > 0 ? (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredReports.map((report, index) => (
-              <Card
-                key={index}
-                title={report.title}
-                description={report.description}
-                image={report.image}
-                date={report.date}
-                link={report.link}
-                linkText="View Report"
-                index={index}
-                direction={index % 2 === 0 ? "left" : "right"}
-              />
-            ))}
-          </div>
+          <>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {reportsToDisplay.map((report, index) => (
+                <Card
+                  key={index}
+                  title={report.title}
+                  description={report.description}
+                  image={report.image}
+                  date={report.date}
+                  link={report.link}
+                  linkText="View Report"
+                  index={index}
+                  direction={index % 2 === 0 ? "left" : "right"}
+                />
+              ))}
+            </div>
+
+            {filteredReports.length > 8 && (
+              <div className="text-center mt-8">
+                <button
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
+                  onClick={() => setShowAll(!showAll)}
+                >
+                  {showAll ? "Read Less" : "Read More"}
+                </button>
+              </div>
+            )}
+          </>
         ) : (
           <div className="text-center py-8">
             <p className="text-gray-600 dark:text-gray-300">No reports found matching your search criteria.</p>
           </div>
         )}
       </Section>
-
-      {/* PR Section */}
-    
     </div>
   )
 }
-
