@@ -12,10 +12,10 @@ import { Button } from "@/components/ui/button"
 // 4. Make sure to update the pastEvents array in /app/events/page.tsx to link to this event
 // =============================================
 const events = {
-  // Event 1: Community Clean-up Drive
-  "community-cleanup": {
-    title: "Community Clean-up Drive",
-    date: "15 Mar 2025",
+  // Event 1: JCI Action Framework
+  "JCI-Action-Framework": {
+    title: "JCI Action Framework",
+    date: "31 Mar 2025",
     location: "Ponda Beach, Goa",
     organizer: "Environmental Committee",
     mainImage: "/placeholder.svg?height=500&width=1200", // Replace with actual image path
@@ -46,10 +46,10 @@ const events = {
     ],
   },
 
-  // Event 2: Leadership Workshop
-  "leadership-workshop": {
-    title: "Leadership Workshop",
-    date: "28 Feb 2025",
+  // Event 2: Effective Public Speaking
+  "Effective-Public-Speaking": {
+    title: "Effective Public Speaking",
+    date: "29 Mar 2025",
     location: "JCI Ponda Hall, Ponda",
     organizer: "Training Committee",
     mainImage: "/placeholder.svg?height=500&width=1200",
@@ -79,10 +79,10 @@ const events = {
     ],
   },
 
-  // Event 3: Health Awareness Camp
-  "health-camp": {
-    title: "Health Awareness Camp",
-    date: "10 Feb 2025",
+  // Event 3: JCOM Meet 1.0
+  "JCOM-Meet-1.0": {
+    title: "JCOM Meet 1.0",
+    date: "29 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
     mainImage: "/placeholder.svg?height=500&width=1200",
@@ -112,17 +112,916 @@ const events = {
     ],
   },
 
-  // =============================================
-  // ADD NEW EVENTS HERE
-  // =============================================
-  // Copy the structure above and create a new event object
-  // Make sure the key (e.g., "health-camp") matches the URL slug you want to use
-  // Example:
-  // "youth-leadership-summit-2025": {
-  //   title: "Youth Leadership Summit 2025",
-  //   date: "15 Jul 2025",
-  //   ...
-  // },
+  "Sport's-Day": {
+    title: "Sport's Day",
+    date: "16 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+
+  "Educational-Outreach-Program": {
+    title: "Educational Outreach Program",
+    date: "15 Mar b2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+
+  "Gulal-Holi-Party": {
+    title: "Gulal Holi Party",
+    date: "14 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+
+  "Annual-Running-Race": {
+    title: "JCOM Meet 1.0",
+    date: "12 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+
+  "53rd-Charter-Night": {
+    title: "JCOM Meet 1.0",
+    date: "10 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+
+  "Women's-Day-Rally": {
+    title: "Aboli Week: Women's Day Rally",
+    date: "08 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+
+  "Women-of-Worth": {
+    title: "Aboli Week: Women of Worth",
+    date: "08 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+
+  "DAY-6": {
+    title: "Aboli Week: DAY 6",
+    date: "07 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+
+  "DAY-5": {
+    title: "Aboli week: Day 5",
+    date: "06 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+
+  "DAY-4": {
+    title: "Aboli week: Day 4",
+    date: "05 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "DAY-3": {
+    title: "Aboli week: Day 3",
+    date: "04 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "DAY-2": {
+    title: "Aboli week: Day 2",
+    date: "03 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "DAY-1": {
+    title: "Aboli week: Breast Cancer Screening Camp",
+    date: "02 Mar 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "Salute-the-Silent-Worker": {
+    title: "Salute the Silent Worker",
+    date: "23 Feb 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "Daan-at-Maa-Ashroghar": {
+    title: "Daan at Maa Ashroghar",
+    date: "23 Feb 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "ldmt": {
+    title: "Lo Development Management Training",
+    date: "21 Feb 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "Water-Distribution": {
+    title: "Water Distribution-Shivjayanthi",
+    date: "19 Feb 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "Valentine's-Day-Contest": {
+    title: "Valentine's Day Contest-Ishq Wala Frame",
+    date: "14 Feb 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "cultural-exchange-program": {
+    title: "Cultural Exchange Program",
+    date: "08 Feb 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "Rising-for-a-Cause": {
+    title: "Rising for a Cause",
+    date: "04 Feb 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "53rd-installation": {
+    title: "JCI'sPonda 53rd installation",
+    date: "26 Jan 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "Republic-Day Celebration": {
+    title: "Republic Day Celebration",
+    date: "26 Jan 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "PSEW": {
+    title: "JPublic Speaking & Entreprenurship Workshop",
+    date: "20 Jan 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "Swagat": {
+    title: "Jwagat a Transformational Orientation Program",
+    date: "19 Jan 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "National-Youth-Day": {
+    title: "National Youth Day: Felicitating Youth Icon",
+    date: "19 Jan 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "Chapcon-2025": {
+    title: "Chapcon 2025",
+    date: "19 Jan 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "Training-on-Startups": {
+    title: "National Youth Day: Training on Startups",
+    date: "18 Jan 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "SD&C": {
+    title: "National Youth Day: Skill Development & Curiosity",
+    date: "17 Jan 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+  "Presidential Academy": {
+    title: "Presidential Academy",
+    date: "11 Jan 2025",
+    location: "Community Center, Ponda",
+    organizer: "Health Committee",
+    mainImage: "/placeholder.svg?height=500&width=1200",
+    images: [
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+      "/placeholder.svg?height=300&width=400",
+    ],
+    description: `
+      <p>The Health Awareness Camp organized by JCI Ponda provided free health check-ups and awareness sessions on preventive healthcare for the local community members, with a special focus on underprivileged sections of society.</p>
+      
+      <p>The camp was set up at the Community Center in Ponda and was operational from 9:00 AM to 5:00 PM. A team of 15 healthcare professionals, including doctors, nurses, and paramedical staff, volunteered their services for the camp. The camp offered various health services, including general health check-ups, blood pressure monitoring, blood sugar testing, eye check-ups, and dental check-ups.</p>
+      
+      <p>In addition to the check-ups, several awareness sessions were conducted throughout the day on topics such as nutrition, hygiene, maternal health, and prevention of common diseases. These sessions were designed to be interactive, allowing participants to ask questions and seek clarification on health-related concerns.</p>
+      
+      <p>A special desk was set up to provide information about government health schemes and how to access them. Volunteers assisted community members in understanding the eligibility criteria and application process for these schemes.</p>
+      
+      <p>The camp also included a free medicine distribution counter, where prescribed medicines were provided to those in need. Additionally, nutritious food packets were distributed to all participants.</p>
+      
+      <p>The Health Awareness Camp was a significant success, serving over 300 community members and providing them with essential healthcare services and information. The initiative highlighted JCI Ponda's commitment to community welfare and public health.</p>
+    `,
+    impact: [
+      "Provided free health check-ups to over 300 community members",
+      "Conducted awareness sessions on preventive healthcare",
+      "Distributed free medicines to those in need",
+      "Connected community members with government health schemes",
+    ],
+  },
+
+
 }
 
 export default function EventDetailPage({ params }: { params: { slug: string } }) {

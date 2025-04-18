@@ -435,31 +435,31 @@ export default function Home() {
       <Section title="" description=" ">
         <div className="grid md:grid-cols-3 gap-6">
           <Card
-            title="Leadership Workshop 2025"
+            title="JCI Action Framework"
             description="An intensive workshop focused on developing essential leadership skills for young professionals in our community."
             image= "/event_photos/32.jpg?height=200&width=300"
             date="15 Mar 2025"
-            link="/events/leadership-workshop"
+            link="/events/JCI-Action-Framework"
             linkText="Read More"
             index={0}
             direction="up"
           />
           <Card
-            title="Environmental Awareness Drive"
+            title="Effective Public Speaking"
             description="A community initiative to raise awareness about environmental conservation and sustainable practices."
             image="/event_photos/31.jpg?height=200&width=300"
             date="28 Feb 2025"
-            link="/events/community-cleanup"
+            link="/events/Effective-Public-Speaking"
             linkText="Read More"
             index={1}
             direction="up"
           />
           <Card
-            title="Youth Entrepreneurship Summit"
+            title="JCOM Meet 1.0"
             description="A platform for young entrepreneurs to showcase their ideas and connect with mentors and investors."
             image="/event_photos/30.jpg?height=200&width=300"
             date="10 Feb 2025"
-            link="/events/health-camp"
+            link="/events/JCOM-Meet-1.0"
             linkText="Read More"
             index={2}
             direction="up"
