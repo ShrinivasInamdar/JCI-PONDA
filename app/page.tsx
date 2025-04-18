@@ -421,7 +421,7 @@ export default function Home() {
             title="JCI Action Framework"
             description="An intensive workshop focused on developing essential leadership skills for young professionals in our community."
             image="/event_photos/32.jpg?height=200&width=300"
-            date="15 Mar 2025"
+            date="31 Mar 2025"
             link="/events/JCI-Action-Framework"
             linkText="Read More"
             index={0}

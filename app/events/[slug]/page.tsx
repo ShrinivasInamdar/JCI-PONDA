@@ -12,10 +12,10 @@ import { Button } from "@/components/ui/button"
 // 4. Make sure to update the pastEvents array in /app/events/page.tsx to link to this event
 // =============================================
 const events = {
-  // Event 1: Community Clean-up Drive
+
   "JCI-Action-Framework": {
     title: "JCI Action Framework",
-    date: "15 Mar 2025",
+    date: "31 Mar 2025",
     location: "Ponda Beach, Goa",
     organizer: "Environmental Committee",
     mainImage: "/event_photos/32.jpg?height=500&width=1200", // Replace with actual image path
@@ -52,7 +52,7 @@ const events = {
     date: "29 Mar 2025",
     location: "JCI Ponda Hall, Ponda",
     organizer: "Training Committee",
-    mainImage: "/event_photos/31?height=500&width=1200",
+    mainImage: "/event_photos/31.jpg",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -1110,7 +1110,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
         </div>
 
         {/* Impact Section */}
-        <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg shadow-md p-6">
+        {/* <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-bold mb-4">Impact</h2>
           <ul className="space-y-2">
             {event.impact.map((item, index) => (
@@ -1122,12 +1122,12 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         {/* Navigation Buttons */}
         <div className="mt-8 flex justify-center">
           <Button asChild>
-            <Link href="/events">Back to Events</Link>
+            <Link href="/reports">Back to Events</Link>
           </Button>
         </div>
       </div>
