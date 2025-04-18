@@ -47,7 +47,7 @@ const teamMembers: {
     {
       name: "JC NAGRAJ SHANBHOG",
       position: "Treasurer",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/nagraj.jpg",
       description: "Managing the chapter's finances and ensuring transparent and efficient use of resources.",
       social: {
         facebook: "#",
@@ -59,7 +59,7 @@ const teamMembers: {
     {
       name: "JC SAMRUDHI NAIK",
       position: "Vice President - Management",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/samrudhi.jpg",
       description: "-",
       social: {
         facebook: "#",
@@ -69,7 +69,7 @@ const teamMembers: {
     {
       name: "JC ROCHELLE FERNANDES",
       position: "Vice President - Program",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/rochelle.jpg",
       description: "-",
       social: {
         facebook: "#",
@@ -79,7 +79,7 @@ const teamMembers: {
     {
       name: "JC DIPESH PATIL",
       position: "Vice President - Training",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/dipesh.jpg",
       description: "-",
       social: {
         facebook: "#",
@@ -89,7 +89,7 @@ const teamMembers: {
     {
       name: "JC DHANYA BHAT",
       position: "Vice President - Internationalism",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/dhanya.jpg",
       description: "-",
       social: {
         facebook: "#",
@@ -101,7 +101,7 @@ const teamMembers: {
     {
       name: "JC DARSHAN MANGUESHKAR",
       position: "Director Management",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/darshan.jpg",
       description: "-",
       social: {
         facebook: "#",
@@ -111,7 +111,7 @@ const teamMembers: {
     {
       name: "JC MAHADEV SHINDE",
       position: "Director Program",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/mahadev.jpg",
       description: "-",
       social: {
         facebook: "#",
@@ -121,7 +121,7 @@ const teamMembers: {
     {
       name: "JC Aniket Sawant",
       position: "Director Training",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/aniket.jpg",
       description: "-",
       social: {
         facebook: "#",
@@ -131,7 +131,7 @@ const teamMembers: {
     {
       name: "JC Netaji Jadhav",
       position: "Director Business",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/netaji.png",
       description: "-",
       social: {
         facebook: "#",
@@ -141,7 +141,7 @@ const teamMembers: {
     {
       name: "JC Rutvik Vaze",
       position: "Director Internationalism",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/rutvik.jpg",
       description: "-",
       social: {
         facebook: "#",
@@ -163,7 +163,7 @@ const teamMembers: {
   ],
   members: [
     {
-      name: "Thomas Brown",
+      name: "JC Janhavi Naik",
       position: "Member",
       image: "/placeholder.svg?height=200&width=200",
       description: "Active member contributing to various community development initiatives.",
@@ -173,7 +173,7 @@ const teamMembers: {
       },
     },
     {
-      name: "Sophia Martinez",
+      name: "JC ADITYA NIRMESH TYAGI",
       position: "Member",
       image: "/placeholder.svg?height=200&width=200",
       description: "Passionate about environmental conservation and sustainable development.",
@@ -183,7 +183,7 @@ const teamMembers: {
       },
     },
     {
-      name: "James Wilson",
+      name: "JC AKSHAY PATIL",
       position: "Member",
       image: "/placeholder.svg?height=200&width=200",
       description: "Focused on youth empowerment and education-related projects.",
@@ -192,6 +192,87 @@ const teamMembers: {
         instagram: "#",
       },
     },
+    {
+      name: "JC AMEY K SHET TILVE",
+      position: "Member",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "Focused on youth empowerment and education-related projects.",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "JC DHIRAJ JEETENDRA GOVEKAR",
+      position: "Member",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "Focused on youth empowerment and education-related projects.",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "JC NIKHIL RADHAKRISHNA",
+      position: "Member",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "Focused on youth empowerment and education-related projects.",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "JC SHUBHAMKAR JOG",
+      position: "Member",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "Focused on youth empowerment and education-related projects.",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "JC ANKITA JALMI",
+      position: "Member",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "Focused on youth empowerment and education-related projects.",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "JC AKASH MANGESHKAR",
+      position: "Member",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "Focused on youth empowerment and education-related projects.",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "JC ANITA P BASARKATTI",
+      position: "Member",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "Focused on youth empowerment and education-related projects.",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "JC PUJA VISHWAKARMA",
+      position: "Member",
+      image: "/placeholder.svg?height=200&width=200",
+      description: "Focused on youth empowerment and education-related projects.",
+      social: {
+        facebook: "#",
+        instagram: "#",
+      },
+    },
+    
   ],
 };
 
@@ -212,9 +293,9 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
         </div>
         <div className="p-4">
           <h3 className="text-lg font-semibold mb-2">{member.name}</h3>
-          <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
+          {/* <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
             {member.description !== "-" ? member.description : ""}
-          </p>
+          </p> */}
           <div className="flex space-x-3 mt-2">
             <a
               href={member.social.facebook}
