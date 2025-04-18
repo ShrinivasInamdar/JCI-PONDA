@@ -14,8 +14,8 @@ const allReports = [
     title: "JCI Action Framework",
     description: "A comprehensive report on the outcomes and impact of our flagship leadership development event.",
     image: "/event_photos/32.jpg?height=200&width=300",
-    date: "31 Mar 2025",
-    link: "/reports/leadership-conference-2025",
+    date: "15 Mar 2024",
+    link: "/events/JCI-Action-Framework",
   },
   {
     title: "Effective Public Speaking",

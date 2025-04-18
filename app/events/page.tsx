@@ -5,9 +5,10 @@ import { Section } from "@/components/section"
 import { Card } from "@/components/card"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 
-// Sample data for upcoming events
-const upcomingEvents = [
-  {
+// Sample data for upcoming events 
+// while adding data remove any[] 
+const upcomingEvents: any[] = [
+  /*{
     title: "Annual Leadership Conference",
     description:
       "Join us for a day of inspiring talks, workshops, and networking opportunities focused on developing leadership skills for the future.",
@@ -60,7 +61,7 @@ const upcomingEvents = [
     date: "12 Jul 2025",
     link: "#",
     linkText: "Register",
-  },
+  },*/
 ]
 
 // Sample data for past events
@@ -124,7 +125,7 @@ export default function EventsPage() {
                 <img
                   src="/placeholder.svg?height=400&width=800"
                   alt="Annual Calendar 2025"
-                  className="rounded-lg shadow-md hover:opacity-90 transition-opacity"
+                  className="rounded-lg shadow-md hover:opacity-90 transition-opacity imght"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/30 text-white font-bold text-xl rounded-lg">
                   Click to view Annual Calendar
@@ -135,7 +136,7 @@ export default function EventsPage() {
               <img
                 src="/placeholder.svg?height=800&width=1200"
                 alt="Annual Calendar 2025 - Full View"
-                className="w-full h-auto"
+                className="w-full h-full imght"
               />
             </DialogContent>
           </Dialog>

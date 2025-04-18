@@ -13,7 +13,7 @@ import { Poppins } from 'next/font/google';
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '600', '700']// include weights you plan to use
-});
+}); 
 // Sample data for carousel
 const carouselSlides = [
   {
@@ -39,7 +39,7 @@ const pastEvents = [
     title: "Community Clean-up Drive",
     description:
       "We organized a community clean-up drive at Ponda Beach, collecting over 200kg of waste and raising awareness about environmental conservation.",
-      image: "/placeholder.svg?height=200&width=300",
+    image: "/placeholder.svg?height=200&width=300",
     date: "15 Mar 2025",
     link: "#",
   },
@@ -47,7 +47,7 @@ const pastEvents = [
     title: "Leadership Workshop",
     description:
       "A workshop focused on developing leadership skills among youth, featuring speakers from various industries sharing their experiences.",
-      image: "/placeholder.svg?height=200&width=300",
+    image: "/placeholder.svg?height=200&width=300",
     date: "28 Feb 2025",
     link: "/events/leadership-workshop",
   },
@@ -55,48 +55,36 @@ const pastEvents = [
     title: "Health Awareness Camp",
     description:
       "Free health check-ups and awareness sessions on preventive healthcare for the local community members.",
-      image: "/placeholder.svg?height=200&width=300",
+    image: "/placeholder.svg?height=200&width=300",
     date: "10 Feb 2025",
     link: "/events/health-camp",
   },
 ]
 
-// Sample data for JCI pillars
 const jciPillars = [
   {
-    title: "Individual Development",
-    frontDescription: "Grow personally and professionally",
-    backDescription:
-      "Opportunities for personal growth through training programs, workshops, and leadership experiences that enhance your skills and capabilities.",
-    icon: "👤",
+    title: "Leadership development programs",
+    icon: "/pillars_icons/leadership.png"
   },
   {
-    title: "Community Action",
-    frontDescription: "Create positive change",
-    backDescription:
-      "Engage in meaningful projects that address community needs and create sustainable impact through collective action and innovative solutions.",
-    icon: "🤝",
+    title: "Self-development trainings",
+    icon: "/pillars_icons/selfdevelopment.png"
   },
   {
-    title: "Business & Entrepreneurship",
-    frontDescription: "Develop business acumen",
-    backDescription:
-      "Access to networking opportunities, business skills development, and entrepreneurial support to help you succeed in your professional endeavors.",
-    icon: "💼",
+    title: "Business development connections",
+    icon: "/pillars_icons/businessdevelopment.png"
   },
   {
-    title: "International Cooperation",
-    frontDescription: "Connect globally",
-    backDescription:
-      "Build international connections and understanding through cross-cultural exchanges, global conferences, and collaborative projects worldwide.",
-    icon: "🌎",
+    title: "Community benefitting projects",
+    icon: "/pillars_icons/community.png"
   },
   {
-    title: "Leadership",
-    frontDescription: "Lead with purpose",
-    backDescription:
-      "Develop leadership skills through hands-on experience, mentorship, and opportunities to lead projects and teams at local and international levels.",
-    icon: "⭐",
+    title: "Uplifting the economically deprived",
+    icon: "/pillars_icons/uplifting.png"
+  },
+  {
+    title: "Together building a better world",
+    icon: "/pillars_icons/world.png"
   },
 ]
 
@@ -247,43 +235,38 @@ export default function Home() {
 
       {/* JCI Pillars Section */}
       <Section
-        title="What's in it for you - The 5 Pillars of JCI"
-        description="Discover the core areas that define the JCI experience"
+        title="What's in it for you - The JCI Experience"
+        description="Discover how JCI empowers young leaders"
         className="bg-gray-50 dark:bg-gray-900"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {jciPillars.map((pillar, index) => {
-            // Define different gradients for each pillar
             const gradients = [
-              "from-blue-500 to-indigo-600",
-              "from-green-500 to-teal-600",
-              "from-purple-500 to-pink-600",
-              "from-yellow-500 to-orange-600",
-              "from-red-500 to-pink-600",
-            ]
+              "from-cyan-600 to-blue-700",     // Leadership (clear + calm)
+              "from-purple-600 to-pink-500",   // Self-development (vibrant but balanced)
+              "from-teal-600 to-green-500",    // Business connections (strong contrast)
+              "from-orange-600 to-yellow-500", // Community projects (careful: light icons might clash)
+              "from-rose-600 to-red-500",      // Uplifting (rich warm tones)
+              "from-indigo-600 to-blue-800",   // Together better world (deep tones, great contrast)
+            ];
 
             return (
               <AnimatedCard key={index} direction="up" delay={index * 100}>
-                <div className="flip-card h-64">
-                  <div className="flip-card-inner">
-                    <div
-                      className={`flip-card-front bg-gradient-to-br ${gradients[index]} text-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center`}
-                    >
-                      <div className="text-4xl mb-4">{pillar.icon}</div>
-                      <h3 className="text-xl font-bold mb-2">{pillar.title}</h3>
-                      <p className="text-center">{pillar.frontDescription}</p>
-                    </div>
-                    <div
-                      className={`flip-card-back bg-gradient-to-br ${gradients[(index + 2) % 5]} text-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center`}
-                    >
-                      <p className="text-center">{pillar.backDescription}</p>
-                    </div>
+                <div className={`bg-gradient-to-br ${gradients[index]} text-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center h-[200px] hover:shadow-lg transition-shadow`}>
+                  <div className="w-16 h-16 mb-3">
+                    <img
+                      src={pillar.icon}
+                      alt={pillar.title}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
+                  <h3 className="text-lg font-bold mb-2 text-center">{pillar.title}</h3>
                 </div>
               </AnimatedCard>
-            )
+            );
           })}
         </div>
+
       </Section>
 
       {/* Leaders Section */}
@@ -326,7 +309,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row justify-center mb-12 gap-6 mx-4 lg:mx-16 mt-4">
           {/* Zone Leaders */}
           <div className="w-full lg:w-1/2">
-            <h3 className="text-2xl font-bold mb-6 text-center">Zone Leaders</h3>
+            <h3 className="text-2xl font-serif  text-center text-blue-800 font-semibold">Zone Leaders</h3>
             <div className="flex justify-center gap-8 flex-wrap">
               {leaders.zone.map((leader, index) => (
                 <AnimatedCard key={index} direction="up" delay={index * 150}>
@@ -358,7 +341,7 @@ export default function Home() {
 
           {/* Local Organisation President */}
           <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-            <h3 className="text-2xl font-bold mb-6 text-center">Local Organisation President</h3>
+            <h3 className="text-2xl font-serif  text-center text-blue-800 font-semibold">Local Organisation President</h3>
             <div className="flex justify-center">
               {leaders.local.map((leader, index) => (
                 <AnimatedCard key={index} direction="up" delay={index * 150}>
@@ -437,7 +420,7 @@ export default function Home() {
           <Card
             title="JCI Action Framework"
             description="An intensive workshop focused on developing essential leadership skills for young professionals in our community."
-            image= "/event_photos/32.jpg?height=200&width=300"
+            image="/event_photos/32.jpg?height=200&width=300"
             date="15 Mar 2025"
             link="/events/JCI-Action-Framework"
             linkText="Read More"

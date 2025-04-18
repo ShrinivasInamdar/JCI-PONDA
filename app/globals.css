@@ -260,3 +260,11 @@
 .image{
   margin-top: -30px;
 }
+
+.imagewidth{
+ display: flex;
+ justify-content: center;
+}
+.imght{
+  height: 550px;
+}
