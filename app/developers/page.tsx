@@ -43,7 +43,7 @@ const developers: Developer[] = [
   {
     name: "AARTH VAJANDAR",
     role: "FRONTEND DEVELOPER",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/developers/aarth.jpg",
     description: "-",
     social: {
       linkedin: "https://www.linkedin.com/in/aarth-vajandar-3b1659252/",
