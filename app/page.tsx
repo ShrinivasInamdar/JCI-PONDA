@@ -39,7 +39,7 @@ const pastEvents = [
     title: "Community Clean-up Drive",
     description:
       "We organized a community clean-up drive at Ponda Beach, collecting over 200kg of waste and raising awareness about environmental conservation.",
-    image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300",
     date: "15 Mar 2025",
     link: "#",
   },
@@ -47,7 +47,7 @@ const pastEvents = [
     title: "Leadership Workshop",
     description:
       "A workshop focused on developing leadership skills among youth, featuring speakers from various industries sharing their experiences.",
-    image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300",
     date: "28 Feb 2025",
     link: "/events/leadership-workshop",
   },
@@ -55,7 +55,7 @@ const pastEvents = [
     title: "Health Awareness Camp",
     description:
       "Free health check-ups and awareness sessions on preventive healthcare for the local community members.",
-    image: "/placeholder.svg?height=200&width=300",
+      image: "/placeholder.svg?height=200&width=300",
     date: "10 Feb 2025",
     link: "/events/health-camp",
   },
@@ -437,7 +437,7 @@ export default function Home() {
           <Card
             title="Leadership Workshop 2025"
             description="An intensive workshop focused on developing essential leadership skills for young professionals in our community."
-            image="/placeholder.svg?height=200&width=300"
+            image= "/event_photos/32.jpg?height=200&width=300"
             date="15 Mar 2025"
             link="/events/leadership-workshop"
             linkText="Read More"
@@ -447,7 +447,7 @@ export default function Home() {
           <Card
             title="Environmental Awareness Drive"
             description="A community initiative to raise awareness about environmental conservation and sustainable practices."
-            image="/placeholder.svg?height=200&width=300"
+            image="/event_photos/31.jpg?height=200&width=300"
             date="28 Feb 2025"
             link="/events/community-cleanup"
             linkText="Read More"
@@ -457,7 +457,7 @@ export default function Home() {
           <Card
             title="Youth Entrepreneurship Summit"
             description="A platform for young entrepreneurs to showcase their ideas and connect with mentors and investors."
-            image="/placeholder.svg?height=200&width=300"
+            image="/event_photos/30.jpg?height=200&width=300"
             date="10 Feb 2025"
             link="/events/health-camp"
             linkText="Read More"

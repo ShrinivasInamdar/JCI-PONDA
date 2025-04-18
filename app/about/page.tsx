@@ -21,9 +21,6 @@ const leaders = {
       ),
       image: "/leaders_images/ankur.jpg",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
     {
       name: "JFS ASHOK BHAT",
@@ -38,9 +35,6 @@ const leaders = {
       ),
       image: "/leaders_images/nvp.png",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
     {
@@ -56,9 +50,6 @@ const leaders = {
       ),
       image: "/leaders_images/nvp.png",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
     {
@@ -76,9 +67,6 @@ const leaders = {
       ),
       image: "/leaders_images/ankur.jpg",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
     {
@@ -99,9 +87,6 @@ const leaders = {
       ),
       image: "/leaders_images/ankur.jpg",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
     {
@@ -116,9 +101,6 @@ const leaders = {
       ),
       image: "/leaders_images/ankur.jpg",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
     {
@@ -136,9 +118,6 @@ const leaders = {
       ),
       image: "/leaders_images/ankur.jpg",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
     {
@@ -152,9 +131,6 @@ const leaders = {
       ),
       image: "/leaders_images/ankur.jpg",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
     {
@@ -170,9 +146,6 @@ const leaders = {
       ),
       image: "/leaders_images/ankur.jpg",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
     {
@@ -192,9 +165,6 @@ const leaders = {
       ),
       image: "/leaders_images/ankur.jpg",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
 
@@ -222,9 +192,6 @@ const leaders = {
       ),
       image: "/leaders_images/ankur.jpg",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
     {
@@ -241,9 +208,6 @@ const leaders = {
       ),
       image: "/leaders_images/ankur.jpg",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
     {
@@ -258,9 +222,6 @@ const leaders = {
       ),
       image: "/leaders_images/ankur.jpg",
       region: "",
-      social: {
-        instagram: "#",
-      },
     },
 
   ],
@@ -397,7 +358,6 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-
         </div>
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md image">
           {/* <div className="text-center mb-6">
@@ -436,14 +396,7 @@ export default function AboutPage() {
                   <div className="flex flex-col items-center flex-grow">
                     <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
                     <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                    <div className="flex space-x-4 mt-auto">
-                      <a
-                        href={leader.social.instagram}
-                        className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
-                      >
-                        <Instagram className="h-5 w-5" />
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
               </AnimatedCard>
