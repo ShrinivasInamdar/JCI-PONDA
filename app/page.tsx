@@ -10,11 +10,10 @@ import chakra from '../public/chakra.png';
 import Image from "next/image";
 import { Poppins } from 'next/font/google';
 
-
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '600', '700']// include weights you plan to use
-});
+}); 
 // Sample data for carousel
 const carouselSlides = [
   {
@@ -62,31 +61,30 @@ const pastEvents = [
   },
 ]
 
-// Sample data for JCI pillars
 const jciPillars = [
   {
     title: "Leadership development programs",
-    icon: "/pillar_icons/leadership.png"
+    icon: "/pillars_icons/leadership.png"
   },
   {
     title: "Self-development trainings",
-    icon: "/pillar_icons/selfdevelopment.png"
+    icon: "/pillars_icons/selfdevelopment.png"
   },
   {
     title: "Business development connections",
-    icon: "/pillar_icons/businessdevlopment.png"
+    icon: "/pillars_icons/businessdevelopment.png"
   },
   {
     title: "Community benefitting projects",
-    icon: "/pillar_icons/community.png"
+    icon: "/pillars_icons/community.png"
   },
   {
     title: "Uplifting the economically deprived",
-    icon: "/pillar_icons/uplifting.png"
+    icon: "/pillars_icons/uplifting.png"
   },
   {
     title: "Together building a better world",
-    icon: "/pillar_icons/world.png"
+    icon: "/pillars_icons/world.png"
   },
 ]
 
@@ -273,46 +271,45 @@ export default function Home() {
 
       {/* Leaders Section */}
       <Section title="" >
-        <div className="w-full flex justify-center px-4">
-          <div className="w-full max-w-6xl">
-            <h3 className="text-2xl font-bold mb-6 text-center">National Leaders</h3>
-            <div className="flex justify-center gap-6 flex-wrap">
-              {leaders.national.map((leader, index) => (
-                <AnimatedCard key={index} direction="up" delay={index * 150}>
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[350px] flex flex-col items-center">
-                    <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
-                      <img
-                        src={leader.image}
-                        alt={leader.name}
-                        className="card-image w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="flex flex-col items-center flex-grow">
-                      <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
-                      <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
-                      <div className="flex space-x-4 mt-auto">
-                        <a
-                          href={leader.social.instagram}
-                          className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
-                        >
-                          <Instagram className="h-5 w-5" />
-                        </a>
-                      </div>
+        {/* National Leaders */}
+        <div className="mb-12">
+          <div className="bg-gradient-to-r from-yellow-100 to-yellow-300 py-6 text-center">
+            <h2 className="text-2xl font-serif text-blue-800 font-semibold">Leaders 2025</h2>
+          </div>
+          <div className="top flex justify-center gap-8 flex-wrap ">
+            {leaders.national.map((leader, index) => (
+              <AnimatedCard key={index} direction="up" delay={index * 150}>
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 w-64 h-[350px] flex flex-col items-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 flex-shrink-0">
+                    <img
+                      src={leader.image}
+                      alt={leader.name}
+                      className="card-image"
+                    />
+                  </div>
+                  <div className="flex flex-col items-center flex-grow">
+                    <h4 className="text-xl font-bold mb-1">{leader.name}</h4>
+                    <p className="text-blue-600 dark:text-blue-400 mb-4">{leader.position}</p>
+                    <div className="flex space-x-4 mt-auto">
+                      <a
+                        href={leader.social.instagram}
+                        className="text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400"
+                      >
+                        <Instagram className="h-5 w-5" />
+                      </a>
                     </div>
                   </div>
-                </AnimatedCard>
-              ))}
-            </div>
+                </div>
+              </AnimatedCard>
+            ))}
           </div>
         </div>
-
-
 
         {/* Zone Leaders and Local Organisation President in a horizontal line */}
         <div className="flex flex-col lg:flex-row justify-center mb-12 gap-6 mx-4 lg:mx-16 mt-4">
           {/* Zone Leaders */}
           <div className="w-full lg:w-1/2">
-            <h3 className="text-2xl font-bold mb-6 text-center">Zone Leaders</h3>
+            <h3 className="text-2xl font-serif  text-center text-blue-800 font-semibold">Zone Leaders</h3>
             <div className="flex justify-center gap-8 flex-wrap">
               {leaders.zone.map((leader, index) => (
                 <AnimatedCard key={index} direction="up" delay={index * 150}>
@@ -344,7 +341,7 @@ export default function Home() {
 
           {/* Local Organisation President */}
           <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-            <h3 className="text-2xl font-bold mb-6 text-center">Local Organisation President</h3>
+            <h3 className="text-2xl font-serif  text-center text-blue-800 font-semibold">Local Organisation President</h3>
             <div className="flex justify-center">
               {leaders.local.map((leader, index) => (
                 <AnimatedCard key={index} direction="up" delay={index * 150}>
@@ -421,31 +418,31 @@ export default function Home() {
       <Section title="" description=" ">
         <div className="grid md:grid-cols-3 gap-6">
           <Card
-            title="Leadership Workshop 2025"
+            title="JCI Action Framework"
             description="An intensive workshop focused on developing essential leadership skills for young professionals in our community."
-            image="/placeholder.svg?height=200&width=300"
-            date="15 Mar 2025"
-            link="/events/leadership-workshop"
+            image="/event_photos/32.jpg?height=200&width=300"
+            date="31 Mar 2025"
+            link="/events/JCI-Action-Framework"
             linkText="Read More"
             index={0}
             direction="up"
           />
           <Card
-            title="Environmental Awareness Drive"
+            title="Effective Public Speaking"
             description="A community initiative to raise awareness about environmental conservation and sustainable practices."
-            image="/placeholder.svg?height=200&width=300"
+            image="/event_photos/31.jpg?height=200&width=300"
             date="28 Feb 2025"
-            link="/events/community-cleanup"
+            link="/events/Effective-Public-Speaking"
             linkText="Read More"
             index={1}
             direction="up"
           />
           <Card
-            title="Youth Entrepreneurship Summit"
+            title="JCOM Meet 1.0"
             description="A platform for young entrepreneurs to showcase their ideas and connect with mentors and investors."
-            image="/placeholder.svg?height=200&width=300"
+            image="/event_photos/30.jpg?height=200&width=300"
             date="10 Feb 2025"
-            link="/events/health-camp"
+            link="/events/JCOM-Meet-1.0"
             linkText="Read More"
             index={2}
             direction="up"

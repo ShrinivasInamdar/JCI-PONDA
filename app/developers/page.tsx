@@ -54,7 +54,7 @@ const developers: Developer[] = [
   {
     name: "P JAYESH NAIDU",
     role: "FRONTEND DEVELOPER",
-    image: "/developers/jayesh.JPG",
+    image: "/developers/jayesh.jpg",
     description: "-",
     social: {
       linkedin: "https://www.linkedin.com/in/p-jayesh-naidu-599648255/",
