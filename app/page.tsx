@@ -13,7 +13,7 @@ import { Poppins } from 'next/font/google';
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '600', '700']// include weights you plan to use
-});
+}); 
 // Sample data for carousel
 const carouselSlides = [
   {
@@ -189,7 +189,7 @@ export default function Home() {
         <div className="flex justify-center mb-8">
           <AnimatedCard direction="fade">
             <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500" id="container">
-              <img src="/jcitm.jpg" alt="JCI Logo" id="img" />
+              <img src="/JCI LOGO.png" alt="JCI Logo" id="img" />
             </div>
           </AnimatedCard>
         </div>
