@@ -1084,7 +1084,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
           <img
             src={event.mainImage || "/placeholder.svg"}
             alt={`${event.title} - Main Image`}
-            className=" w-[500px] h-[550px] object-cover rounded-lg shadow-md"
+            className=" w-[550px] h-[670px] object-cover rounded-lg shadow-md"
           />
         </div>
 
