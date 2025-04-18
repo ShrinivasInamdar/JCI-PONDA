@@ -18,7 +18,7 @@ const events = {
     date: "15 Mar 2025",
     location: "Ponda Beach, Goa",
     organizer: "Environmental Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200", // Replace with actual image path
+    mainImage: "/event_photos/32.jpg?height=500&width=1200", // Replace with actual image path
     // Add 2-3 additional images for the gallery
     images: [
       "/placeholder.svg?height=300&width=400", // Replace with actual image paths
@@ -52,7 +52,7 @@ const events = {
     date: "29 Mar 2025",
     location: "JCI Ponda Hall, Ponda",
     organizer: "Training Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/31?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -85,7 +85,7 @@ const events = {
     date: "29 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/30.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -117,7 +117,7 @@ const events = {
     date: "16 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/29.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -149,7 +149,7 @@ const events = {
     date: "15 Mar b2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/28.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -181,7 +181,7 @@ const events = {
     date: "14 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/27.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -213,7 +213,7 @@ const events = {
     date: "12 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/26.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -245,7 +245,7 @@ const events = {
     date: "10 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/25.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -277,7 +277,7 @@ const events = {
     date: "08 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/24.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -309,7 +309,7 @@ const events = {
     date: "08 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/23.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -341,7 +341,7 @@ const events = {
     date: "07 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/22.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -373,7 +373,7 @@ const events = {
     date: "06 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/21.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -405,7 +405,7 @@ const events = {
     date: "05 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/20.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -436,7 +436,7 @@ const events = {
     date: "04 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/19.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -467,7 +467,7 @@ const events = {
     date: "03 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/18.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -498,7 +498,7 @@ const events = {
     date: "02 Mar 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/17.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -529,7 +529,7 @@ const events = {
     date: "23 Feb 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/16.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -560,7 +560,7 @@ const events = {
     date: "23 Feb 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/15.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -591,7 +591,7 @@ const events = {
     date: "21 Feb 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/14.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -622,7 +622,7 @@ const events = {
     date: "19 Feb 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/13.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -653,7 +653,7 @@ const events = {
     date: "14 Feb 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/12.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -684,7 +684,7 @@ const events = {
     date: "08 Feb 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/11.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -715,7 +715,7 @@ const events = {
     date: "04 Feb 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/10.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -746,7 +746,7 @@ const events = {
     date: "26 Jan 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/9.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -777,7 +777,7 @@ const events = {
     date: "26 Jan 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/8.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -808,7 +808,7 @@ const events = {
     date: "20 Jan 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/7.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -839,7 +839,7 @@ const events = {
     date: "19 Jan 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/6.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -870,7 +870,7 @@ const events = {
     date: "19 Jan 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/5.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -901,7 +901,7 @@ const events = {
     date: "19 Jan 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/4.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -932,7 +932,7 @@ const events = {
     date: "18 Jan 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/3.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -963,7 +963,7 @@ const events = {
     date: "17 Jan 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/2.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",
@@ -989,12 +989,12 @@ const events = {
       "Connected community members with government health schemes",
     ],
   },
-  "Presidential Academy": {
+  "Presidential-Academy": {
     title: "Presidential Academy",
     date: "11 Jan 2025",
     location: "Community Center, Ponda",
     organizer: "Health Committee",
-    mainImage: "/placeholder.svg?height=500&width=1200",
+    mainImage: "/event_photos/1.jpg?height=500&width=1200",
     images: [
       "/placeholder.svg?height=300&width=400",
       "/placeholder.svg?height=300&width=400",

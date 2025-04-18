@@ -23,7 +23,7 @@ const allReports = [
       "Details of our environmental initiative that mobilized over 200 volunteers to clean local beaches and parks.",
     image: "/event_photos/31.jpg?height=200&width=300",
     date: "29 Mar 2025",
-    link: "/reports/cEffective-Public-Speaking",
+    link: "/events/Effective-Public-Speaking",
   },
   {
     title: "JCOM Meet 1.0",
@@ -31,14 +31,14 @@ const allReports = [
       "Impact report of our health camp that provided free check-ups and consultations to over 500 community members.",
     image: "/event_photos/30.jpg?height=200&width=300",
     date: "29 Mar 2025",
-    link: "/reports/JCOM-Meet-1.0",
+    link: "/events/JCOM-Meet-1.0",
   },
   {
     title: "Sport's Day",
     description: "Highlights from our summit that connected young entrepreneurs with mentors and potential investors.",
     image: "/event_photos/29.jpg?height=200&width=300",
     date: "16 Mar 2025",
-    link: "/reports/Sport's-Day",
+    link: "/events/Sport's-Day",
   },
   {
     title: "Educational Outreach Program",
@@ -46,7 +46,7 @@ const allReports = [
       "Report on our initiative to provide educational resources and mentorship to underprivileged students.",
     image: "/event_photos/28.jpg?height=200&width=300",
     date: "15 Mar 2025",
-    link: "/reports/Educational-Outreach-Program",
+    link: "/events/Educational-Outreach-Program",
   },
   {
     title: "Gulal Holi Party",
@@ -54,7 +54,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/27.jpg?height=200&width=300",
     date: "14 Mar 2025",
-    link: "/reports/Gulal-Holi-Party",
+    link: "/events/Gulal-Holi-Party",
   },
   {
     title: "Annual Running Race",
@@ -62,7 +62,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/26.jpg?height=200&width=300",
     date: "12 Mar 2025",
-    link: "/reports/Annual-Running-Race",
+    link: "/events/Annual-Running-Race",
   },
   {
     title: "53rd Charter Night",
@@ -70,7 +70,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/25.jpg?height=200&width=300",
     date: "10 Mar 2025",
-    link: "/reports/53rd-Charter-Night",
+    link: "/events/53rd-Charter-Night",
   },
   {
     title: "Aboli Week - Women's Day Rally",
@@ -78,7 +78,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/24.jpg?height=200&width=300",
     date: "08 Mar 2025",
-    link: "/reports/Women's-Day-Rally",
+    link: "/events/Women's-Day-Rally",
   },
   {
     title: "Aboli Week - Women of Worth",
@@ -86,7 +86,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/23.jpg?height=200&width=300",
     date: "08 Mar 2025",
-    link: "/reports/Women-of-Worth",
+    link: "/events/Women-of-Worth",
   },
   {
     title: "Aboli Week - DAY 6",
@@ -94,7 +94,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/22.jpg?height=200&width=300",
     date: "07 Mar 2025",
-    link: "/reports/DAY-6",
+    link: "/events/DAY-6",
   },
   {
     title: "Aboli Week - DAY 5",
@@ -102,7 +102,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/21.jpg?height=200&width=300",
     date: "06 Mar 2025",
-    link: "/reports/DAY 5",
+    link: "/events/DAY 5",
   },
   {
     title: "Aboli Week - DAY 4",
@@ -110,7 +110,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/20.jpg?height=200&width=300",
     date: "05 Mar 2025",
-    link: "/reports/Day-4",
+    link: "/events/Day-4",
   },
   {
     title: "Aboli Week - DAY 3",
@@ -118,7 +118,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/19.jpg?height=200&width=300",
     date: "04 Mar 2025",
-    link: "/reports/Day-3",
+    link: "/events/Day-3",
   },
   {
     title: "Aboli Week - DAY 2",
@@ -126,7 +126,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/18.jpg?height=200&width=300",
     date: "03 Mar 2025",
-    link: "/reports/Day-2",
+    link: "/events/Day-2",
   },
   {
     title: "Aboli Week - Breast Cancer Screening Camp",
@@ -134,7 +134,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/17.jpg?height=200&width=300",
     date: "02 Mar 2025",
-    link: "/reports/Day-1",
+    link: "/events/Day-1",
   },
   {
     title: "Salute the Silent Worker",
@@ -142,7 +142,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/16.jpg?height=200&width=300",
     date: "23 Feb 2025",
-    link: "/reports/Salute-the-Silent-Worker",
+    link: "/events/Salute-the-Silent-Worker",
   },
   {
     title: "Daan at Maa Ashroghar",
@@ -150,7 +150,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/15.jpg?height=200&width=300",
     date: "23 Feb 2025",
-    link: "/reports/Daan-at-Maa-Ashroghar",
+    link: "/events/Daan-at-Maa-Ashroghar",
   },
   {
     title: "Lo Development Management Training",
@@ -158,7 +158,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/14.jpg?height=200&width=300",
     date: "21 Feb 2025",
-    link: "/reports/ldmt",
+    link: "/events/ldmt",
   },
   {
     title: "Water Distribution-Shivjayanthi",
@@ -166,7 +166,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/13.jpg?height=200&width=300",
     date: "19 Feb 2025",
-    link: "/reports/Water-Distribution",
+    link: "/events/Water-Distribution",
   },
   {
     title: "Valentine's Day Contest-Ishq Wala Frame",
@@ -174,7 +174,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/12.jpg?height=200&width=300",
     date: "14 Feb 2025",
-    link: "/reports/Valentine's-Day-Contest",
+    link: "/events/Valentine's-Day-Contest",
   },
   {
     title: "Cultural Exchange Program",
@@ -182,7 +182,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/11.jpg?height=200&width=300",
     date: "08 Feb 2025",
-    link: "/reports/cultural-exchange-program",
+    link: "/events/cultural-exchange-program",
   },
   {
     title: "Rising for a Cause",
@@ -190,7 +190,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/10.jpg?height=200&width=300",
     date: "04 Feb 2025",
-    link: "/reports/Rising-for-a-Cause",
+    link: "/events/Rising-for-a-Cause",
   },
   {
     title: "JCI Ponda's 53rd installation",
@@ -198,7 +198,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/9.jpg?height=200&width=300",
     date: "26 Jan 2025",
-    link: "/reports/53rd-installation",
+    link: "/events/53rd-installation",
   },
   {
     title: "Reupublic Day Celebration",
@@ -206,7 +206,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/8.jpg?height=200&width=300",
     date: "26 Jan 2025",
-    link: "/reports/Reupublic-Day-Celebration",
+    link: "/events/Reupublic-Day-Celebration",
   },
   {
     title: "Public Speaking & Entreprenurship Workshop",
@@ -214,7 +214,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/7.jpg?height=200&width=300",
     date: "20 Jan 2025",
-    link: "/reports/PSEW",
+    link: "/events/PSEW",
   },
   {
     title: "Swagat a Transformational Orientation Program",
@@ -222,7 +222,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/6.jpg?height=200&width=300",
     date: "19 Jan 2025",
-    link: "/reports/Swagat",
+    link: "/events/Swagat",
   },
   {
     title: "Felicitating Youth Icon",
@@ -230,7 +230,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/5.jpg?height=200&width=300",
     date: "19 Jan 2025",
-    link: "/reports/National-Youth-Day",
+    link: "/events/National-Youth-Day",
   },
   {
     title: "Chapcon 2025",
@@ -238,7 +238,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/4.jpg?height=200&width=300",
     date: "19 Jan 2025",
-    link: "/reports/Chapcon-2025",
+    link: "/events/Chapcon-2025",
   },
   {
     title: "Training on Startups",
@@ -246,7 +246,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/3.jpg?height=200&width=300",
     date: "18 Jan 2025",
-    link: "/reports/Training-on-Startups",
+    link: "/events/Training-on-Startups",
   },
   {
     title: "Skill Development & Curiosity",
@@ -254,7 +254,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/2.jpg?height=200&width=300",
     date: "17 Jan 2025",
-    link: "/reports/SD&C",
+    link: "/events/SD&C",
   },
   {
     title: "Presidential Academy",
@@ -262,7 +262,7 @@ const allReports = [
       "Outcomes of our international cultural exchange program that fostered global understanding and cooperation.",
     image: "/event_photos/1.jpg?height=200&width=300",
     date: "11 Jan 2025",
-    link: "/reports/Presidential-Academy",
+    link: "/events/Presidential-Academy",
   },
 ]
 
