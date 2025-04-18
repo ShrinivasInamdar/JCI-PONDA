@@ -309,7 +309,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row justify-center mb-12 gap-6 mx-4 lg:mx-16 mt-4">
           {/* Zone Leaders */}
           <div className="w-full lg:w-1/2">
-            <h3 className="text-2xl font-bold mb-6 text-center">Zone Leaders</h3>
+            <h3 className="text-2xl font-serif  text-center text-blue-800 font-semibold">Zone Leaders</h3>
             <div className="flex justify-center gap-8 flex-wrap">
               {leaders.zone.map((leader, index) => (
                 <AnimatedCard key={index} direction="up" delay={index * 150}>
@@ -341,7 +341,7 @@ export default function Home() {
 
           {/* Local Organisation President */}
           <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-            <h3 className="text-2xl font-bold mb-6 text-center">Local Organisation President</h3>
+            <h3 className="text-2xl font-serif  text-center text-blue-800 font-semibold">Local Organisation President</h3>
             <div className="flex justify-center">
               {leaders.local.map((leader, index) => (
                 <AnimatedCard key={index} direction="up" delay={index * 150}>
