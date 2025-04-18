@@ -260,10 +260,11 @@
 .image{
   margin-top: -30px;
 }
-.fc{
-  color: blueviolet;
-}
+
 .imagewidth{
  display: flex;
  justify-content: center;
+}
+.imght{
+  height: 550px;
 }
