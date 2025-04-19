@@ -12,7 +12,7 @@ const leaders = {
   national: [
     
     {
-      name: "JFS Mukesh",
+      name: "Jc Mukesh Kavlekar",
       position: (
         <>
           <br />
@@ -27,15 +27,16 @@ const leaders = {
     },
 
     {
-      name: "JFS Dhunhill",
+      name: "Jc Dhunhill Fernandes",
       position: (
         <>
-          <br />
           ZONE VICE PRESIDENT
           <br />
           JCI INDIA
           <br />
           Half Centurion LO
+          <br />
+          Outstanding President of Zone XI, Winner
           <br />
         </>
       ),
@@ -44,7 +45,7 @@ const leaders = {
     },
 
     {
-      name: "JFS Sneha",
+      name: "JFM Sneha Naik",
       position: (
         <>
           <br />
@@ -64,11 +65,9 @@ const leaders = {
     },
 
     {
-      name: "JFS Shashikant Phadte",
+      name: "JC HGF Shashikant Phadte",
       position: (
         <>
-          JCI INDIA
-          <br />
           100% Efficient LO
           <br />
         </>
@@ -78,7 +77,7 @@ const leaders = {
     },
 
     {
-      name: "JFS Thejus Shenoy",
+      name: "JC Thejus Shenoy",
       position: (
         <>
           <br />
@@ -95,20 +94,7 @@ const leaders = {
     },
 
     {
-      name: "JFS Rahul",
-      position: (
-        <>
-          
-          <br />
-          
-        </>
-      ),
-      image: "/leaders_images/ankur.jpg",
-      region: "",
-    },
-
-    {
-      name: "JFS Varun Pandey",
+      name: "JC Varun Pandey",
       position: (
         <>
           <br />
@@ -123,11 +109,11 @@ const leaders = {
     },
 
     {
-      name: "JFS Akshay Patil",
+      name: "JC HGF Akshay Patil",
       position: (
         <>
           <br />
-          ZONE Director Business
+          ZONE DIRECTOR BUSINESS
           <br />
           JCI INDIA
           <br />
@@ -143,10 +129,9 @@ const leaders = {
 
 
     {
-      name: "JFS Janhavi Naik",
+      name: "JC HGF Janhavi Naik",
       position: (
         <>
-          JCI INDIA
           <br />
           Outstanding LO of Zone XI, Winner 
           <br />
@@ -169,12 +154,9 @@ const leaders = {
     },
 
     {
-      name: "JFS Akash",
+      name: "JC Akash",
       position: (
         <>
-          
-          <br />
-          JCI INDIA
           <br />
           Recognition for 50 glorious years at National Meet. 
           <br />
@@ -187,8 +169,7 @@ const leaders = {
     {
       name: "JFS Vadiraj",
       position: (
-        <>
-          
+        <>          
           <br />
           JCI INDIA
           <br />

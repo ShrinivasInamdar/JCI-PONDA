@@ -392,7 +392,7 @@ export default function Home() {
         description=""
         className="bg-gray-50 dark:bg-gray-900"
       >
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {pastEvents.map((event, index) => (
             <Card
               key={index}
@@ -406,7 +406,7 @@ export default function Home() {
               direction={index % 2 === 0 ? "left" : "right"}
             />
           ))}
-        </div>
+        </div> */}
         {/* <div className="mt-8 text-center">
           <Button asChild>
             <Link href="/reports">More Reports - Click Here</Link>
