@@ -165,7 +165,7 @@ const teamMembers: {
     {
       name: "JC Janhavi Naik",
       position: "Member",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/janhavi.jpg",
       description: "Active member contributing to various community development initiatives.",
       social: {
         facebook: "#",
@@ -175,7 +175,7 @@ const teamMembers: {
     {
       name: "JC ADITYA NIRMESH TYAGI",
       position: "Member",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/.jpg",
       description: "Passionate about environmental conservation and sustainable development.",
       social: {
         facebook: "#",
@@ -185,7 +185,7 @@ const teamMembers: {
     {
       name: "JC AKSHAY PATIL",
       position: "Member",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/akshay.jpg",
       description: "Focused on youth empowerment and education-related projects.",
       social: {
         facebook: "#",
@@ -195,7 +195,7 @@ const teamMembers: {
     {
       name: "JC AMEY K SHET TILVE",
       position: "Member",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/amey.jpg",
       description: "Focused on youth empowerment and education-related projects.",
       social: {
         facebook: "#",
@@ -205,7 +205,7 @@ const teamMembers: {
     {
       name: "JC DHIRAJ JEETENDRA GOVEKAR",
       position: "Member",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/dhiraj.jpg",
       description: "Focused on youth empowerment and education-related projects.",
       social: {
         facebook: "#",
@@ -213,9 +213,9 @@ const teamMembers: {
       },
     },
     {
-      name: "JC NIKHIL RADHAKRISHNA",
+      name: "JCI Sen. Nitish Raj Victor",
       position: "Member",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/nitish.jpg",
       description: "Focused on youth empowerment and education-related projects.",
       social: {
         facebook: "#",
@@ -225,7 +225,7 @@ const teamMembers: {
     {
       name: "JC SHUBHAMKAR JOG",
       position: "Member",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/shubamkar.jpg",
       description: "Focused on youth empowerment and education-related projects.",
       social: {
         facebook: "#",
@@ -235,7 +235,7 @@ const teamMembers: {
     {
       name: "JC ANKITA JALMI",
       position: "Member",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/ankita.jpg",
       description: "Focused on youth empowerment and education-related projects.",
       social: {
         facebook: "#",
@@ -245,7 +245,7 @@ const teamMembers: {
     {
       name: "JC AKASH MANGESHKAR",
       position: "Member",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/akash.jpg",
       description: "Focused on youth empowerment and education-related projects.",
       social: {
         facebook: "#",
@@ -255,7 +255,7 @@ const teamMembers: {
     {
       name: "JC ANITA P BASARKATTI",
       position: "Member",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/teams/LGB/anita.jpg",
       description: "Focused on youth empowerment and education-related projects.",
       social: {
         facebook: "#",

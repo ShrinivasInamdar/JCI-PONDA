@@ -123,7 +123,7 @@ export default function EventsPage() {
             <DialogTrigger asChild>
               <div className="cursor-pointer relative">
                 <img
-                  src="/placeholder.svg?height=400&width=800"
+                  src="./calender.jpg"
                   alt="Annual Calendar 2025"
                   className="rounded-lg shadow-md hover:opacity-90 transition-opacity imght"
                 />
