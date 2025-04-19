@@ -5,7 +5,8 @@ import { AnimatedCard } from "@/components/animated-card"
 import galaxy from "./images/galaxy.jpg"
 import { Instagram } from "lucide-react"
 import jci from "./images/jci.jpg"
-import jciindia from "./images/jciindia.jpg"
+// import jciindia from "./images/jciindia.jpg"
+import jciindia2 from "./images/jciindia2.png"
 import jciponda from "./images/jciponda.jpg"
 
 const leaders = {
@@ -218,6 +219,7 @@ export default function AboutPage() {
                 <p className="mb-4 font-light">
                 Junior Chamber International (JCI) is a worldwide federation of young leaders and entrepreneurs with nearly five lakh active members and millions of alumni spread across more than 115 countries.
                 </p>
+                <h3 className="text-2xl font-serif font-bold mb-4 mt-10">How it began</h3>
                 <p className="mb-4 font-light">
                 JCI orgin can be traced back to 1915 to the city of St. Louis, Missouri, USA where Sir Henry Giessenbier with 32 other young men established Young Men's Progressive Civic Association (YMPCA)
                 </p>
@@ -258,7 +260,7 @@ export default function AboutPage() {
               </div>
               <div className="md:w-1/3">
                 <img
-                 src={jciindia.src}
+                 src={jciindia2.src}
                   alt="JCI India Logo"
                   className="w-full rounded-lg"
                 />

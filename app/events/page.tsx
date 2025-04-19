@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Section } from "@/components/section"
 import { Card } from "@/components/card"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import Calendar from './calender.jpg'
 
 // Sample data for upcoming events 
 // while adding data remove any[] 
@@ -123,7 +124,7 @@ export default function EventsPage() {
             <DialogTrigger asChild>
               <div className="cursor-pointer relative">
                 <img
-                  src="./calender.jpg"
+                  src={Calendar.src}
                   alt="Annual Calendar 2025"
                   className="rounded-lg shadow-md hover:opacity-90 transition-opacity imght"
                 />
@@ -134,7 +135,7 @@ export default function EventsPage() {
             </DialogTrigger>
             <DialogContent className="max-w-4xl">
               <img
-                src="/placeholder.svg?height=800&width=1200"
+                src={Calendar.src}
                 alt="Annual Calendar 2025 - Full View"
                 className="w-full h-full imght"
               />

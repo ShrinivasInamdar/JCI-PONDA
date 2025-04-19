@@ -6,7 +6,6 @@ import { Menu, X, ChevronDown } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
-import { Dropdown } from "react-day-picker"
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -38,6 +37,7 @@ const navLinks = [
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [openDropdowns, setOpenDropdowns] = useState<{ [key: string]: boolean }>({})
   const pathname = usePathname()
 
   return (
@@ -87,7 +87,9 @@ export function Navbar() {
                   href={link.href}
                   className={cn(
                     "text-sm font-medium transition-colors hover:text-blue-600 dark:hover:text-blue-400",
-                    pathname === link.href ? "text-blue-600 dark:text-blue-400" : "text-gray-700 dark:text-gray-200",
+                    pathname === link.href
+                      ? "text-blue-600 dark:text-blue-400"
+                      : "text-gray-700 dark:text-gray-200",
                   )}
                 >
                   {link.name}
@@ -113,35 +115,59 @@ export function Navbar() {
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
           <div className="ipad:hidden py-4 space-y-2">
-            {navLinks.map((link) =>
-              link.dropdown ? (
-                <div key={link.name} className="py-2">
-                  <div className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200">{link.name}</div>
-                  <div className="pl-8 space-y-2">
-                    {link.items.map((item) => (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        className={cn(
-                          "block py-2 px-4 text-sm font-medium rounded-md transition-colors",
-                          pathname === item.href
-                            ? "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
-                            : "text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800",
-                        )}
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href
+              const isDropdownOpen = openDropdowns[link.name]
+
+              if (link.dropdown) {
+                return (
+                  <div key={link.name} className="px-4">
+                    <button
+                      onClick={() =>
+                        setOpenDropdowns((prev) => ({
+                          ...prev,
+                          [link.name]: !prev[link.name],
+                        }))
+                      }
+                      className="w-full flex justify-between items-center py-2 text-sm font-medium text-left text-gray-700 dark:text-gray-200"
+                    >
+                      {link.name}
+                      <ChevronDown
+                        className={cn("ml-2 h-4 w-4 transition-transform", {
+                          "rotate-180": isDropdownOpen,
+                        })}
+                      />
+                    </button>
+                    {isDropdownOpen && (
+                      <div className="pl-4 space-y-2">
+                        {link.items.map((item) => (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            className={cn(
+                              "block py-2 px-4 text-sm font-medium rounded-md transition-colors",
+                              pathname === item.href
+                                ? "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
+                                : "text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800",
+                            )}
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                </div>
-              ) : (
+                )
+              }
+
+              return (
                 <Link
                   key={link.name}
                   href={link.href}
                   className={cn(
                     "block py-2 px-4 text-sm font-medium rounded-md transition-colors",
-                    pathname === link.href
+                    isActive
                       ? "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
                       : "text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800",
                   )}
@@ -150,7 +176,7 @@ export function Navbar() {
                   {link.name}
                 </Link>
               )
-            )}
+            })}
           </div>
         )}
       </div>
